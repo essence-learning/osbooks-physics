@@ -1,0 +1,316 @@
+## Electric Power
+> ## Section Learning Objectives
+> By the end of this section, you will be able to do the following:
+> 
+> * Define electric power and describe the electric power equation
+> * Calculate electric power in circuits of resistors in series, parallel, and complex arrangements
+> 
+> 
+### Section Key Terms
+
+<table>
+  <tr>
+    <td>electric power</td>
+  </tr>
+</table>
+
+
+
+Power is associated by many people with electricity. Every day, we use electric power to run our modern appliances. Electric power transmission lines are visible examples of electricity providing power. We also use electric power to start our cars, to run our computers, or to light our homes. Power is the rate at which energy of any type is transferred; **electric power** is the rate at which electric energy is transferred in a circuit. In this section, we’ll learn not only what this means, but also what factors determine electric power. 
+
+To get started, let’s think of light bulbs, which are often characterized in terms of their power ratings in watts. Let us compare a 25-W bulb with a 60-W bulb (see [None](None)). Although both operate at the same voltage, the 60-W bulb emits more light intensity than the 25-W bulb. This tells us that something other than voltage determines the power output of an electric circuit. 
+
+Incandescent light bulbs, such as the two shown in [None](None), are essentially resistors that heat up when current flows through them and they get so hot that they emit visible and invisible light. Thus the two light bulbs in the photo can be considered as two different resistors. In a simple circuit such as a light bulb with a voltage applied to it, the resistance determines the current by Ohm’s law, so we can see that current as well as voltage must determine the power.
+
+
+<caption>On the left is a 25-W light bulb, and on the right is a 60-W light bulb. Why are their power outputs different despite their operating on the same voltage?</caption>
+The formula for power may be found by dimensional analysis. Consider the units of power. In the SI system, power is given in watts (W), which is energy per unit time, or J/s
+
+W=Js.Recall now that a voltage is the potential energy per unit charge, which means that voltage has units of J/C
+
+V=JC.We can rewrite this equation as  J=V×C  and substitute this into the equation for watts to get
+
+W=Js=V×Cs=V×Cs.But a Coulomb per second (C/s) is an electric current, which we can see from the definition of electric current,  I=ΔQΔt, where  Δ  *Q* is the charge in coulombs and  Δ  *t* is time in seconds. Thus, equation above tells us that electric power is voltage times current, or
+
+P=IV.This equation gives the electric power consumed by a circuit with a voltage drop of *V* and a current of *I*.
+
+For example, consider the circuit in [None](None). From Ohm’s law, the current running through the circuit is
+
+I=VR=12V100Ω=0.12A.Thus, the power consumed by the circuit is
+
+P=VI=(12V)(0.12A)=1.4W.Where does this power go? In this circuit, the power goes primarily into heating the resistor in this circuit.
+
+
+<caption>A simple circuit that consumes electric power.</caption>
+In calculating the power in the circuit of [None](None), we used the resistance and Ohm’s law to find the current. Ohm’s law gives the current: I=V/R, which we can insert into the equation for electric power to obtain
+
+P=IV=(VR)V=V2R.This gives the power in terms of only the voltage and the resistance. 
+
+We can also use Ohm’s law to eliminate the voltage in the equation for electric power and obtain an expression for power in terms of just the current and the resistance. If we write Ohm’s law as  V=IR 
+ and use this to eliminate *V* in the equation  P=IV, we obtain
+
+P=IV=I(IR)=I2R.This gives the power in terms of only the current and the resistance.
+
+Thus, by combining Ohm’s law with the equation  P=IV  for electric power, we obtain two more expressions for power: one in terms of voltage and resistance and one in terms of current and resistance. Note that only resistance (not capacitance or anything else), current, and voltage enter into the expressions for electric power. This means that the physical characteristic of a circuit that determines how much power it dissipates is its resistance. Any capacitors in the circuit do not dissipate electric power—on the contrary, capacitors either store electric energy or release electric energy back to the circuit.
+
+To clarify how voltage, resistance, current, and power are all related, consider [None](None), which shows the *formula wheel*. The quantities in the center quarter circle are equal to the quantities in the corresponding outer quarter circle. For example, to express a potential V in terms of power and current, we see from the formula wheel that  V=P/I .
+
+
+<caption>The formula wheel shows how volts, resistance, current, and power are related. The quantities in the inner quarter circles equal the quantities in the corresponding outer quarter circles.</caption>
+## Find the Resistance of a Lightbulb
+A typical older incandescent lightbulb was 60 W. Assuming that 120 V is applied across the lightbulb, what is the current through the lightbulb?
+
+## Strategy
+We are given the voltage and the power output of a simple circuit containing a lightbulb, so we can use the equation  P=IV  to find the current *I* that flows through the lightbulb.
+
+## Solution
+Solving  P=IV  for the current and inserting the given values for voltage and power gives
+
+P=IVI=PV=60W120V=0.50A.Thus, a half ampere flows through the lightbulb when 120 V is applied across it.
+
+## Discussion
+This is a significant current. Recall that household power is AC and not DC, so the 120 V supplied by household sockets is an alternating power, not a constant power. The 120 V is actually the time-averaged power provided by such sockets. Thus, the average current going through the light bulb over a period of time longer than a few seconds is 0.50 A.
+
+## Boot Warmers
+To warm your boots on cold days, you decide to sew a circuit with some resistors into the insole of your boots. You want 10 W of heat output from the resistors in each insole, and you want to run them from two 9-V batteries (connected in series). What total resistance should you put in each insole?
+
+## Strategy
+We know the desired power and the voltage (18 V, because we have two 9-V batteries connected in series), so we can use the equation  P=V2/R  to find the requisite resistance.
+
+## Solution
+Solving  P=V2/R  for the resistance and inserting the given voltage and power, we obtain
+
+P=V2RR=V2P=(18V)210W=32Ω.Thus, the total resistance in each insole should be 32  Ω. 
+
+
+## Discussion
+Let’s see how much current would run through this circuit. We have 18 V applied across a resistance of 32  Ω, so Ohm’s law gives
+
+I=VR=18V32Ω=0.56A.All batteries have labels that say how much charge they can deliver (in terms of a current multiplied by a time). A typical 9-V alkaline battery can deliver a charge of 565  mA⋅h 
+ (so two 9 V batteries deliver 1,130  mA⋅h ), so this heating system would function for a time of
+
+t=1130×10−3A⋅h0.56A=2.0h.## Power through a Branch of a Circuit
+Each resistor in the circuit below is 30  Ω . What power is dissipated by the middle branch of the circuit?
+
+
+## Strategy
+The middle branch of the circuit contains resistors  R3 and R5  in series. The voltage across this branch is 12 V. We will first find the equivalent resistance in this branch, and then use  P=V2/R  to find the power dissipated in the branch.
+
+## Solution
+The equivalent resistance is  Rmiddle=R3+R5=30Ω+30Ω=60Ω . The power dissipated by the middle branch of the circuit is
+
+Pmiddle=V2Rmiddle=(12V)260Ω=2.4W.## Discussion
+Let’s see if energy is conserved in this circuit by comparing the power dissipated in the circuit to the power supplied by the battery. First, the equivalent resistance of the left branch is
+
+Rleft=11/R1+1/R2+R4=11/30Ω+1/30Ω+30Ω=45Ω.The power through the left branch is
+
+Pleft=V2Rleft=(12V)245Ω=3.2W.The right branch contains only  R6, so the equivalent resistance is  Rright=R6=30Ω . The power through the right branch is
+
+Pright=V2Rright=(12V)230Ω=4.8W.The total power dissipated by the circuit is the sum of the powers dissipated in each branch.
+
+P=Pleft+Pmiddle+Pright=2.4W+3.2W+4.8W=10.4WThe power provided by the battery is
+
+P=IV.where *I* is the total current flowing through the battery. We must therefore add up the currents going through each branch to obtain *I*. The branches contributes currents of
+
+Ileft=VRleft=12V45Ω=0.2667AImiddle=VRmiddle=12V60Ω=0.20AIright=VRright=12V30Ω=0.40A.The total current is
+
+I=Ileft+Imiddle+Iright=0.2667A+0.20A+0.40A=0.87A.and the power provided by the battery is
+
+P=IV=(0.87A)(12V)=10.4W.This is the same power as is dissipated in the resistors of the circuit, which shows that energy is conserved in this circuit.
+
+### Practice Problems
+
+What is the formula for the power dissipated in a resistor?
+
+1. P=IV.
+2. P=VI.
+3. *P**IV*
+4. *P**I*<sup>2</sup>*V*
+
+What is the formula for power dissipated by a resistor given its resistance and the voltage across it?
+
+1. P=RV2
+2. P=V2R
+3. P=V2R
+4. P=I2R
+
+
+
+### Check your Understanding
+
+Which circuit elements dissipate power?
+
+1. capacitors
+2. inductors
+3. ideal switches
+4. resistors
+
+
+[None](#ost/api/ex/k12phys-ch19-ex085)
+
+
+
+
+### Section Summary
+
+* Electric power is dissipated in the resistances of a circuit. Capacitors do not dissipate electric power.
+* Electric power is proportional to the voltage and the current in a circuit.
+* Ohm’s law provides two extra expressions for electric power: one that does not involve current and one that does not involve voltage.
+
+
+
+### Key Equations
+
+<table>
+  <tr>
+    <td>*I** V*</td>
+    <td>P=IV</td>
+  </tr>
+  <tr>
+    <td>*I**R*</td>
+    <td>P=I2R</td>
+  </tr>
+  <tr>
+    <td>*V**R*</td>
+    <td>P=V2R</td>
+  </tr>
+</table>
+
+
+
+### Concept Items
+
+To draw the most power from a battery, should you connect a small or a large resistance across its terminals? Explain.
+
+1. Small resistance, because smaller resistance will lead to the largest power
+2. Large resistance, because smaller resistance will lead to the largest power
+
+If you double the current through a resistor, by what factor does the power dissipated by the resistor change?
+
+1. Power increases by a factor of two.
+2. Power increases by a factor of four.
+3. Power increases by a factor of eight.
+4. Power increases by a factor of 16.
+
+
+
+### Critical Thinking
+
+Two lamps have different resistances. (a) If the lamps are connected in parallel, which one is brighter, the lamp with greater resistance or the lamp with less resistance? (b) If the lamps are connected in series, which one is brighter? Note that the brighter lamp dissipates more power.
+
+1. (a) lamp with greater resistance; (b) lamp with less resistance
+2. (a) lamp with greater resistance; (b) lamp with greater resistance
+3. (a) lamp with less resistance; (b) lamp with less resistance
+4. (a) lamp with less resistance; (b) lamp with greater resistance
+
+To measure the power consumed by your laptop computer, you place an ammeter (a device that measures electric current) in series with its DC power supply. When the screen is off, the computer draws 0.40 A of current.  When the screen is on at full brightness, it draws 0.90 A of current. Knowing the DC power supply delivers 16 V, how much power is used by the screen? 
+
+1. The power used by the screen is −8.0 W.
+2. The power used by the screen is 0.3 W.
+3. The power used by the screen is 3.2 W.
+4. The power used by the screen is 8.0 W.
+
+
+
+### Problems
+
+When 12 V are applied across a resistor, it dissipates 120 W of power. What is the current through the resistor?
+
+1. The current is 1,440 A.
+2. The current is 10 A.
+3. The current is 0.1 A.
+4. The current is 0.01 A.
+
+Warming 1 g of water requires 4.18 J of energy per °C. How long would it take to warm 1 L of water from 20 to 40 °C
+if you immerse in the water a 1-kW resistor connected across a 9.0-V battery?
+
+1. 10 min
+2. 20 min
+3. 30 min
+4. 40 min
+
+
+
+### Test Prep Multiple Choice
+
+
+[None](#ost/api/ex/k12phys-ch19-ex090)
+
+
+
+[None](#ost/api/ex/k12phys-ch19-ex091)
+
+
+
+[None](#ost/api/ex/k12phys-ch19-ot071)
+
+
+What power is dissipated in a circuit through which 0.12 A flows across a potential drop of 3.0 V?
+
+1. 0.36 W
+2. 0.011 W
+3. 5 V
+4. 2.5 W
+
+
+
+### Test Prep Short Answer
+
+You want to increase the power dissipated in a circuit. You have the choice between doubling the current or doubling the resistance, with the voltage remaining constant. Which one would you choose?
+
+1. doubling the resistance
+2. doubling the current
+
+You want to increase the power dissipated in a circuit. You have the choice between reducing the voltage or reducing the resistance, with the current remaining constant. Which one would you choose?
+
+1. reduce the voltage to increase the power
+2. reduce the resistance to increase the power
+
+What power is dissipated in the circuit consisting of 310-Ω resistors connected in series across a 9.0-V battery?
+
+1. The power dissipated is 2430 W.
+2. The power dissipated is 270 W.
+3. The power dissipated is 2.7 W.
+4. The power dissipated is 0.37 W.
+
+What power is dissipated in a circuit consisting of three 10-Ω resistors connected in parallel across a 9.0-V battery?
+
+1. The power dissipated is 270 W.
+2. The power dissipated is 30 W.
+3. The power dissipated is 24 W.
+4. The power dissipated is 1/24 W.
+
+
+
+### Performance Task
+
+1. An incandescent light bulb (i.e., an old-fashioned light bulb with a little wire in it)
+2. A lightbulb socket to hold the light bulb
+3. A variable voltage source
+4. An ammeter
+
+* ## Procedure
+
+* Screw the lightbulb into its socket. Connect the positive terminal of the voltage source to the input of the ammeter. Connect the output of the ammeter to one connection of the socket. Connect the other connection of the socket to the negative terminal of the voltage source. Ensure that the voltage source is set to supply DC voltage and that the ammeter is set to measure DC amperes. The desired circuit is shown below.
+
+* *volts**current.*
+
+1. What is the resistance of the lightbulb?
+2. What is the range of possible error in your result for the resistance?
+3. In a single word, how would you describe the curve formed by the data points?
+
+
+
+### Test Prep Extended Response
+
+
+[None](#ost/api/ex/k12phys-ch19-ex096)
+
+
+
+[None](#ost/api/ex/k12phys-ch19-ex097)
+
+
+
+
+**electric power** rate at which electric energy is transferred in a circuit
