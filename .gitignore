@@ -1,2 +1,5 @@
 .xsd
 *.vsix
+lib/
+bin/
+.idea/
