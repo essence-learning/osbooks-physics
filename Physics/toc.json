@@ -3,7 +3,7 @@
     "pages": [
         {
             "id": "m54081",
-            "title": "Practice and Assessment"
+            "title": "Preface"
         },
         {
             "id": "m54602",
@@ -20,15 +20,15 @@
                 },
                 {
                     "id": "m54057",
-                    "title": "The Physics of Landing on a Comet"
+                    "title": "Physics: Definitions and Applications"
                 },
                 {
                     "id": "m54083",
-                    "title": "Using Models and the Scientific Processes"
+                    "title": "The Scientific Methods"
                 },
                 {
                     "id": "m54599",
-                    "title": "Graphing Lines"
+                    "title": "The Language of Physics: Physical Quantities and Units"
                 }
             ],
             "subsections": []
@@ -42,19 +42,19 @@
                 },
                 {
                     "id": "m54108",
-                    "title": "Mars Probe Explosion"
+                    "title": "Relative Motion, Distance, and Displacement"
                 },
                 {
                     "id": "m54104",
-                    "title": "The Walking Man"
+                    "title": "Speed and Velocity"
                 },
                 {
                     "id": "m54110",
-                    "title": "Discussion"
+                    "title": "Position vs. Time Graphs"
                 },
                 {
                     "id": "m54094",
-                    "title": "Procedure"
+                    "title": "Velocity vs. Time Graphs"
                 }
             ],
             "subsections": []
@@ -68,11 +68,11 @@
                 },
                 {
                     "id": "m54123",
-                    "title": "Measure the Acceleration of a Bicycle on a Slope"
+                    "title": "Acceleration"
                 },
                 {
                     "id": "m54116",
-                    "title": "Materials"
+                    "title": "Representing Acceleration with Equations and Graphs"
                 }
             ],
             "subsections": []
@@ -86,19 +86,19 @@
                 },
                 {
                     "id": "m54135",
-                    "title": "Section Learning Objectives"
+                    "title": "Force"
                 },
                 {
                     "id": "m54138",
-                    "title": "Forces and Motion\u2014Basics"
+                    "title": "Newton's First Law of Motion: Inertia"
                 },
                 {
                     "id": "m54142",
-                    "title": "Discussion"
+                    "title": "Newton's Second Law of Motion"
                 },
                 {
                     "id": "m54131",
-                    "title": "Discussion"
+                    "title": "Newton's Third Law of Motion"
                 }
             ],
             "subsections": []
@@ -112,11 +112,11 @@
                 },
                 {
                     "id": "m54165",
-                    "title": "Vector Addition"
+                    "title": "Vector Addition and Subtraction: Graphical Methods"
                 },
                 {
                     "id": "m54147",
-                    "title": "Atmospheric Science"
+                    "title": "Vector Addition and Subtraction: Analytical Methods"
                 },
                 {
                     "id": "m54162",
@@ -124,11 +124,11 @@
                 },
                 {
                     "id": "m54159",
-                    "title": "Friction at an Angle: Sliding a Coin"
+                    "title": "Inclined Planes"
                 },
                 {
                     "id": "m54154",
-                    "title": "Finding Gravity Using a Simple Pendulum"
+                    "title": "Simple Harmonic Motion"
                 }
             ],
             "subsections": []
@@ -142,15 +142,15 @@
                 },
                 {
                     "id": "m54176",
-                    "title": "Discussion"
+                    "title": "Angle of Rotation and Angular Velocity"
                 },
                 {
                     "id": "m54181",
-                    "title": "Discussion"
+                    "title": "Uniform Circular Motion"
                 },
                 {
                     "id": "m54180",
-                    "title": "Discussion"
+                    "title": "Rotational Motion"
                 }
             ],
             "subsections": []
@@ -164,11 +164,11 @@
                 },
                 {
                     "id": "m54192",
-                    "title": "Discussion"
+                    "title": "Kepler's Laws of Planetary Motion"
                 },
                 {
                     "id": "m54189",
-                    "title": "Discussion"
+                    "title": "Newton's Law of Universal Gravitation and Einstein's Theory of General Relativity"
                 }
             ],
             "subsections": []
@@ -182,15 +182,15 @@
                 },
                 {
                     "id": "m54215",
-                    "title": "Discussion"
+                    "title": "Linear Momentum, Force, and Impulse"
                 },
                 {
                     "id": "m54202",
-                    "title": "Angular Momentum in Figure Skating"
+                    "title": "Conservation of Momentum"
                 },
                 {
                     "id": "m54209",
-                    "title": "Discussion"
+                    "title": "Elastic and Inelastic Collisions"
                 }
             ],
             "subsections": []
@@ -204,15 +204,15 @@
                 },
                 {
                     "id": "m54271",
-                    "title": "Discussion"
+                    "title": "Work, Power, and the Work\u2013Energy Theorem"
                 },
                 {
                     "id": "m54273",
-                    "title": "Procedure"
+                    "title": "Mechanical Energy and Conservation of Energy"
                 },
                 {
                     "id": "m54274",
-                    "title": "Discussion"
+                    "title": "Simple Machines"
                 }
             ],
             "subsections": []
@@ -226,11 +226,11 @@
                 },
                 {
                     "id": "m54280",
-                    "title": "Discussion"
+                    "title": "Postulates of Special Relativity"
                 },
                 {
                     "id": "m54282",
-                    "title": "Discussion"
+                    "title": "Consequences of Special Relativity"
                 }
             ],
             "subsections": []
@@ -244,15 +244,15 @@
                 },
                 {
                     "id": "m54287",
-                    "title": "Discussion"
+                    "title": "Temperature and Thermal Energy"
                 },
                 {
                     "id": "m54290",
-                    "title": "Discussion"
+                    "title": "Heat, Specific Heat, and Heat Transfer"
                 },
                 {
                     "id": "m54292",
-                    "title": "Procedure"
+                    "title": "Phase Change and Latent Heat"
                 }
             ],
             "subsections": []
@@ -266,19 +266,19 @@
                 },
                 {
                     "id": "m54302",
-                    "title": "Thermodynamics Engineer"
+                    "title": "Zeroth Law of Thermodynamics: Thermal Equilibrium"
                 },
                 {
                     "id": "m54305",
-                    "title": "Discussion"
+                    "title": "First law of Thermodynamics: Thermal Energy and Work"
                 },
                 {
                     "id": "m54306",
-                    "title": "Discussion"
+                    "title": "Second Law of Thermodynamics: Entropy"
                 },
                 {
                     "id": "m54307",
-                    "title": "Procedure"
+                    "title": "Applications of Thermodynamics: Heat Engines, Heat Pumps, and Refrigerators"
                 }
             ],
             "subsections": []
@@ -292,15 +292,15 @@
                 },
                 {
                     "id": "m54314",
-                    "title": "The Physics of Surfing"
+                    "title": "Types of Waves"
                 },
                 {
                     "id": "m54321",
-                    "title": "Discussion"
+                    "title": "Wave Properties: Speed, Amplitude, Frequency, and Period"
                 },
                 {
                     "id": "m54318",
-                    "title": "Wave Interference"
+                    "title": "Wave Interaction: Superposition and Interference"
                 }
             ],
             "subsections": []
@@ -314,19 +314,19 @@
                 },
                 {
                     "id": "m54331",
-                    "title": "Echolocation"
+                    "title": "Speed of Sound, Frequency, and Wavelength"
                 },
                 {
                     "id": "m54333",
-                    "title": "Musical Instruments"
+                    "title": "Sound Intensity and Sound Level"
                 },
                 {
                     "id": "m54334",
-                    "title": "Discussion"
+                    "title": "Doppler Effect and Sonic Booms"
                 },
                 {
                     "id": "m54335",
-                    "title": "Discussion"
+                    "title": "Sound Interference and Resonance"
                 }
             ],
             "subsections": []
@@ -340,11 +340,11 @@
                 },
                 {
                     "id": "m54342",
-                    "title": "Animal Color Perception"
+                    "title": "The Electromagnetic Spectrum"
                 },
                 {
                     "id": "m54346",
-                    "title": "Discussion"
+                    "title": "The Behavior of Electromagnetic Radiation"
                 }
             ],
             "subsections": []
@@ -358,15 +358,15 @@
                 },
                 {
                     "id": "m54357",
-                    "title": "Discussion"
+                    "title": "Reflection"
                 },
                 {
                     "id": "m54365",
-                    "title": "Discussion"
+                    "title": "Refraction"
                 },
                 {
                     "id": "m54361",
-                    "title": "Procedure"
+                    "title": "Lenses"
                 }
             ],
             "subsections": []
@@ -380,11 +380,11 @@
                 },
                 {
                     "id": "m54369",
-                    "title": "Discussion"
+                    "title": "Understanding Diffraction and Interference"
                 },
                 {
                     "id": "m54371",
-                    "title": "Procedure"
+                    "title": "Applications of Diffraction, Interference, and Coherence"
                 }
             ],
             "subsections": []
@@ -398,23 +398,23 @@
                 },
                 {
                     "id": "m54410",
-                    "title": "Discussion"
+                    "title": "Electrical Charges, Conservation of Charge, and Transfer of Charge"
                 },
                 {
                     "id": "m54414",
-                    "title": "Discussion"
+                    "title": "Coulomb's law"
                 },
                 {
                     "id": "m54428",
-                    "title": "Discussion"
+                    "title": "Electric Field"
                 },
                 {
                     "id": "m54426",
-                    "title": "Discussion"
+                    "title": "Electric Potential"
                 },
                 {
                     "id": "m63179",
-                    "title": "Discussion for (b)"
+                    "title": "Capacitors and Dielectrics"
                 }
             ],
             "subsections": []
@@ -428,19 +428,19 @@
                 },
                 {
                     "id": "m54437",
-                    "title": "Solution"
+                    "title": "Ohm's law"
                 },
                 {
                     "id": "m54435",
-                    "title": "Discussion"
+                    "title": "Series Circuits"
                 },
                 {
                     "id": "m54442",
-                    "title": "Discussion"
+                    "title": "Parallel Circuits"
                 },
                 {
                     "id": "m54446",
-                    "title": "Procedure"
+                    "title": "Electric Power"
                 }
             ],
             "subsections": []
@@ -454,15 +454,15 @@
                 },
                 {
                     "id": "m54465",
-                    "title": "Discussion"
+                    "title": "Magnetic Fields, Field Lines, and Force"
                 },
                 {
                     "id": "m54467",
-                    "title": "Magnetic Rope Memory"
+                    "title": "Motors, Generators, and Transformers"
                 },
                 {
                     "id": "m54456",
-                    "title": "Discussion"
+                    "title": "Electromagnetic Induction"
                 }
             ],
             "subsections": []
@@ -476,15 +476,15 @@
                 },
                 {
                     "id": "m54566",
-                    "title": "Discussion"
+                    "title": "Planck and Quantum Nature of Light"
                 },
                 {
                     "id": "m54559",
-                    "title": "Solar Energy Physicist"
+                    "title": "Einstein and the Photoelectric Effect"
                 },
                 {
                     "id": "m54552",
-                    "title": "LightSail-1 Project"
+                    "title": "The Dual Nature of Light"
                 }
             ],
             "subsections": []
@@ -498,23 +498,23 @@
                 },
                 {
                     "id": "m54582",
-                    "title": "Models of the Hydrogen Atom"
+                    "title": "The Structure of the Atom"
                 },
                 {
                     "id": "m54580",
-                    "title": "Beta Decay"
+                    "title": "Nuclear Forces and Radioactivity"
                 },
                 {
                     "id": "m63183",
-                    "title": "Radioactive Dating Game"
+                    "title": "Half Life and Radiometric Dating"
                 },
                 {
                     "id": "m54574",
-                    "title": "Fusion Reactors"
+                    "title": "Nuclear Fission and Fusion"
                 },
                 {
                     "id": "m54578",
-                    "title": null
+                    "title": "Medical Applications of Radioactivity: Diagnostic Imaging and Radiation"
                 }
             ],
             "subsections": []
@@ -528,15 +528,15 @@
                 },
                 {
                     "id": "m54593",
-                    "title": "Searching for the Graviton"
+                    "title": "The Four Fundamental Forces"
                 },
                 {
                     "id": "m54595",
-                    "title": "Particle Physicist"
+                    "title": "Quarks"
                 },
                 {
                     "id": "m54588",
-                    "title": "Section Learning Objectives"
+                    "title": "The Unification of Forces"
                 }
             ],
             "subsections": []

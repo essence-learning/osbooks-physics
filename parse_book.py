@@ -41,8 +41,6 @@ def cnxml_to_mdx(cnxml_file):
         # print(f'parsing {ET.tostring(element, encoding="unicode")}')
         tag = element.tag.split('}')[-1]
         if tag == 'title':
-            nonlocal content_title
-            content_title = element.text
             return f'## {element.text}\n'
         elif tag == 'para':
             return f'{parse_para(element)}\n\n'
@@ -66,7 +64,9 @@ def cnxml_to_mdx(cnxml_file):
                 if 'content-id' in e.tag:
                     nonlocal content_id
                     content_id = e.text
-                    break
+                elif 'title' in e.tag:
+                    nonlocal content_title
+                    content_title = e.text
 
             return ''
         elif tag == 'note':
