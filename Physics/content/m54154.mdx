@@ -36,7 +36,14 @@
 
 Imagine a car parked against a wall. If a bulldozer pushes the car into the wall, the car will not move but it will noticeably change shape. A change in shape due to the application of a force is a **deformation**. Even very small forces are known to cause some deformation. For small deformations, two important things can happen. First, unlike the car and bulldozer example, the object returns to its original shape when the force is removed. Second, the size of the deformation is proportional to the force. This second property is known as **Hooke’s law**. In equation form, Hooke’s law is 
 
-F=−kx,where *x* is the amount of deformation (the change in length, for example) produced by the restoring force *F*, and *k* is a constant that depends on the shape and composition of the object. The restoring force is the force that brings the object back to its equilibrium position; the minus sign is there because the restoring force acts in the direction opposite to the displacement. Note that the restoring force is proportional to the deformation *x*. The deformation can also be thought of as a displacement from equilibrium. It is a change in position due to a force. In the absence of force, the object would rest at its equilibrium position. The force constant *k* is related to the stiffness of a system. The larger the force constant, the stiffer the system. A stiffer system is more difficult to deform and requires a greater restoring force. The units of *k* are newtons per meter (N/m). One of the most common uses of Hooke’s law is solving problems involving springs and pendulums, which we will cover at the end of this section. 
+<equation id="fs-id1167067133839" class="unnumbered"><label />
+       <math>
+        <mrow>
+          <mstyle mathvariant="bold" mathsize="normal"><mi>F</mi></mstyle><mo>=</mo><mo>−</mo><mstyle mathvariant="bold" mathsize="normal"><mi>k</mi><mi>x,</mi></mstyle>
+        </mrow>
+      </math>
+      </equation>
+where *x* is the amount of deformation (the change in length, for example) produced by the restoring force *F*, and *k* is a constant that depends on the shape and composition of the object. The restoring force is the force that brings the object back to its equilibrium position; the minus sign is there because the restoring force acts in the direction opposite to the displacement. Note that the restoring force is proportional to the deformation *x*. The deformation can also be thought of as a displacement from equilibrium. It is a change in position due to a force. In the absence of force, the object would rest at its equilibrium position. The force constant *k* is related to the stiffness of a system. The larger the force constant, the stiffer the system. A stiffer system is more difficult to deform and requires a greater restoring force. The units of *k* are newtons per meter (N/m). One of the most common uses of Hooke’s law is solving problems involving springs and pendulums, which we will cover at the end of this section. 
 
 
 
@@ -54,7 +61,15 @@ When you pluck a guitar string, the resulting sound has a steady tone and lasts 
 
 **Frequency** *f* is the number of oscillations per unit time. The SI unit for frequency is the **hertz** (Hz), defined as the number of oscillations per second. The relationship between frequency and period is
 
-f= 1/T.As you can see from the equation, frequency and period are different ways of expressing the same concept. For example, if you get a paycheck twice a month, you could say that the frequency of payment is two per month, or that the period between checks is half a month.
+<equation id="fs-id1167066836799" class="unnumbered"><label />
+       <math display="block">
+        <mrow>
+          <mi>f</mi><mo>=</mo><mtext> </mtext><mn>1</mn><mo>/</mo><mi>T</mi>
+<mtext>.</mtext>
+        </mrow>
+      </math>
+    </equation>
+As you can see from the equation, frequency and period are different ways of expressing the same concept. For example, if you get a paycheck twice a month, you could say that the frequency of payment is two per month, or that the period between checks is half a month.
 
 If there is no friction to slow it down, then an object in simple motion will oscillate forever with equal displacement on either side of the equilibrium position. The **equilibrium position** is where the object would naturally rest in the absence of force. The maximum displacement from equilibrium is called the **amplitude** *X*. The units for amplitude and displacement are the same, but depend on the type of oscillation. For the object on the spring, shown in [None](None), the units of amplitude and displacement are meters.
 
@@ -62,9 +77,47 @@ If there is no friction to slow it down, then an object in simple motion will os
         <caption>An object attached to a spring sliding on a frictionless surface is a simple harmonic oscillator. When displaced from equilibrium, the object performs simple harmonic motion that has an amplitude </caption>
 The mass *m* and the force constant *k* are the *only* factors that affect the period and frequency of simple harmonic motion. The period of a simple harmonic oscillator is given by
 
-T=2πmkand, because *f* = 1/*T*, the frequency of a simple harmonic oscillator is
+<equation id="fs-id1167066806397" class="unnumbered"><label />
 
-f=12πkm.## Introduction to Harmonic Motion
+       <math>
+        <mrow>
+          <mi>T</mi><mo>=</mo><mn>2</mn><mi>π</mi><msqrt>
+            <mrow>
+              <mfrac>
+                <mi>m</mi>
+                <mstyle mathvariant="bold" mathsize="normal"><mi>k</mi></mstyle>
+              </mfrac>
+
+            </mrow>
+          </msqrt>
+
+        </mrow>
+      </math> </equation>
+and, because *f* = 1/*T*, the frequency of a simple harmonic oscillator is
+
+<equation id="fs-id1167066806163" class="unnumbered"><label />
+     <math>
+      <mrow>
+        <mi>f</mi><mo>=</mo><mfrac>
+          <mn>1</mn>
+          <mrow>
+            <mn>2</mn><mi>π</mi>
+          </mrow>
+        </mfrac>
+        <msqrt>
+          <mrow>
+            <mfrac>
+              <mstyle mathvariant="bold" mathsize="normal"><mi>k</mi></mstyle>
+              <mi>m</mi>
+            </mfrac>
+
+          </mrow>
+        </msqrt>
+        <mtext>.</mtext>
+      </mrow>
+    </math>
+    </equation>
+## Introduction to Harmonic Motion
 This video shows how to graph the displacement of a spring in the x-direction over time, based on the period. Watch the first 10 minutes of the video (you can stop when the narrator begins to cover calculus). 
 
 
@@ -80,11 +133,44 @@ Before solving problems with springs and pendulums, it is important to first get
 
 
         <caption>A simple pendulum has a small-diameter bob and a string that has a very small mass but is strong enough not to stretch. The linear displacement from equilibrium is s, the length of the arc. Also shown are the forces on the bob, which result in a net force of −</caption>
-Everyday examples of pendulums include old-fashioned clocks, a child’s swing, or the sinker on a fishing line. For small displacements of less than 15 degrees, a pendulum experiences simple harmonic oscillation, meaning that its restoring force is directly proportional to its displacement. A pendulum in simple harmonic motion is called a **simple pendulum**. A pendulum has an object with a small mass, also known as the pendulum bob, which hangs from a light wire or string. The equilibrium position for a pendulum is where the angle θ is zero (that is, when the pendulum is hanging straight down). It makes sense that without any force applied, this is where the pendulum bob would rest.
+Everyday examples of pendulums include old-fashioned clocks, a child’s swing, or the sinker on a fishing line. For small displacements of less than 15 degrees, a pendulum experiences simple harmonic oscillation, meaning that its restoring force is directly proportional to its displacement. A pendulum in simple harmonic motion is called a **simple pendulum**. A pendulum has an object with a small mass, also known as the pendulum bob, which hangs from a light wire or string. The equilibrium position for a pendulum is where the angle <math>
+      <mrow>
+        <mi>θ</mi>
+      </mrow>
+    </math> is zero (that is, when the pendulum is hanging straight down). It makes sense that without any force applied, this is where the pendulum bob would rest. is zero (that is, when the pendulum is hanging straight down). It makes sense that without any force applied, this is where the pendulum bob would rest.
 
-The displacement of the pendulum bob is the arc length *s*. The weight *m**g* has components *m**g* cos θ along the string and *m**g* sin θ  tangent to the arc. Tension in the string exactly cancels the component *m**g* cos θ parallel to the string. This leaves a *net* restoring force back toward the equilibrium position that runs tangent to the arc and equals −*m**g* sin θ .
+The displacement of the pendulum bob is the arc length *s*. The weight *m**g* has components *m**g* cos <math>
+        <mrow>
+          <mi>θ</mi>
+        </mrow>
+      </math> along the string and  along the string and *m**g* sin <math>
+        <mrow>
+          <mi>θ</mi>
+        </mrow>
+      </math>  tangent to the arc. Tension in the string exactly cancels the component   tangent to the arc. Tension in the string exactly cancels the component *m**g* cos <math>
+        <mrow>
+          <mi>θ</mi>
+        </mrow>
+      </math> parallel to the string. This leaves a  parallel to the string. This leaves a *net* restoring force back toward the equilibrium position that runs tangent to the arc and equals −*m**g* sin <math>
+        <mrow>
+          <mi>θ</mi>
+        </mrow>
+      </math> . .
 
-For small angle oscillations of a simple pendulum, the period is T=2πLg. 
+For small angle oscillations of a simple pendulum, the period is <math>
+      <mrow>
+        <mi>T</mi><mo>=</mo><mn>2</mn><mi>π</mi><msqrt>
+          <mrow>
+            <mfrac>
+              <mi>L</mi>
+              <mstyle mathvariant="bold" mathsize="normal"><mi>g</mi></mstyle>
+            </mfrac>
+
+          </mrow>
+        </msqrt>
+        <mo>.</mo>
+      </mrow>
+    </math>  
 
 The only things that affect the period of a simple pendulum are its length and the acceleration due to gravity. The period is completely independent of other factors, such as mass or amplitude. However, note that *T* does depend on *g*. This means that if we know the length of a pendulum, we can actually use it to measure gravity! This will come in useful in [None](None).
 
@@ -94,12 +180,99 @@ Tension is represented by the variable *T*, and period is represented by the var
 What is the acceleration due to gravity in a region where a simple pendulum having a length 75.000 cm has a period of 1.7357 s?
 
 ## Strategy
-We are asked to find *g* given the period *T* and the length *L* of a pendulum. We can solve T=2πLg for *g*, assuming that the angle of deflection is less than 15 degrees. Recall that when the angle of deflection is less than 15 degrees, the pendulum is considered to be in simple harmonic motion, allowing us to use this equation.
+We are asked to find *g* given the period *T* and the length *L* of a pendulum. We can solve <math>
+              <mrow>
+                <mi>T</mi><mo>=</mo><mn>2</mn><mi>π</mi><msqrt>
+                  <mrow>
+                    <mfrac>
+                      <mi>L</mi>
+                      <mstyle mathvariant="bold" mathsize="normal"><mi>g</mi></mstyle>
+                    </mfrac>
+
+                  </mrow>
+                </msqrt>
+
+              </mrow>
+            </math> for  for *g*, assuming that the angle of deflection is less than 15 degrees. Recall that when the angle of deflection is less than 15 degrees, the pendulum is considered to be in simple harmonic motion, allowing us to use this equation.
 
 ## Solution
-1. T=2πLg*g*g=4π2LT2
-2. g=4π20.75000 m(1.7357 s)2
-3. *g*g= 9.8281 m/s2
+1. <math>
+              <mrow>
+                <mi>T</mi><mo>=</mo><mn>2</mn><mi>π</mi><msqrt>
+                  <mrow>
+                    <mfrac>
+                      <mi>L</mi>
+                      <mstyle mathvariant="bold" mathsize="normal"><mi>g</mi></mstyle>
+                    </mfrac>
+
+                  </mrow>
+                </msqrt>
+
+              </mrow>
+            </math> and solve for *g*<equation id="fs-id1167066870214" class="unnumbered"><label />
+               <math>
+                <mrow>
+                  <mstyle mathvariant="bold" mathsize="normal"><mi>g</mi></mstyle><mo>=</mo><mn>4</mn><msup>
+                    <mi>π</mi>
+                    <mn>2</mn>
+                  </msup>
+                  <mfrac>
+                    <mi>L</mi>
+                    <mrow>
+                      <msup>
+                        <mi>T</mi>
+                        <mn>2</mn>
+                      </msup>
+
+                    </mrow>
+                  </mfrac>
+
+                </mrow>
+              </math>
+
+            </equation>
+
+2. <equation id="fs-id1167066997902" class="unnumbered"><label />
+               <math>
+                <mrow>
+                  <mstyle mathvariant="bold" mathsize="normal"><mi>g</mi></mstyle><mo>=</mo><mn>4</mn><msup>
+                    <mi>π</mi>
+                    <mn>2</mn>
+                  </msup>
+                  <mfrac>
+                    <mrow>
+                      <mn>0.75000</mn><mspace width="0.3em" /><mtext> m</mtext>
+                    </mrow>
+                    <mrow>
+                      <msup>
+                        <mrow>
+                          <mo stretchy="false">(</mo><mn>1.7357</mn><mspace width="0.3em" /><mtext> s</mtext><mo stretchy="false">)</mo>
+                        </mrow>
+                        <mn>2</mn>
+                      </msup>
+
+                    </mrow>
+                  </mfrac>
+
+                </mrow>
+              </math>
+
+            </equation>
+
+3. *g*<equation id="fs-id1167066827127" class="unnumbered">
+                <label />
+                 <math display="block">
+                  <mrow>
+                    <mstyle mathvariant="bold" mathsize="normal"><mi>g</mi></mstyle><mo>=</mo><mtext> </mtext><mn>9.8281</mn><mspace width="0.3em" /><mtext> m</mtext><mo>/</mo><msup>
+                      <mtext>s</mtext>
+                      <mn>2</mn>
+                    </msup>
+                  </mrow>
+                </math>
+
+              </equation>
+            
+
 
 ## Discussion
 This method for determining *g* can be very accurate. This is why length and period are given to five digits in this example. 
@@ -121,9 +294,79 @@ Knowing *F* and *x*, we can then solve for the force constant *k*.
 ## Solution
 Solve Hooke’s law, *F* = −*kx*, for *k*.
 
-k=FxSubstitute known values and solve for *k*.
+<equation id="fs-id1167067026136" class="unnumbered"><label />
+             <math>
+              <mrow>
+                <mstyle mathvariant="bold" mathsize="normal"><mi>k</mi></mstyle><mo>=</mo><mfrac>
+                  <mstyle mathvariant="bold" mathsize="normal"><mi>F</mi></mstyle>
+                  <mstyle mathvariant="bold" mathsize="normal"><mi>x</mi></mstyle>
+                </mfrac>
 
-k=−784 N−1.20×10−2 m=6.53×104 N/m## Discussion
+              </mrow>
+            </math>
+
+
+
+          </equation>
+Substitute known values and solve for *k*.
+
+<equation id="fs-id1167066867576" class="unnumbered"><label />
+             <math display="block">
+              <mrow>
+                <mtable>
+                  <mtr rowalign="center">
+                    <mtd rowalign="center" columnalign="right">
+                      <mstyle mathvariant="bold" mathsize="normal"><mi>k</mi></mstyle>
+                    </mtd>
+                    <mtd rowalign="center">
+                      <mo>=</mo>
+                    </mtd>
+                    <mtd rowalign="center" columnalign="left">
+                      <mrow>
+                        <mfrac>
+                          <mrow>
+                            <mo>−</mo><mn>784</mn><mspace width="0.3em" /><mtext> N</mtext>
+                          </mrow>
+                          <mrow>
+                            <mo>−</mo><mn>1.20</mn><mo>×</mo><msup>
+                              <mrow>
+                                <mn>10</mn>
+                              </mrow>
+                              <mrow>
+                                <mo>−</mo><mn>2</mn>
+                              </mrow>
+                            </msup>
+                            <mtext> m</mtext>
+                          </mrow>
+                        </mfrac>
+
+                      </mrow>
+                    </mtd>
+                  </mtr>
+                  <mtr rowalign="center">
+                    <mtd rowalign="center" />
+                    <mtd rowalign="center">
+                      <mo>=</mo>
+                    </mtd>
+                    <mtd rowalign="center" columnalign="left">
+                      <mrow>
+                        <mn>6.53</mn><mo>×</mo><msup>
+                          <mrow>
+                            <mn>10</mn>
+                          </mrow>
+                          <mn>4</mn>
+                        </msup>
+                        <mtext> N/m</mtext>
+                      </mrow>
+                    </mtd>
+                  </mtr>
+
+                </mtable>
+              </mrow>
+            </math>
+
+          </equation>
+## Discussion
 Note that *F* and *x* have opposite signs because they are in opposite directions—the restoring force is up, and the displacement is down. Also, note that the car would oscillate up and down when the person got in, if it were not for the shock absorbers. Bouncing cars are a sure sign of bad shock absorbers.
 
 
@@ -179,19 +422,68 @@ Note that *F* and *x* have opposite signs because they are in opposite direction
 <table>
   <tr>
     <td>Hooke’s law</td>
-    <td>F=−kx</td>
+    <td><math>
+                <mrow>
+                  <mstyle mathvariant="bold" mathsize="normal"><mi>F</mi></mstyle><mo>=</mo><mo>−</mo><mstyle mathvariant="bold" mathsize="normal"><mi>k</mi><mi>x</mi></mstyle>
+                </mrow>
+              </math></td>
   </tr>
   <tr>
     <td>period in simple harmonic motion</td>
-    <td>T=2πmk</td>
+    <td><math>
+              <mrow>
+                <mi>T</mi><mo>=</mo><mn>2</mn><mi>π</mi><msqrt>
+                  <mrow>
+                    <mfrac>
+                      <mi>m</mi>
+                     <mstyle mathvariant="bold" mathsize="normal"> <mi>k</mi></mstyle>
+                    </mfrac>
+
+                  </mrow>
+                </msqrt>
+
+              </mrow>
+            </math></td>
   </tr>
   <tr>
     <td>frequency in simple harmonic motion</td>
-    <td>f=12πkm</td>
+    <td><math>
+              <mrow>
+                <mi>f</mi><mo>=</mo><mfrac>
+                  <mn>1</mn>
+                  <mrow>
+                    <mn>2</mn><mi>π</mi>
+                  </mrow>
+                </mfrac>
+                <msqrt>
+                  <mrow>
+                    <mfrac>
+                      <mstyle mathvariant="bold" mathsize="normal"><mi>k</mi></mstyle>
+                      <mi>m</mi>
+                    </mfrac>
+
+                  </mrow>
+                </msqrt>
+
+              </mrow>
+            </math></td>
   </tr>
   <tr>
     <td>period of a simple pendulum</td>
-    <td>T=2πLg</td>
+    <td><math>
+              <mrow>
+                <mi>T</mi><mo>=</mo><mn>2</mn><mi>π</mi><msqrt>
+                  <mrow>
+                    <mfrac>
+                      <mi>L</mi>
+                      <mstyle mathvariant="bold" mathsize="normal"><mi>g</mi></mstyle>
+                    </mfrac>
+
+                  </mrow>
+                </msqrt>
+
+              </mrow>
+            </math></td>
   </tr>
 </table>
 
@@ -363,4 +655,12 @@ What physical characteristic of a system is its force constant related to?
 
 
 
-**amplitude**the maximum displacement from the equilibrium position of an object oscillating around the equilibrium position**deformation**displacement from equilibrium, or change in shape due to the application of force**equilibrium position**where an object would naturally rest in the absence of a net force**frequency**number of events per unit of time**Hooke’s law***F*ΔLF=kΔL**oscillate**moving back and forth regularly between two points**period**time it takes to complete one oscillation**periodic motion**motion that repeats itself at regular time intervals**restoring force**force acting in opposition to the force causing the deformation**simple harmonic motion**the oscillatory motion in a system where the net force can be described by Hooke’s law**simple pendulum**an object with a small mass suspended from a light wire or string
+**amplitude**the maximum displacement from the equilibrium position of an object oscillating around the equilibrium position**deformation**displacement from equilibrium, or change in shape due to the application of force**equilibrium position**where an object would naturally rest in the absence of a net force**frequency**number of events per unit of time**Hooke’s law***F*<math>
+      <mrow>
+        <mi>Δ</mi><mi>L</mi>
+      </mrow>
+    </math> it causes, <math>
+      <mrow>
+        <mstyle mathvariant="bold" mathsize="normal"><mi>F</mi></mstyle><mo>=</mo><mstyle mathvariant="bold" mathsize="normal"><mi>k</mi></mstyle><mi>Δ</mi><mi>L</mi>
+      </mrow>
+    </math> **oscillate**moving back and forth regularly between two points**period**time it takes to complete one oscillation**periodic motion**motion that repeats itself at regular time intervals**restoring force**force acting in opposition to the force causing the deformation**simple harmonic motion**the oscillatory motion in a system where the net force can be described by Hooke’s law**simple pendulum**an object with a small mass suspended from a light wire or string

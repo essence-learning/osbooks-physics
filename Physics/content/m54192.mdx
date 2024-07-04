@@ -48,7 +48,60 @@ The orbit of each planet about the sun is an ellipse with the sun at one focus, 
 <caption>(a) An ellipse is a closed curve such that the sum of the distances from a point on the curve to the two foci (</caption>
 If you know the aphelion (*r*a) and perihelion (*r*p) distances, then you can calculate the semi-major axis (*a*) and semi-minor axis (*b*).
 
-a=(ra+rp)2b=rarp
+<equation id="fs-id1167066055063" class="unnumbered"><label />
+ <math display="block">
+ 
+  <mrow>
+   <mtable columnalign="left">
+    <mtr columnalign="left">
+     <mtd columnalign="left">
+      <mrow>
+       <mi>a</mi><mo>=</mo><mfrac>
+        <mrow>
+         <mo stretchy="false">(</mo><msub>
+          <mi>r</mi>
+          <mi>a</mi>
+         </msub>
+         <mo>+</mo><msub>
+          <mi>r</mi>
+          <mi>p</mi>
+         </msub>
+         <mo stretchy="false">)</mo>
+        </mrow>
+        <mn>2</mn>
+       </mfrac>
+
+      </mrow>
+     </mtd>
+    </mtr>
+    <mtr columnalign="left">
+     <mtd columnalign="left">
+      <mrow>
+       <mi>b</mi><mo>=</mo><msqrt>
+        <mrow>
+         <msub>
+          <mi>r</mi>
+          <mi>a</mi>
+         </msub>
+         <msub>
+          <mi>r</mi>
+          <mi>p</mi>
+         </msub>
+
+        </mrow>
+       </msqrt>
+
+      </mrow>
+     </mtd>
+    </mtr>
+
+   </mtable>
+  </mrow>
+ 
+</math>
+</equation>
+
+
 <caption>You can draw an ellipse as shown by putting a pin at each focus, and then placing a loop of string around a pen and the pins and tracing a line on the paper.</caption>
 
 
@@ -66,7 +119,44 @@ Note that while, for historical reasons, Kepler’s laws are stated for planets 
 
 The ratio of the periods squared of any two planets around the sun is equal to the ratio of their average distances from the sun cubed. In equation form, this is
 
-T12T22=r13r23,where *T *is the **period** (time for one orbit) and *r *is the average distance (also called orbital radius). This equation is valid only for comparing two small masses orbiting a single large mass. Most importantly, this is only a descriptive equation; it gives no information about the cause of the equality.
+<equation id="fs-id1167066098361" class="unnumbered"><label />
+ <math display="block">
+ <mrow>
+  <mfrac>
+   <mrow>
+    <msubsup>
+     <mi>T</mi>
+     <mn>1</mn>
+     <mn>2</mn>
+    </msubsup>
+    </mrow>
+   <mrow>
+    <msubsup>
+     <mi>T</mi>
+     <mn>2</mn>
+     <mn>2</mn>
+    </msubsup>
+    </mrow>
+  </mfrac>
+  <mo>=</mo><mfrac>
+   <mrow>
+    <msubsup>
+     <mi>r</mi>
+     <mn>1</mn>
+     <mn>3</mn>
+    </msubsup>
+    </mrow>
+   <mrow>
+    <msubsup>
+     <mi>r</mi>
+     <mn>2</mn>
+     <mn>3</mn>
+    </msubsup>
+    </mrow>
+  </mfrac>
+  <mo>,</mo></mrow>
+</math> </equation>
+where *T *is the **period** (time for one orbit) and *r *is the average distance (also called orbital radius). This equation is valid only for comparing two small masses orbiting a single large mass. Most importantly, this is only a descriptive equation; it gives no information about the cause of the equality.
 
 ## History: Ptolemy vs. Copernicus
 Before the discoveries of Kepler, Copernicus, Galileo, Newton, and others, the solar system was thought to revolve around Earth as shown in [None](None) *(a)*. This is called the **Ptolemaic model**, named for the Greek philosopher Ptolemy who lived in the second century AD. The Ptolemaic model is characterized by a list of facts for the motions of planets, with no explanation of cause and effect. There tended to be a different rule for each heavenly body and a general lack of simplicity.
@@ -98,19 +188,89 @@ This simulation allows you to create your own solar system so that you can see h
 
 ### Kepler’s First Law
 
-Refer back to [None](None) *(a)*. Notice which distances are constant. The foci are fixed, so distance  f1f2¯  is a constant. The definition of an ellipse states that the sum of the distances  f1m¯+mf2¯  is also constant. These two facts taken together mean that the perimeter of triangle  Δf1mf2  must also be constant. Knowledge of these constants will help you determine positions and distances of objects in a system that includes one object orbiting another.
+Refer back to [None](None) *(a)*. Notice which distances are constant. The foci are fixed, so distance  <math>
+ <mrow>
+  <mover accent="true">
+   <mrow>
+    <msub>
+     <mi>f</mi>
+     <mn>1</mn>
+    </msub>
+    <msub>
+     <mi>f</mi>
+     <mn>2</mn>
+    </msub>
+    </mrow>
+   <mo stretchy="true">¯</mo>
+  </mover>
+  </mrow>
+</math>  is a constant. The definition of an ellipse states that the sum of the distances    is a constant. The definition of an ellipse states that the sum of the distances  <math>
+ <mrow>
+  <mover accent="true">
+   <mrow>
+    <msub>
+     <mi>f</mi>
+     <mn>1</mn>
+    </msub>
+    <mi>m</mi></mrow>
+   <mo stretchy="true">¯</mo>
+  </mover>
+  <mo>+</mo><mover accent="true">
+   <mrow>
+    <mi>m</mi><msub>
+     <mi>f</mi>
+     <mn>2</mn>
+    </msub>
+    </mrow>
+   <mo stretchy="true">¯</mo>
+  </mover>
+  </mrow>
+</math>  is also constant. These two facts taken together mean that the perimeter of triangle    is also constant. These two facts taken together mean that the perimeter of triangle  <math>
+ <mrow>
+  <mi>Δ</mi><msub>
+   <mi>f</mi>
+   <mn>1</mn>
+  </msub>
+  <mi>m</mi><msub>
+   <mi>f</mi>
+   <mn>2</mn>
+  </msub>
+  </mrow>
+</math>  must also be constant. Knowledge of these constants will help you determine positions and distances of objects in a system that includes one object orbiting another.  must also be constant. Knowledge of these constants will help you determine positions and distances of objects in a system that includes one object orbiting another.
 
 
 
 ### Kepler’s Second Law
 
-Refer back to [None](None). The second law says that the segments have equal area and that it takes equal time to sweep through each segment. That is, the time it takes to travel from A to B equals the time it takes to travel from C to D, and so forth. Velocity *v* equals distance *d* divided by time *t*:  v=d/t . Then,  t=d/v, so distance divided by velocity is also a constant. For example, if we know the average velocity of Earth on June 21 and December 21, we can compare the distance Earth travels on those days.
+Refer back to [None](None). The second law says that the segments have equal area and that it takes equal time to sweep through each segment. That is, the time it takes to travel from A to B equals the time it takes to travel from C to D, and so forth. Velocity *v* equals distance *d* divided by time *t*:  <math>
+ <mrow>
+  <mstyle mathvariant="bold" mathsize="normal"><mi>v</mi></mstyle><mo>=</mo><mrow><mi>d</mi><mo>/</mo><mi>t</mi></mrow>
+  </mrow>
+</math> . Then,   . Then,  <math>
+ <mrow>
+  <mi>t</mi><mo>=</mo><mrow><mi>d</mi><mo>/</mo><mstyle mathvariant="bold" mathsize="normal"><mi>v</mi></mstyle></mrow>
+  </mrow>
+</math>, so distance divided by velocity is also a constant. For example, if we know the average velocity of Earth on June 21 and December 21, we can compare the distance Earth travels on those days., so distance divided by velocity is also a constant. For example, if we know the average velocity of Earth on June 21 and December 21, we can compare the distance Earth travels on those days.
 
 The degree of elongation of an elliptical orbit is called its **eccentricity** (*e*). Eccentricity is calculated by dividing the distance *f* from the center of an ellipse to one of the foci by half the long axis *a*.
 
-(e)=f/aWhen  e=0, the ellipse is a circle.
+<equation id="fs-id1167067012774"> <math>
+ 
+  <mrow>
+   <mo stretchy="false">(</mo><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mi>f</mi><mo>/</mo><mi>a</mi>
+  </mrow>
+ 
+</math> </equation>
 
-The area of an ellipse is given by  A=πab, where *b* is half the short axis. If you know the axes of Earth’s orbit and the area Earth sweeps out in a given period of time, you can calculate the fraction of the year that has elapsed.
+When  <math>
+ <mrow>
+  <mi>e</mi><mo>=</mo><mn>0</mn></mrow>
+</math>, the ellipse is a circle., the ellipse is a circle.
+
+The area of an ellipse is given by  <math>
+ <mrow>
+  <mi>A</mi><mo>=</mo><mi>π</mi><mi>a</mi><mi>b</mi></mrow>
+</math>, where , where *b* is half the short axis. If you know the axes of Earth’s orbit and the area Earth sweeps out in a given period of time, you can calculate the fraction of the year that has elapsed.
 
 ## Kepler’s First Law
 At its closest approach, a moon comes within 200,000 km of the planet it orbits. At that point, the moon is 300,000 km from the other focus of its orbit, *f*2. The planet is focus *f*1 of the moon’s elliptical orbit. How far is the moon from the planet when it is 260,000 km from *f*2?
@@ -119,9 +279,27 @@ At its closest approach, a moon comes within 200,000 km of the planet it orbits.
 Show and label the ellipse that is the orbit in your solution. Picture the triangle *f*1m*f*2 collapsed along the major axis and add up the lengths of the three sides. Find the length of the unknown side of the triangle when the moon is 260,000 km from *f*2.
 
 ## Solution
-Perimeter of  f1mf2=200,000km+100,000km+300,000km=600,000km. 
+Perimeter of  <math>
+ <mrow>
+  <msub>
+   <mi>f</mi>
+   <mn>1</mn>
+  </msub>
+  <mi>m</mi><msub>
+   <mi>f</mi>
+   <mn>2</mn>
+  </msub>
+  <mo>=</mo><mn>200</mn><mo>,</mo><mn>000</mn><mspace width="0.3em" /><mtext>km</mtext><mo>+</mo><mn>100,000</mn><mspace width="0.3em" /><mtext>km</mtext><mo>+</mo><mn>300,000</mn><mspace width="0.3em" /><mtext>km</mtext><mo>=</mo><mn>600,000</mn><mspace width="0.3em" /><mtext>km.</mtext></mrow>
+</math>  
 
-mf1=600,000km−(100,000km+260,000km)=240,000km. 
+<math>
+ <mrow>
+  <mi>m</mi><msub>
+   <mi>f</mi>
+   <mn>1</mn>
+  </msub>
+  <mo>=</mo><mn>600,000</mn><mspace width="0.3em" /><mtext>km</mtext><mo>−</mo><mo stretchy="false">(</mo><mn>100,000</mn><mspace width="0.3em" /><mtext>km</mtext><mo>+</mo><mn>260,000</mn><mspace width="0.3em" /><mtext>km</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>240,000</mn><mspace width="0.3em" /><mtext>km.</mtext></mrow>
+</math>  
 
 ## Discussion
 The perimeter of triangle *f*1*mf*2 must be constant because the distance between the foci does not change and Kepler’s first law says the orbit is an ellipse. For any ellipse, the sum of the two sides of the triangle, which are *f*1*m* and *mf*2, is constant.
@@ -134,10 +312,120 @@ The perimeter of triangle *f*1*mf*2 must be constant because the distance betwee
 Earth’s orbit is very slightly elliptical, with a semi-major axis of 1.49598 × 10<sup>8</sup>  km and a semi-minor axis of 1.49577 × 10<sup>8</sup> km. If Earth’s period is 365.26 days, what area does an Earth-to-sun line sweep past in one day?
 
 ## Strategy
-Each day, Earth sweeps past an equal-sized area, so we divide the total area by the number of days in a year to find the area swept past in one day. For total area use  A=πab . Calculate *A*, the area inside Earth’s orbit and divide by the number of days in a year (i.e., its period).
+Each day, Earth sweeps past an equal-sized area, so we divide the total area by the number of days in a year to find the area swept past in one day. For total area use  <math>
+ <mrow>
+  <mi>A</mi><mo>=</mo><mi>π</mi><mi>a</mi><mi>b</mi></mrow>
+</math> . Calculate  . Calculate *A*, the area inside Earth’s orbit and divide by the number of days in a year (i.e., its period).
 
 ## Solution
-area per day=total areatotal number of days=πab365 d=π(1.496×108 km)(1.496×103 km)365 d=1.93×1014 km2/dThe area swept out in one day is thus  1.93×1014km2 .
+<equation id="fs-id1164563062709"> <math>
+ <mrow>
+  <mtable>
+   <mtr rowalign="center">
+    <mtd rowalign="center" columnalign="right">
+     <mrow>
+      <mtext>area per day</mtext></mrow>
+    </mtd>
+    <mtd rowalign="center">
+     <mo>=</mo>
+    </mtd>
+    <mtd rowalign="center" columnalign="left">
+     <mrow>
+      <mfrac>
+       <mrow>
+        <mtext>total area</mtext></mrow>
+       <mrow>
+        <mtext>total number of days</mtext></mrow>
+      </mfrac>
+      </mrow>
+    </mtd>
+   </mtr>
+   <mtr rowalign="center">
+    <mtd rowalign="center" />
+    <mtd rowalign="center"><mo>=</mo></mtd>
+    <mtd rowalign="center" columnalign="left">
+     <mrow>
+      <mfrac>
+       <mrow>
+        <mi>π</mi><mi>a</mi><mi>b</mi></mrow>
+       <mrow>
+        <mtext>365 d</mtext></mrow>
+      </mfrac>
+      </mrow>
+    </mtd>
+   </mtr>
+   <mtr rowalign="center">
+    <mtd rowalign="center" />
+    <mtd rowalign="center">
+     <mo>=</mo>
+    </mtd>
+    <mtd rowalign="center" columnalign="left">
+     <mrow>
+      <mfrac>
+       <mrow>
+        <mi>π</mi><mrow><mo>(</mo>
+         <mrow>
+          <mn>1.496</mn><mo>×</mo><msup>
+           <mrow>
+            <mn>10</mn></mrow>
+           <mn>8</mn>
+          </msup>
+          <mtext> km</mtext></mrow>
+        <mo>)</mo></mrow><mrow><mo>(</mo>
+         <mrow>
+          <mn>1.496</mn><mo>×</mo><msup>
+           <mrow>
+            <mn>10</mn></mrow>
+           <mn>3</mn>
+          </msup>
+          <mtext> km</mtext></mrow>
+        <mo>)</mo></mrow></mrow>
+       <mrow>
+        <mtext>365 d</mtext></mrow>
+      </mfrac>
+      </mrow>
+    </mtd>
+   </mtr>
+   <mtr rowalign="center">
+    <mtd rowalign="center" />
+    <mtd rowalign="center">
+     <mo>=</mo>
+    </mtd>
+    <mtd rowalign="center" columnalign="left">
+     <mrow>
+      <mn>1.93</mn><mo>×</mo><msup>
+       <mrow>
+        <mn>10</mn></mrow>
+       <mrow>
+        <mn>14</mn></mrow>
+      </msup>
+      <msup>
+       <mrow>
+        <mtext> km</mtext></mrow>
+       <mn>2</mn>
+      </msup>
+      <mo>/</mo><mtext>d</mtext></mrow>
+    </mtd>
+   </mtr>
+
+  </mtable></mrow>
+</math> </equation>
+
+The area swept out in one day is thus  <math>
+ <mrow>
+  <mn>1.93</mn><mo>×</mo><msup>
+   <mrow>
+    <mn>10</mn></mrow>
+   <mrow>
+    <mn>14</mn></mrow>
+  </msup>
+  <msup>
+   <mrow>
+    <mtext>km</mtext></mrow>
+   <mtext>2</mtext>
+  </msup>
+  </mrow>
+</math> . .
 
 ## Discussion
 The answer is based on Kepler’s law, which states that a line from a planet to the sun sweeps out equal areas in equal times.
@@ -148,18 +436,269 @@ The answer is based on Kepler’s law, which states that a line from a planet to
 
 Kepler’s third law states that the ratio of the squares of the periods of any two planets (*T*1*, T*2) is equal to the ratio of the cubes of their average orbital distance from the sun (*r*1*, r*2). Mathematically, this is represented by
 
-T12T22=r13r23.From this equation, it follows that the ratio *r*<sup>3</sup>*/T*<sup>2</sup> is the same for all planets in the solar system. Later we will see how the work of Newton leads to a value for this constant.
+<equation id="fs-id1167064583666" class="unnumbered"> <math>
+ <mrow>
+  <mfrac>
+   <mrow>
+    <msubsup>
+     <mi>T</mi>
+     <mn>1</mn>
+     <mn>2</mn>
+    </msubsup>
+    </mrow>
+   <mrow>
+    <msubsup>
+     <mi>T</mi>
+     <mn>2</mn>
+     <mn>2</mn>
+    </msubsup>
+    </mrow>
+  </mfrac>
+  <mo>=</mo><mfrac>
+   <mrow>
+    <msubsup>
+     <mi>r</mi>
+     <mn>1</mn>
+     <mn>3</mn>
+    </msubsup>
+    </mrow>
+   <mrow>
+    <msubsup>
+     <mi>r</mi>
+     <mn>2</mn>
+     <mn>3</mn>
+    </msubsup>
+    </mrow>
+  </mfrac>
+<mtext>.</mtext>
+  </mrow>
+</math>
+</equation>
+From this equation, it follows that the ratio *r*<sup>3</sup>*/T*<sup>2</sup> is the same for all planets in the solar system. Later we will see how the work of Newton leads to a value for this constant.
 
 ## Kepler’s Third Law
-Given that the moon orbits Earth each 27.3 days and that it is an average distance of  3.84×108m  from the center of Earth, calculate the period of an artificial satellite orbiting at an average altitude of 1,500 km above Earth’s surface.
+Given that the moon orbits Earth each 27.3 days and that it is an average distance of  <math>
+ <mrow>
+  <mn>3.84</mn><mo>×</mo><msup>
+   <mrow>
+    <mn>10</mn>
+   </mrow>
+   <mn>8</mn>
+  </msup>
+  <mtext>m</mtext>
+ </mrow>
+</math>  from the center of Earth, calculate the period of an artificial satellite orbiting at an average altitude of 1,500 km above Earth’s surface.  from the center of Earth, calculate the period of an artificial satellite orbiting at an average altitude of 1,500 km above Earth’s surface.
 
 ## Strategy
-The period, or time for one orbit, is related to the radius of the orbit by Kepler’s third law, given in mathematical form by  T12T22=r13r23. Let us use the subscript 1 for the moon and the subscript 2 for the satellite. We are asked to find *T*2. The given information tells us that the orbital radius of the moon is  r1=3.84×108m, and that the period of the moon is  T1=27.3days . The height of the artificial satellite above Earth’s surface is given, so to get the distance *r*2 from the center of Earth we must add the height to the radius of Earth (6380 km). This gives  r2=1500km+6380km=7880km . Now all quantities are known, so *T*2 can be found.
+The period, or time for one orbit, is related to the radius of the orbit by Kepler’s third law, given in mathematical form by  <math>
+ <mrow>
+  <mfrac>
+   <mrow>
+    <msubsup>
+     <mi>T</mi>
+     <mn>1</mn>
+     <mn>2</mn>
+    </msubsup>
+    </mrow>
+   <mrow>
+    <msubsup>
+     <mi>T</mi>
+     <mn>2</mn>
+     <mn>2</mn>
+    </msubsup>
+    </mrow>
+  </mfrac>
+  <mo>=</mo><mfrac>
+   <mrow>
+    <msubsup>
+     <mi>r</mi>
+     <mn>1</mn>
+     <mn>3</mn>
+    </msubsup>
+    </mrow>
+   <mrow>
+    <msubsup>
+     <mi>r</mi>
+     <mn>2</mn>
+     <mn>3</mn>
+    </msubsup>
+    </mrow>
+  </mfrac>
+  </mrow>
+</math>. Let us use the subscript 1 for the moon and the subscript 2 for the satellite. We are asked to find . Let us use the subscript 1 for the moon and the subscript 2 for the satellite. We are asked to find *T*2. The given information tells us that the orbital radius of the moon is  <math>
+ <mrow>
+  <msub>
+   <mi>r</mi>
+   <mn>1</mn>
+  </msub>
+  <mo>=</mo><mn>3.84</mn><mo>×</mo><msup>
+   <mrow>
+    <mn>10</mn></mrow>
+   <mn>8</mn>
+  </msup>
+  <mtext>m</mtext></mrow>
+</math>, and that the period of the moon is  , and that the period of the moon is  <math>
+ <mrow>
+  <msub>
+   <mi>T</mi>
+   <mn>1</mn>
+  </msub>
+  <mo>=</mo><mn>27.3</mn><mspace width="0.3em" /><mtext>days</mtext></mrow>
+</math> . The height of the artificial satellite above Earth’s surface is given, so to get the distance  . The height of the artificial satellite above Earth’s surface is given, so to get the distance *r*2 from the center of Earth we must add the height to the radius of Earth (6380 km). This gives  <math>
+ <mrow>
+  <msub>
+   <mi>r</mi>
+   <mn>2</mn>
+  </msub>
+  <mo>=</mo><mn>1500</mn><mspace width="0.3em" /><mtext>km</mtext><mo>+</mo><mn>6380</mn><mspace width="0.3em" /><mtext>km</mtext><mo>=</mo><mn>7880</mn><mspace width="0.3em" /><mtext>km</mtext></mrow>
+</math> . Now all quantities are known, so  . Now all quantities are known, so *T*2 can be found.
 
 ## Solution
 To solve for *T*2, we cross-multiply and take the square root, yielding
 
-T22=T12(r2r1)3; T2=T1(r2r1)32T2=(27.3 d)(24.0 hd)(7880 km3.84×105 km)32=1.93 h.## Discussion
+<equation id="fs-id1164562239848"> <math display="block">
+ 
+  <mtable columnalign="left">
+   <mtr>
+    <mtd>
+     <msubsup>
+      <mi>T</mi>
+      <mn>2</mn>
+      <mn>2</mn>
+     </msubsup>
+     <mo>=</mo><msubsup>
+      <mi>T</mi>
+      <mn>1</mn>
+      <mn>2</mn>
+     </msubsup>
+     <msup>
+      <mrow><mo>(</mo>
+       <mrow>
+        <mfrac>
+         <mrow>
+          <msub>
+           <mi>r</mi>
+           <mn>2</mn>
+          </msub>
+
+         </mrow>
+         <mrow>
+          <msub>
+           <mi>r</mi>
+           <mn>1</mn>
+          </msub>
+
+         </mrow>
+        </mfrac>
+
+       </mrow>
+      <mo>)</mo></mrow>
+      <mn>3</mn>
+     </msup>
+     <mo>;</mo><mo> </mo><msub>
+      <mi>T</mi>
+      <mn>2</mn>
+     </msub>
+     <mo>=</mo><msub>
+      <mi>T</mi>
+      <mn>1</mn>
+     </msub>
+     <msup>
+      <mrow><mo>(</mo>
+       <mrow>
+        <mfrac>
+         <mrow>
+          <msub>
+           <mi>r</mi>
+           <mn>2</mn>
+          </msub>
+
+         </mrow>
+         <mrow>
+          <msub>
+           <mi>r</mi>
+           <mn>1</mn>
+          </msub>
+
+         </mrow>
+        </mfrac>
+
+       </mrow>
+      <mo>)</mo></mrow>
+      <mrow>
+       <mfrac>
+        <mn>3</mn>
+        <mn>2</mn>
+       </mfrac>
+
+      </mrow>
+     </msup>
+
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mtable>
+      <mtr>
+       <mtd>
+        <mrow>
+         <msub>
+          <mi>T</mi>
+          <mn>2</mn>
+         </msub>
+         <mo>=</mo><mo stretchy="false">(</mo><mn>27.3</mn><mo> </mo><mtext>d</mtext><mo stretchy="false">)</mo><mrow><mo>(</mo>
+          <mrow>
+           <mfrac>
+            <mrow>
+             <mn>24.0</mn><mo> </mo><mtext>h</mtext>
+            </mrow>
+            <mtext>d</mtext>
+           </mfrac>
+
+          </mrow>
+         <mo>)</mo></mrow><msup>
+          <mrow>
+           <mrow><mo>(</mo>
+            <mrow>
+             <mfrac>
+              <mrow>
+               <mn>7880</mn><mo> </mo><mtext>km</mtext>
+              </mrow>
+              <mrow>
+               <mn>3.84</mn><mo>×</mo><msup>
+                <mrow>
+                 <mn>10</mn>
+                </mrow>
+                <mn>5</mn>
+               </msup>
+               <mo> </mo><mtext>km</mtext>
+              </mrow>
+             </mfrac>
+
+            </mrow>
+           <mo>)</mo></mrow>
+          </mrow>
+          <mrow>
+           <mfrac>
+            <mn>3</mn>
+            <mn>2</mn>
+           </mfrac>
+
+          </mrow>
+         </msup>
+         <mo>=</mo><mn>1.93</mn><mo> </mo><mtext>h</mtext><mo>.</mo>
+        </mrow>
+       </mtd>
+      </mtr>
+
+     </mtable>
+    </mtd>
+   </mtr>
+  </mtable>
+ 
+</math> </equation>
+
+## Discussion
 This is a reasonable period for a satellite in a fairly low orbit. It is interesting that any satellite at this altitude will complete one orbit in the same amount of time.
 
 
@@ -211,23 +750,99 @@ True or false—According to Keplers laws of planetary motion, a satellite inc
 <table>
   <tr>
     <td>Kepler’s third law</td>
-    <td>T12T22=r13r23</td>
+    <td><math>
+ <mrow>
+  <mfrac>
+   <mrow>
+    <msubsup>
+     <mi>T</mi>
+     <mn>1</mn>
+     <mn>2</mn>
+    </msubsup>
+    </mrow>
+   <mrow>
+    <msubsup>
+     <mi>T</mi>
+     <mn>2</mn>
+     <mn>2</mn>
+    </msubsup>
+    </mrow>
+  </mfrac>
+  <mo>=</mo><mfrac>
+   <mrow>
+    <msubsup>
+     <mi>r</mi>
+     <mn>1</mn>
+     <mn>3</mn>
+    </msubsup>
+    </mrow>
+   <mrow>
+    <msubsup>
+     <mi>r</mi>
+     <mn>2</mn>
+     <mn>3</mn>
+    </msubsup>
+    </mrow>
+  </mfrac>
+  </mrow>
+</math></td>
   </tr>
   <tr>
     <td>eccentricity</td>
-    <td>e=fa</td>
+    <td><math>
+ <mrow>
+  <mi>e</mi><mo>=</mo><mfrac>
+   <mi>f</mi>
+   <mi>a</mi>
+  </mfrac>
+  </mrow>
+</math></td>
   </tr>
   <tr>
     <td>area of an ellipse</td>
-    <td>A=πab</td>
+    <td><math>
+ <mrow>
+  <mi>A</mi><mo>=</mo><mi>π</mi><mi>a</mi><mi>b</mi></mrow>
+</math></td>
   </tr>
   <tr>
     <td>semi-major axis of an ellipse</td>
-    <td>a=(ra+rp)/2</td>
+    <td><math>
+ <mrow>
+  <mi>a</mi><mo>=</mo><mrow><mrow>
+   <mrow><mo>(</mo>
+    <mrow>
+     <msub>
+      <mi>r</mi>
+      <mtext>a</mtext>
+     </msub>
+     <mo>+</mo><msub>
+      <mi>r</mi>
+      <mtext>p</mtext>
+     </msub>
+     </mrow>
+   <mo>)</mo></mrow></mrow><mo>/</mo><mn>2</mn></mrow>
+  </mrow>
+</math></td>
   </tr>
   <tr>
     <td>semi-minor axis of an ellipse</td>
-    <td>b=rarp</td>
+    <td><math>
+ <mrow>
+  <mi>b</mi><mo>=</mo><msqrt>
+   <mrow>
+    <msub>
+     <mi>r</mi>
+     <mtext>a</mtext>
+    </msub>
+    <msub>
+     <mi>r</mi>
+     <mtext>p</mtext>
+    </msub>
+    </mrow>
+  </msqrt>
+  </mrow>
+</math></td>
   </tr>
 </table>
 
@@ -315,10 +930,62 @@ Earth is 1.496×10<sup>8</sup> km from the sun, and Neptune is 4.490×10<sup>9</
 A planet of mass m circles a sun of mass M. Which distance changes throughout the planet’s orbit?
 
 
-1. f1f2¯
-2. mM¯
-3. Mf2¯
-4. Mf1¯
+1. <math>
+    <mrow>
+  <mover accent="true">
+   <mrow>
+    <msub>
+     <mi>f</mi>
+     <mn>1</mn>
+    </msub>
+    <msub>
+     <mi>f</mi>
+     <mn>2</mn>
+    </msub>
+    </mrow>
+   <mo stretchy="true">¯</mo>
+  </mover>
+  </mrow>
+  </math> 
+2. <math>
+ <mrow>
+  <mover accent="true">
+   <mrow>
+     <mi>m</mi>
+     <mi>M</mi>
+    </mrow>
+   <mo stretchy="true">¯</mo>
+  </mover>
+  </mrow>
+  </math> 
+3. <math>
+    <mrow>
+  <mover accent="true">
+   <mrow>
+     <mi>M</mi>
+    <msub>
+     <mi>f</mi>
+     <mn>2</mn>
+    </msub>
+    </mrow>
+   <mo stretchy="true">¯</mo>
+  </mover>
+  </mrow>
+  </math> 
+4. <math>
+    <mrow>
+  <mover accent="true">
+   <mrow>
+     <mi>M</mi>
+    <msub>
+     <mi>f</mi>
+     <mn>1</mn>
+    </msub>
+    </mrow>
+   <mo stretchy="true">¯</mo>
+  </mover>
+  </mrow>
+  </math> 
 
 
 [None](#ost/api/ex/k12phys-ch07-ex016)

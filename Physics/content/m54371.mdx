@@ -68,9 +68,20 @@ An interesting thing happens if you pass light through a large number of evenly-
 > 1. ## Procedure
 > 
 > 2. Hold the CD in direct sunlight near the wall, and move it around until a circular rainbow pattern appears on the wall.
-> 3. tanθsinθ
-> 4. λ
-> 5. dsinθ=mλ*d*
+> 3. <math>
+>  <mrow>
+>   <mi>tan</mi><mi>θ</mi></mrow>
+> </math> . Find  <math>
+>  <mrow>
+>   <mtext>sin</mtext><mi>θ</mi></mrow>
+> </math> .
+> 4. <math>
+>  <mi>λ</mi>
+> </math> .
+> 5. <math>
+>  <mrow>
+>   <mi>d</mi><mi>sin</mi><mi>θ</mi><mo>=</mo><mi>m</mi><mi>λ</mi></mrow>
+> </math>  for *d*
 > 6. How do you know what number to use for *m*?
 > 
 > 1. Count the rainbow rings preceding the chosen color.
@@ -128,9 +139,51 @@ There are many situations in which diffraction limits the resolution. The acuity
 
 Early in the chapter, it was mentioned that when light passes from one medium to another, its speed and wavelength change, but its frequency remains constant. The equation
 
-λn=λnshows how to the wavelength in a given medium,  λn, is related to the wavelength in a vacuum,  λ, and the refractive index, *n*, of the medium. The equation is useful for calculating the change in wavelength of a monochromatic laser beam in various media. The analysis of a diffraction grating is very similar to that for a double slit. As you know from the discussion of double slits in Young’s double-slit experiment, light is diffracted by, and spreads out after passing through, each slit. Rays travel at an angle  θ  relative to the incident direction. Each ray travels a different distance to a common point on a screen far away. The rays start in phase, and they can be in or out of phase when they reach a screen, depending on the difference in the path lengths traveled. Each ray travels a distance that differs by  dsinθ  from that of its neighbor, where *d *is the distance between slits. If  dsinθ  equals an integral number of wavelengths, the rays all arrive in phase, and constructive interference (a maximum) is obtained. Thus, the condition necessary to obtain constructive interference for a diffraction grating is
+<equation id="fs-id1167064529157" class="unnumbered"><label />
+ <math display="block">
+ <mrow>
+  <msub>
+   <mi>λ</mi>
+   <mi>n</mi>
+  </msub>
+  <mo>=</mo><mfrac>
+   <mi>λ</mi>
+   <mi>n</mi>
+  </mfrac>
+  </mrow>
+</math>
+</equation>
 
-dsinθ=mλ,for m=0,1,−1,2,−2,…,where *d* is the distance between slits in the grating,  λ  is the wavelength of the light, and *m *is the order of the maximum. Note that this is exactly the same equation as for two slits separated by *d*. However, the slits are usually closer in diffraction gratings than in double slits, producing fewer maxima at larger angles.
+shows how to the wavelength in a given medium,  <math>
+ <mrow>
+  <msub>
+   <mi>λ</mi>
+   <mi>n</mi>
+  </msub>
+  </mrow>
+</math>, is related to the wavelength in a vacuum,  , is related to the wavelength in a vacuum,  <math>
+ <mi>λ</mi>
+</math>, and the refractive index, , and the refractive index, *n*, of the medium. The equation is useful for calculating the change in wavelength of a monochromatic laser beam in various media. The analysis of a diffraction grating is very similar to that for a double slit. As you know from the discussion of double slits in Young’s double-slit experiment, light is diffracted by, and spreads out after passing through, each slit. Rays travel at an angle  <math>
+ <mi>θ</mi>
+</math>  relative to the incident direction. Each ray travels a different distance to a common point on a screen far away. The rays start in phase, and they can be in or out of phase when they reach a screen, depending on the difference in the path lengths traveled. Each ray travels a distance that differs by    relative to the incident direction. Each ray travels a different distance to a common point on a screen far away. The rays start in phase, and they can be in or out of phase when they reach a screen, depending on the difference in the path lengths traveled. Each ray travels a distance that differs by  <math>
+ <mrow>
+  <mi>d</mi><mi>sin</mi><mi>θ</mi></mrow>
+</math>  from that of its neighbor, where   from that of its neighbor, where *d *is the distance between slits. If  <math>
+ <mrow>
+  <mi>d</mi><mi>sin</mi><mi>θ</mi></mrow>
+</math>  equals an integral number of wavelengths, the rays all arrive in phase, and constructive interference (a maximum) is obtained. Thus, the condition necessary to obtain constructive interference for a diffraction grating is  equals an integral number of wavelengths, the rays all arrive in phase, and constructive interference (a maximum) is obtained. Thus, the condition necessary to obtain constructive interference for a diffraction grating is
+
+<equation id="fs-id1167062368653" class="unnumbered">
+<label />
+ <math display="block">
+ <mrow>
+  <mi>d</mi><mi>sin</mi><mi>θ</mi><mo>=</mo><mi>m</mi><mi>λ</mi><mo>,</mo><mtext>for </mtext><mi>m</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mo>−</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mo>−</mo><mn>2</mn><mo>,</mo><mo>…</mo><mtext>,</mtext></mrow>
+</math>
+</equation>
+
+where *d* is the distance between slits in the grating,  <math>
+ <mi>λ</mi>
+</math>  is the wavelength of the light, and   is the wavelength of the light, and *m *is the order of the maximum. Note that this is exactly the same equation as for two slits separated by *d*. However, the slits are usually closer in diffraction gratings than in double slits, producing fewer maxima at larger angles.
 
 ## Diffraction Grating
 This [video](https://www.openstax.org/l/28diffraction) explains the geometry behind the diffraction pattern produced by a diffraction grating.
@@ -138,9 +191,31 @@ This [video](https://www.openstax.org/l/28diffraction) explains the geometry beh
 
 [None](#ost/api/ex/k12phys-ch17-ex026)
 
-Just what is the resolution limit of an aperture or lens? To answer that question, consider the diffraction pattern for a circular aperture, which, similar to the diffraction pattern of light passing through a slit, has a central maximum that is wider and brighter than the maxima surrounding it (see [None](None) (a)). It can be shown that, for a circular aperture of diameter *D*, the first minimum in the diffraction pattern occurs at  θ=1.22λ/D, provided that the aperture is large compared with the wavelength of light, which is the case for most optical instruments. The accepted criterion for determining the diffraction limit to resolution based on diffraction was developed by Lord Rayleigh in the 19th century. The **Rayleigh criterion** for the diffraction limit to resolution states that two images are just resolvable when the center of the diffraction pattern of one is directly over the first minimum of the diffraction pattern of the other. See [None](None) (b). The first minimum is at an angle of  θ=1.22λ/D, so that two point objects are just resolvable if they are separated by the angle
+Just what is the resolution limit of an aperture or lens? To answer that question, consider the diffraction pattern for a circular aperture, which, similar to the diffraction pattern of light passing through a slit, has a central maximum that is wider and brighter than the maxima surrounding it (see [None](None) (a)). It can be shown that, for a circular aperture of diameter *D*, the first minimum in the diffraction pattern occurs at  <math>
+ <mrow>
+  <mi>θ</mi><mo>=</mo><mn>1.22</mn><mi>λ</mi><mo>/</mo><mi>D</mi></mrow>
+</math>, provided that the aperture is large compared with the wavelength of light, which is the case for most optical instruments. The accepted criterion for determining the diffraction limit to resolution based on diffraction was developed by Lord Rayleigh in the 19th century. The , provided that the aperture is large compared with the wavelength of light, which is the case for most optical instruments. The accepted criterion for determining the diffraction limit to resolution based on diffraction was developed by Lord Rayleigh in the 19th century. The **Rayleigh criterion** for the diffraction limit to resolution states that two images are just resolvable when the center of the diffraction pattern of one is directly over the first minimum of the diffraction pattern of the other. See [None](None) (b). The first minimum is at an angle of  <math>
+ <mrow>
+  <mi>θ</mi><mo>=</mo><mn>1.22</mn><mi>λ</mi><mo>/</mo><mi>D</mi></mrow>
+</math>, so that two point objects are just resolvable if they are separated by the angle, so that two point objects are just resolvable if they are separated by the angle
 
-θ=1.22λD,where  λ  is the wavelength of the light (or other electromagnetic radiation) and *D *is the diameter of the aperture, lens, mirror, etc., with which the two objects are observed. In the expression above,  θ  has units of radians.
+<equation id="fs-id1167062602058" class="unnumbered">
+<label />
+ <math display="block">
+ <mrow>
+  <mi>θ</mi><mo>=</mo><mn>1.22</mn><mfrac>
+   <mi>λ</mi>
+   <mi>D</mi>
+  </mfrac>
+  <mo>,</mo></mrow>
+</math> </equation>
+
+
+where  <math>
+ <mi>λ</mi>
+</math>  is the wavelength of the light (or other electromagnetic radiation) and   is the wavelength of the light (or other electromagnetic radiation) and *D *is the diameter of the aperture, lens, mirror, etc., with which the two objects are observed. In the expression above,  <math>
+ <mi>θ</mi>
+</math>  has units of radians.  has units of radians.
 
 
 <caption>(a) Graph of intensity of the diffraction pattern for a circular aperture. Note that, similar to a single slit, the central maximum is wider and brighter than those to the sides. (b) Two point objects produce overlapping diffraction patterns. Shown here is the Rayleigh criterion for their being just resolvable. The central maximum of one pattern lies on the first minimum of the other.</caption>
@@ -155,7 +230,18 @@ Just what is the resolution limit of an aperture or lens? To answer that questio
 > 
 > 2. Draw two lines several mm apart on a white sheet of paper.
 > 3. Move away from the sheet as it is held upright, and measure the distance at which you can just distinguish (resolve) the lines as separate.
-> 4. θ=1.22λD*D*θλ
+> 4. <math>
+>  <mrow>
+>   <mi>θ</mi><mo>=</mo><mn>1.22</mn><mfrac>
+>    <mi>λ</mi>
+>    <mi>D</mi>
+>   </mfrac>
+>   </mrow>
+> </math>  to calculate *D*<math>
+>  <mi>θ</mi>
+> </math> . Use the average wavelength for visible light as the value for  <math>
+>  <mi>λ</mi>
+> </math> .
 > 5. Compare your answer to the average pupil diameter of 3 mm.
 > 
 > [None](#ost/api/ex/k12phys-ch17-ex027)
@@ -165,38 +251,198 @@ Just what is the resolution limit of an aperture or lens? To answer that questio
 A monochromatic laser beam of green light with a wavelength of 550 nm passes from air to water. The refractive index of water is 1.33. What will be the wavelength of the light after it enters the water?
 
 ## Strategy
-You can assume that the refractive index of air is the same as that of light in a vacuum because they are so close. You then have all the information you need to solve for  λn .
+You can assume that the refractive index of air is the same as that of light in a vacuum because they are so close. You then have all the information you need to solve for  <math>
+ <mrow>
+  <msub>
+   <mi>λ</mi>
+   <mi>n</mi>
+  </msub>
+  </mrow>
+</math> . .
 
 ## Solution
-λn=λn=550 nm1.33=414 nm## Discussion
+<equation id="fs-id1164562434035"> <math display="block">
+ <mrow>
+  <msub>
+   <mi>λ</mi>
+   <mi>n</mi>
+  </msub>
+  <mo>=</mo><mfrac>
+   <mi>λ</mi>
+   <mi>n</mi>
+  </mfrac>
+  <mo>=</mo><mfrac>
+   <mrow>
+    <mn>550</mn><mspace width="0.3em" /><mtext> nm</mtext></mrow>
+   <mrow>
+    <mn>1.33</mn></mrow>
+  </mfrac>
+  <mo>=</mo><mn>414</mn><mspace width="0.3em" /><mtext> nm</mtext></mrow>
+</math> </equation>
+
+## Discussion
 The refractive index of air is 1.0003, so the approximation holds for three significant figures. You would not see the light change color, however. Color is determined by frequency, not wavelength.
 
 ## Diffraction Grating
 A diffraction grating has 2000 lines per centimeter. At what angle will the first-order maximum form for green light with a wavelength of 520 nm?
 
 ## Strategy
-You are given enough information to calculate *d*, and you are given the values of  λ  and *m*. You will have to find the arcsin of a number to find  θ .
+You are given enough information to calculate *d*, and you are given the values of  <math>
+ <mi>λ</mi>
+</math>  and   and *m*. You will have to find the arcsin of a number to find  <math>
+ <mi>θ</mi>
+</math> . .
 
 ## Solution
 First find *d*.
 
-d=1 cm2,000=5.00×10−4 cm = 5,000 nmRearrange the equation for constructive interference conditions for a diffraction grating, and substitute the known values.
+<equation id="fs-id1164564937571"> <math>
+ <mrow>
+  <mi>d</mi><mo>=</mo><mfrac>
+   <mrow>
+    <mn>1</mn><mspace width="0.3em" /><mtext> cm</mtext></mrow>
+   <mrow>
+    <mn>2,000</mn></mrow>
+  </mfrac>
+  <mo>=</mo><mn>5.00</mn><mspace width="0.25em" /><mo>×</mo><mspace width="0.25em" /><msup>
+   <mrow>
+    <mn>10</mn></mrow>
+   <mrow>
+    <mo>−</mo><mn>4</mn></mrow>
+  </msup>
+  <mtext> cm = 5,000 nm</mtext></mrow>
+</math> </equation>
 
- dsinθ=mλθ=sin−1mλd
-     =sin−1((1)(520)5,000)
-     =5.97 
+Rearrange the equation for constructive interference conditions for a diffraction grating, and substitute the known values.
+
+ <math display="block">
+ <mrow>
+  <mtable>
+   <mtr rowalign="center">
+    <mtd columnalign="right">
+     <mrow>
+      <mi>d</mi><mi>sin</mi><mi>θ</mi></mrow>
+    </mtd>
+    <mtd columnalign="center">
+     <mo>=</mo>
+    </mtd>
+    <mtd columnalign="left">
+     <mrow>
+      <mi>m</mi><mi>λ</mi></mrow>
+    </mtd>
+   </mtr>
+   <mtr rowalign="center">
+    <mtd columnalign="right">
+     <mi>θ</mi>
+    </mtd>
+    <mtd columnalign="center">
+     <mo>=</mo>
+    </mtd>
+    <mtd columnalign="left">
+     <mrow>
+      <msup>
+       <mrow>
+        <mtext>sin</mtext></mrow>
+       <mrow>
+        <mo>−</mo><mn>1</mn></mrow>
+      </msup>
+      <mfrac>
+       <mrow>
+        <mi>m</mi><mi>λ</mi></mrow>
+       <mi>d</mi>
+      </mfrac>
+      </mrow>
+    </mtd>
+   </mtr>
+   <mtr rowalign="center">
+    <mtd columnalign="right">
+     <mrow />
+    </mtd>
+    <mtd columnalign="center">
+     <mo>=</mo>
+    </mtd>
+    <mtd columnalign="left">
+     <mrow>
+      <msup>
+       <mrow>
+        <mtext>sin</mtext></mrow>
+       <mrow>
+        <mo>−</mo><mn>1</mn></mrow>
+      </msup>
+      <mrow><mo>(</mo>
+       <mrow>
+        <mfrac>
+         <mrow>
+          <mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>520</mn><mo stretchy="false">)</mo></mrow>
+         <mrow>
+          <mn>5,000</mn></mrow>
+        </mfrac>
+        </mrow>
+      <mo>)</mo></mrow></mrow>
+    </mtd>
+   </mtr>
+   <mtr rowalign="center">
+    <mtd columnalign="right">
+     <mrow />
+    </mtd>
+    <mtd columnalign="center">
+     <mo>=</mo>
+    </mtd>
+    <mtd columnalign="left">
+     <mrow>
+      <mn>5.97</mn></mrow>
+    </mtd>
+   </mtr>
+
+  </mtable></mrow>
+</math>  
 
 ## Discussion
-This angle seems reasonable for the first maximum. Recall that the meaning of sin<sup>‒1</sup> (or arcsin) is *the angle with a sine that is (the unknown)*. Remember that the value of  sinθ  will not be greater than 1 for any value of  θ .
+This angle seems reasonable for the first maximum. Recall that the meaning of sin<sup>‒1</sup> (or arcsin) is *the angle with a sine that is (the unknown)*. Remember that the value of  <math>
+ <mrow>
+  <mi>sin</mi><mi>θ</mi></mrow>
+</math>  will not be greater than 1 for any value of    will not be greater than 1 for any value of  <math>
+ <mi>θ</mi>
+</math> . .
 
 ## Resolution
 What is the minimum angular spread of a 633-nm-wavelength He-Ne laser beam that is originally 1.00 mm in diameter?
 
 ## Strategy
-The diameter of the beam is the same as if it were coming through an aperture of that size, so *D* = 1.00 mm. You are given  λ, and you must solve for  θ .
+The diameter of the beam is the same as if it were coming through an aperture of that size, so *D* = 1.00 mm. You are given  <math>
+ <mi>λ</mi>
+</math>, and you must solve for  , and you must solve for  <math>
+ <mi>θ</mi>
+</math> . .
 
 ## Solution
-θ=(1.22)λD=(1.22)(633 nm)1.00×106 nm=7.72×10−4 rad=0.0442°## Discussion
+<equation id="fs-id1164566844758"> <math display="block">
+ <mrow>
+  <mi>θ</mi><mo>=</mo><mfrac>
+   <mrow>
+    <mo stretchy="false">(</mo><mn>1.22</mn><mo stretchy="false">)</mo><mi>λ</mi></mrow>
+   <mi>D</mi>
+  </mfrac>
+  <mo>=</mo><mfrac>
+   <mrow>
+    <mo stretchy="false">(</mo><mn>1.22</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>633</mn><mspace width="0.3em" /><mtext> nm</mtext><mo stretchy="false">)</mo></mrow>
+   <mrow>
+    <mn>1.00</mn><mspace width="0.25em" /><mo>×</mo><mspace width="0.25em" /><msup>
+     <mrow>
+      <mn>10</mn></mrow>
+     <mn>6</mn>
+    </msup>
+    <mtext> nm</mtext></mrow>
+  </mfrac>
+  <mo>=</mo><mn>7.72</mn><mo>×</mo><msup>
+   <mrow>
+    <mn>10</mn></mrow>
+   <mrow>
+    <mn>−4</mn></mrow>
+  </msup>
+  <mtext> rad</mtext><mo>=</mo><mn>0.0442°</mn></mrow>
+</math> </equation>
+## Discussion
 The conversion factor for radians to degrees is 1.000 radian = 57.3°. The spread is very small and would not be noticeable over short distances. The angle represents the angular separation of the central maximum and the first minimum.
 
 
@@ -253,15 +499,36 @@ What is the angle between two just-resolved points of light for a 3.00 mm diamet
 <table>
   <tr>
     <td>wavelength change with change in medium</td>
-    <td>λn=λn</td>
+    <td><math>
+ <mrow>
+  <msub>
+   <mi>λ</mi>
+   <mi>n</mi>
+  </msub>
+  <mo>=</mo><mfrac>
+   <mi>λ</mi>
+   <mi>n</mi>
+  </mfrac>
+  </mrow>
+</math></td>
   </tr>
   <tr>
     <td>diffraction grating constructive interference</td>
-    <td>dsinθ=mλ</td>
+    <td><math>
+ <mrow>
+  <mi>d</mi><mi>sin</mi><mi>θ</mi><mo>=</mo><mi>m</mi><mi>λ</mi></mrow>
+</math></td>
   </tr>
   <tr>
     <td>resolution</td>
-    <td>θ=1.22λD</td>
+    <td><math>
+ <mrow>
+  <mi>θ</mi><mo>=</mo><mn>1.22</mn><mfrac>
+   <mi>λ</mi>
+   <mi>D</mi>
+  </mfrac>
+  </mrow>
+</math></td>
   </tr>
 </table>
 
@@ -272,14 +539,22 @@ What is the angle between two just-resolved points of light for a 3.00 mm diamet
 There is a principle related to resolution that is expressed by this equation.
 
 
-θ=λDWhat is that principle stated in full?
+<equation id="eip-idm230410704"> <math><mrow>
+<mi>θ</mi><mo>=</mo><mfrac><mi>λ</mi><mi>D</mi></mfrac>
+</mrow></math> </equation>
+
+What is that principle stated in full?
 
 A principle related to resolution states, “Two images are just resolved when the center of the diffraction pattern of one is directly over the first minimum of the diffraction pattern of the other.” Write the equation that expresses that principle.
 
-1. θ=1.22Dλ
-2. θ=Dλ
-3. θ=λD
-4. θ=1.22λD
+1. <math><mrow><mi>θ</mi><mo>=</mo><mn>1.22</mn><mfrac><mi>D</mi><mi>λ</mi></mfrac></mrow></math>
+
+2. <math><mrow><mi>θ</mi><mo>=</mo><mfrac><mi>D</mi><mi>λ</mi></mfrac></mrow></math>
+
+3. <math><mrow><mi>θ</mi><mo>=</mo><mfrac><mi>λ</mi><mi>D</mi></mfrac></mrow></math>
+
+4. <math><mrow><mi>θ</mi><mo>=</mo><mn>1.22</mn><mfrac><mi>λ</mi><mi>D</mi></mfrac></mrow></math>
+
 
 Which statement completes this resolution?
 Two images are just resolved when —
@@ -416,7 +691,12 @@ In this performance task you will create one- and two-slit diffraction and obser
 5. When the sharpest, brightest pattern possible is obtained, the partner who is not holding the foil and light makes measurements.
 6. Measure the perpendicular (shortest) distance from the slit to the wall, the distance from the center of the pattern to several of the dark bands, and the distance from the slit to the same dark bands.
 7. Carefully make a second slit parallel to the first slit and 1 mm or less away.
-8. NOTE—In your calculations, use 580 nm for  λ  if you used white light. If you used a colored laser pointer, look up the wavelength of the color. You may find it easier to calculate  θ  from its tangent rather than from its sine.
+8. NOTE—In your calculations, use 580 nm for  <math>
+ <mi>λ</mi>
+</math>  if you used white light. If you used a colored laser pointer, look up the wavelength of the color. You may find it easier to calculate    if you used white light. If you used a colored laser pointer, look up the wavelength of the color. You may find it easier to calculate  <math>
+ <mi>θ</mi>
+</math>  from its tangent rather than from its sine.
+  from its tangent rather than from its sine.
 1. Which experiment gave the most distinct pattern—one or two slits?
 2. What was the width of the single slit? Compare the calculated distance with the measured distance.
 3. What was the distance between the two slits? Compare the calculated distance with the measured distance.

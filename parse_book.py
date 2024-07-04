@@ -83,6 +83,10 @@ def cnxml_to_mdx(cnxml_file):
                     return '\n'.join(objective_lines) + '\n'
         elif tag == 'tbody':
             return f'{parse_table(element)}\n'
+        elif tag == 'equation':
+            return f'{ET.tostring(element, encoding="unicode")}\n'
+        elif tag == 'math':
+            return f'{ET.tostring(element, encoding="unicode")}'
 
         try_recurse = ''.join(parse_element(e) for e in element)
         as_str = element.text

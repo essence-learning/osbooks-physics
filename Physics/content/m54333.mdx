@@ -35,9 +35,43 @@ In a quiet forest, you can sometimes hear a single leaf fall to the ground. But 
 
 A useful quantity for describing the loudness of sounds is called **sound intensity**. In general, the intensity of a wave is the **power** per unit area carried by the wave. Power is the rate at which energy is transferred by the wave. In equation form, intensity *I* is
 
-I=PA,where *P *is the power through an area *A*. The SI unit for *I *is W/m<sup>2</sup>. The intensity of a sound depends upon its pressure amplitude. The relationship between the intensity of a sound wave and its pressure amplitude (or pressure variation Δ*p*) is
+<equation id="fs-id1164565700116"> <math display="block">
+ <mrow>
+  <mi>I</mi><mo>=</mo><mfrac>
+   <mi>P</mi>
+   <mi>A</mi>
+  </mfrac>
+<mtext>,</mtext>
+  </mrow>
+</math>
+</equation>
+where *P *is the power through an area *A*. The SI unit for *I *is W/m<sup>2</sup>. The intensity of a sound depends upon its pressure amplitude. The relationship between the intensity of a sound wave and its pressure amplitude (or pressure variation Δ*p*) is
 
-I=(Δp)22ρvw,where *ρ *is the density of the material in which the sound wave travels, in units of kg/m<sup>3</sup>, and *v* is the speed of sound in the medium, in units of m/s. Pressure amplitude has units of pascals (Pa) or N/m<sup>2</sup>. Note that Δ*p *is half the difference between the maximum and minimum pressure in the sound wave.
+<equation id="fs-id1164566990309"> <math display="block">
+ <mrow>
+  <mi>I</mi><mo>=</mo><mfrac>
+   <mrow>
+    <msup>
+     <mrow>
+      <mrow><mo>(</mo>
+       <mrow>
+        <mi>Δ</mi><mi>p</mi></mrow>
+      <mo>)</mo></mrow></mrow>
+     <mn>2</mn>
+    </msup>
+    </mrow>
+   <mrow>
+    <mn>2</mn><mi>ρ</mi><msub>
+     <mi>v</mi>
+     <mi>w</mi>
+    </msub>
+    </mrow>
+  </mfrac>
+<mtext>,</mtext>
+  </mrow>
+</math>
+</equation>
+where *ρ *is the density of the material in which the sound wave travels, in units of kg/m<sup>3</sup>, and *v* is the speed of sound in the medium, in units of m/s. Pressure amplitude has units of pascals (Pa) or N/m<sup>2</sup>. Note that Δ*p *is half the difference between the maximum and minimum pressure in the sound wave.
 
 We can see from the equation that the intensity of a sound is proportional to its amplitude squared. The pressure variation is proportional to the amplitude of the oscillation, and so *I *varies as (Δ*p*)<sup>2</sup>. This relationship is consistent with the fact that the sound wave is produced by some vibration; the greater its pressure amplitude, the more the air is compressed during the vibration. Because the power of a sound wave is the rate at which energy is transferred, the energy of a sound wave is also proportional to its amplitude squared.
 
@@ -50,7 +84,31 @@ Pressure is usually denoted by capital *P*, but we are using a lowercase *p *for
 
 You may have noticed that when people talk about the loudness of a sound, they describe it in units of **decibels** rather than watts per meter squared. While sound intensity (in W/m<sup>2</sup>) is the SI unit, the **sound intensity level** in decibels (dB) is more relevant for how humans perceive sounds. The way our ears perceive sound can be more accurately described by the logarithm of the intensity of a sound rather than the intensity of a sound directly. The sound intensity level *β *is defined to be
 
-β (dB)=10 log10(II0),where *I *is sound intensity in watts per meter squared, and* I*0 = 10<sup>–12</sup> W/m<sup>2</sup> is a reference intensity. *I*0 is chosen as the reference point because it is the lowest intensity of sound a person with normal hearing can perceive. The decibel level of a sound having an intensity of 10<sup>–12</sup> W/m<sup>2</sup> is *β* = 0 dB, because log10 1 = 0. That is, the threshold of human hearing is 0 decibels.
+<equation id="fs-id1164567805332"> <math display="block">
+ <mrow>
+  <mi>β</mi><mtext> (dB)</mtext><mo>=</mo><mn>10</mn><msub>
+   <mrow>
+    <mtext> log</mtext></mrow>
+   <mrow>
+    <mn>10</mn></mrow>
+  </msub>
+  <mrow><mo>(</mo>
+   <mrow>
+    <mfrac>
+     <mi>I</mi>
+     <mrow>
+      <msub>
+       <mi>I</mi>
+       <mn>0</mn>
+      </msub>
+      </mrow>
+    </mfrac>
+    </mrow>
+  <mo>)</mo></mrow><mtext>,</mtext></mrow>
+</math>
+</equation>
+
+where *I *is sound intensity in watts per meter squared, and* I*0 = 10<sup>–12</sup> W/m<sup>2</sup> is a reference intensity. *I*0 is chosen as the reference point because it is the lowest intensity of sound a person with normal hearing can perceive. The decibel level of a sound having an intensity of 10<sup>–12</sup> W/m<sup>2</sup> is *β* = 0 dB, because log10 1 = 0. That is, the threshold of human hearing is 0 decibels.
 
 Each factor of 10 in intensity corresponds to 10 dB. For example, a 90 dB sound compared with a 60 dB sound is 30 dB greater, or three factors of 10 (that is, 10<sup>3</sup> times) as intense. Another example is that if one sound is 10<sup>7</sup> as intense as another, it is 70 dB higher.
 
@@ -83,8 +141,72 @@ Since *β *is defined in terms of a ratio, it is unit-less. The unit called *dec
 Calculate the sound intensity level in decibels for a sound wave traveling in air at 0 ºC and having a pressure amplitude of 0.656 Pa.
 
 ## Strategy
-We are given Δ*p*, so we can calculate *I* using the equation  I=(Δp)22ρv . Using *I *, we can calculate *β *straight from its definition in  β (dB)=10 log10(II0)
- β (dB)=10 log10(II0) .
+We are given Δ*p*, so we can calculate *I* using the equation  <math>
+ <mrow>
+  <mi>I</mi><mo>=</mo><mfrac>
+   <mrow>
+    <msup>
+     <mrow>
+      <mrow><mo>(</mo>
+       <mrow>
+        <mi>Δ</mi><mi>p</mi></mrow>
+      <mo>)</mo></mrow></mrow>
+     <mn>2</mn>
+    </msup>
+    </mrow>
+   <mrow>
+    <mn>2</mn><mi>ρ</mi><msub>
+     <mi>v</mi>
+     <mrow />
+    </msub>
+    </mrow>
+  </mfrac>
+  </mrow>
+</math> . Using  . Using *I *, we can calculate *β *straight from its definition in  <math>
+ <mrow>
+  <mi>β</mi><mtext> (</mtext><mi>d</mi><mtext>B)</mtext><mo>=</mo><mn>10</mn><msub>
+   <mrow>
+    <mi> log</mi></mrow>
+   <mrow>
+    <mn>10</mn></mrow>
+  </msub>
+  <mrow><mo>(</mo>
+   <mrow>
+    <mfrac>
+     <mi>I</mi>
+     <mrow>
+      <msub>
+       <mi>I</mi>
+       <mn>0</mn>
+      </msub>
+      </mrow>
+    </mfrac>
+    </mrow>
+  <mo>)</mo></mrow></mrow>
+</math>
+ 
+ <math>
+ <mrow>
+  <mi>β</mi><mtext> (dB)</mtext><mo>=</mo><mn>10</mn><msub>
+   <mrow>
+    <mtext> log</mtext></mrow>
+   <mrow>
+    <mn>10</mn></mrow>
+  </msub>
+  <mrow><mo>(</mo>
+   <mrow>
+    <mfrac>
+     <mi>I</mi>
+     <mrow>
+      <msub>
+       <mi>I</mi>
+       <mn>0</mn>
+      </msub>
+      </mrow>
+    </mfrac>
+    </mrow>
+  <mo>)</mo></mrow></mrow>
+</math> . .
 
 ## Solution
 (1) Identify knowns:
@@ -93,14 +215,136 @@ Sound travels at 331 m/s in air at 0 °C.
 
 Air has a density of 1.29 kg/m<sup>3</sup> at atmospheric pressure and 0ºC.
 
-(2) Enter these values and the pressure amplitude into  I=(Δp)22ρvw .	
+(2) Enter these values and the pressure amplitude into  <math>
+ <mrow>
+  <mi>I</mi><mo>=</mo><mfrac>
+   <mrow>
+    <msup>
+     <mrow>
+      <mrow><mo>(</mo>
+       <mrow>
+        <mi>Δ</mi><mi>p</mi></mrow>
+      <mo>)</mo></mrow></mrow>
+     <mn>2</mn>
+    </msup>
+    </mrow>
+   <mrow>
+    <mn>2</mn><mi>ρ</mi><msub>
+     <mi>v</mi>
+     <mi>w</mi>
+    </msub>
+    </mrow>
+  </mfrac>
+  </mrow>
+</math> .	 .	
 
- I=(Δp)22ρvw=(0.656 Pa)22(1.29 kg/m3)(331 m/s)=5.04×10−4 W/m2.
+ <math display="block">
+ <mrow>
+  <mi>I</mi><mo>=</mo><mfrac>
+   <mrow>
+    <msup>
+     <mrow>
+      <mrow><mo>(</mo>
+       <mrow>
+        <mi>Δ</mi><mi>p</mi></mrow>
+      <mo>)</mo></mrow></mrow>
+     <mn>2</mn>
+    </msup>
+    </mrow>
+   <mrow>
+    <mn>2</mn><mi>ρ</mi><msub>
+     <mi>v</mi>
+     <mi>w</mi>
+    </msub>
+    </mrow>
+  </mfrac>
+  <mo>=</mo><mfrac>
+   <mrow>
+    <msup>
+     <mrow>
+      <mrow><mo>(</mo>
+       <mrow>
+        <mn>0.656</mn><mspace width="0.3em" /><mtext> Pa</mtext></mrow>
+      <mo>)</mo></mrow></mrow>
+     <mn>2</mn>
+    </msup>
+    </mrow>
+   <mrow>
+    <mn>2</mn><mrow><mo>(</mo>
+     <mrow>
+      <mn>1.29</mn><msup>
+       <mrow>
+        <mtext> kg/m</mtext></mrow>
+       <mn>3</mn>
+      </msup>
+      </mrow>
+    <mo>)</mo></mrow><mrow><mo>(</mo>
+     <mrow>
+      <mn>331</mn><mspace width="0.3em" /><mtext> m/s</mtext></mrow>
+    <mo>)</mo></mrow></mrow>
+  </mfrac>
+  <mo>=</mo><mn>5.04</mn><mo>×</mo><msup>
+   <mrow>
+    <mn>10</mn></mrow>
+   <mrow>
+    <mo>−</mo><mn>4</mn></mrow>
+  </msup>
+  <msup>
+   <mrow>
+    <mtext> W/m</mtext></mrow>
+   <mn>2</mn>
+  </msup>
+<mtext>.</mtext>
+  </mrow>
+</math>
 
 
-(3) Enter the value for *I* and the known value for *I*0 into  β (dB)=10 log10(II0) . Calculate to find the sound intensity level in decibels.
 
- 10 log10(5.04×108)=10(8.70) dB=87.0 dB.
+(3) Enter the value for *I* and the known value for *I*0 into  <math>
+ <mrow>
+  <mi>β</mi><mtext> (dB)</mtext><mo>=</mo><mn>10</mn><msub>
+   <mrow>
+    <mtext> log</mtext></mrow>
+   <mrow>
+    <mn>10</mn></mrow>
+  </msub>
+  <mrow><mo>(</mo>
+   <mrow>
+    <mfrac>
+     <mi>I</mi>
+     <mrow>
+      <msub>
+       <mi>I</mi>
+       <mn>0</mn>
+      </msub>
+      </mrow>
+    </mfrac>
+    </mrow>
+  <mo>)</mo></mrow></mrow>
+</math> . Calculate to find the sound intensity level in decibels. . Calculate to find the sound intensity level in decibels.
+
+ <math display="block">
+ <mrow>
+  <mn>10</mn><msub>
+   <mrow>
+    <mtext> log</mtext></mrow>
+   <mrow>
+    <mn>10</mn></mrow>
+  </msub>
+  <mrow><mo>(</mo>
+   <mrow>
+    <mn>5.04</mn><mo>×</mo><msup>
+     <mrow>
+      <mn>10</mn></mrow>
+     <mn>8</mn>
+    </msup>
+    </mrow>
+  <mo>)</mo></mrow><mo>=</mo><mn>10</mn><mrow><mo>(</mo>
+   <mrow>
+    <mn>8.70</mn></mrow>
+  <mo>)</mo></mrow><mtext> dB</mtext><mo>=</mo><mn>87.0</mn><mspace width="0.3em" /><mtext> dB.</mtext></mrow>
+</math>
+
 
 
 ## Discussion
@@ -115,16 +359,138 @@ You are given that the ratio of two intensities is 2 to 1, and are then asked to
 ## Solution
 (1) Identify knowns:
 
-The ratio of the two intensities is 2 to 1, or:  I2I1=2.00.
+The ratio of the two intensities is 2 to 1, or:  <math display="block">
+ <mrow>
+  <mfrac>
+   <mrow>
+    <msub>
+     <mi>I</mi>
+     <mn>2</mn>
+    </msub>
+    </mrow>
+   <mrow>
+    <msub>
+     <mi>I</mi>
+     <mn>1</mn>
+    </msub>
+    </mrow>
+  </mfrac>
+  <mo>=</mo><mn>2.00</mn><mspace width="0.3em" /><mtext>.</mtext></mrow>
+</math>
+
 
 
 We want to show that the difference in sound levels is about 3 dB. That is, we want to show
 
-β2−β1=3 dB.Note that
+<equation id="fs-id1164564399569"> <math display="block">
+ <mrow>
+  <msub>
+   <mi>β</mi>
+   <mn>2</mn>
+  </msub>
+  <mo>−</mo><msub>
+   <mi>β</mi>
+   <mn>1</mn>
+  </msub>
+  <mo>=</mo><mn>3</mn><mspace width="0.3em" /><mtext> dB.</mtext></mrow>
+</math>
+</equation>
 
-log10b − log10a = log10(ba).(2) Use the definition of *β* to get
 
-β2−β1=10 log10(I2I1)=10 log102.00=10(0.301) dB.Therefore, β2−β1=3.01 dB.
+Note that
+
+<equation id="fs-id1164566270413"> <math display="block">
+ <mrow>
+  <msub>
+   <mrow>
+    <mi>log</mi></mrow>
+   <mrow>
+    <mn>10</mn></mrow>
+  </msub>
+  <mi>b</mi><mtext> </mtext><mo>−</mo><mtext> </mtext><msub>
+   <mrow>
+    <mi>log</mi></mrow>
+   <mrow>
+    <mn>10</mn></mrow>
+  </msub>
+  <mi>a</mi><msub>
+   <mrow>
+    <mtext> = log</mtext></mrow>
+   <mrow>
+    <mn>10</mn></mrow>
+  </msub>
+  <mrow><mo>(</mo>
+   <mrow>
+    <mfrac>
+     <mi>b</mi>
+     <mi>a</mi>
+    </mfrac>
+    </mrow>
+  <mo>)</mo></mrow><mtext>.</mtext></mrow>
+</math>
+</equation>
+(2) Use the definition of *β* to get
+
+<equation id="fs-id1164567925567"> <math display="block">
+ <mrow>
+  <msub>
+   <mi>β</mi>
+   <mn>2</mn>
+  </msub>
+  <mo>−</mo><msub>
+   <mi>β</mi>
+   <mn>1</mn>
+  </msub>
+  <mo>=</mo><mn>10</mn><msub>
+   <mrow>
+    <mtext> log</mtext></mrow>
+   <mrow>
+    <mn>10</mn></mrow>
+  </msub>
+  <mrow><mo>(</mo>
+   <mrow>
+    <mfrac>
+     <mrow>
+      <msub>
+       <mi>I</mi>
+       <mn>2</mn>
+      </msub>
+      </mrow>
+     <mrow>
+      <msub>
+       <mi>I</mi>
+       <mn>1</mn>
+      </msub>
+      </mrow>
+    </mfrac>
+    </mrow>
+  <mo>)</mo></mrow><mo>=</mo><mn>10</mn><msub>
+   <mrow>
+    <mtext> log</mtext></mrow>
+   <mrow>
+    <mn>10</mn></mrow>
+  </msub>
+  <mn>2.00</mn><mo>=</mo><mn>10</mn><mrow><mo>(</mo>
+   <mrow>
+    <mn>0.301</mn></mrow>
+  <mo>)</mo></mrow><mtext> dB.</mtext></mrow>
+</math>
+</equation>
+
+
+Therefore, <math display="block">
+ <mrow>
+  <msub>
+   <mi>β</mi>
+   <mn>2</mn>
+  </msub>
+  <mo>−</mo><msub>
+   <mi>β</mi>
+   <mn>1</mn>
+  </msub>
+  <mo>=</mo><mn>3.01</mn><mspace width="0.3em" /><mtext> dB.</mtext></mrow>
+</math>
+
 
 
 ## Discussion
@@ -233,15 +599,64 @@ How do humans change the pitch of their voice?
 <table>
   <tr>
     <td>intensity</td>
-    <td>I=PA</td>
+    <td><math>
+ <mrow>
+  <mi>I</mi><mo>=</mo><mfrac>
+   <mi>P</mi>
+   <mi>A</mi>
+  </mfrac>
+  </mrow>
+</math></td>
   </tr>
   <tr>
     <td>sound intensity</td>
-    <td>I=(Δp)22ρvw</td>
+    <td><math>
+ <mrow>
+  <mi>I</mi><mo>=</mo><mfrac>
+   <mrow>
+    <msup>
+     <mrow>
+      <mrow><mo>(</mo>
+       <mrow>
+        <mi>Δ</mi><mi>p</mi></mrow>
+      <mo>)</mo></mrow></mrow>
+     <mn>2</mn>
+    </msup>
+    </mrow>
+   <mrow>
+    <mn>2</mn><mi>ρ</mi><msub>
+     <mi>v</mi>
+     <mi>w</mi>
+    </msub>
+    </mrow>
+  </mfrac>
+  </mrow>
+</math></td>
   </tr>
   <tr>
     <td>sound intensity level</td>
-    <td>β (dB)=10 log10(II0)</td>
+    <td><math>
+ <mrow>
+  <mi>β</mi><mtext> (dB)</mtext><mo>=</mo><mn>10</mn><msub>
+   <mrow>
+    <mtext> log</mtext></mrow>
+   <mrow>
+    <mn>10</mn></mrow>
+  </msub>
+  <mrow><mo>(</mo>
+   <mrow>
+    <mfrac>
+     <mi>I</mi>
+     <mrow>
+      <msub>
+       <mi>I</mi>
+       <mn>0</mn>
+      </msub>
+      </mrow>
+    </mfrac>
+    </mrow>
+  <mo>)</mo></mrow></mrow>
+</math></td>
   </tr>
 </table>
 
@@ -251,10 +666,52 @@ How do humans change the pitch of their voice?
 
 What is the mathematical relationship between intensity, power, and area?
 
-1. I=PA2
-2. I=PA
-3. I=AP
-4. I=PA
+1. <math>
+ 
+  <mrow>
+   <mi>I</mi><mo>=</mo><mfrac>
+    <mi>P</mi>
+    <mrow>
+     <msup>
+      <mi>A</mi>
+      <mn>2</mn>
+     </msup>
+
+    </mrow>
+   </mfrac>
+
+  </mrow>
+ 
+</math>
+
+2. <math>
+ 
+  <mrow>
+   <mi>I</mi><mo>=</mo><mi>P</mi><mi>A</mi>
+  </mrow>
+ 
+</math>
+
+3. <math>
+ 
+  <mrow>
+   <mi>I</mi><mo>=</mo><mfrac>
+    <mi>A</mi>
+    <mi>P</mi>
+   </mfrac>
+    </mrow>
+   
+</math> 
+4. <math>
+ 
+  <mrow>
+   <mi>I</mi><mo>=</mo><mfrac>
+    <mi>P</mi>
+    <mi>A</mi>
+   </mfrac>
+    </mrow>
+   
+</math> 
 
 How does the "decibel" get its name?
 
