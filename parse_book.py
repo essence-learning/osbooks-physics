@@ -1,45 +1,50 @@
 import xml.etree.ElementTree as ET
 import json
 import os
-
 from pathlib import Path
+
+def remove_namespace(element):
+    for elem in element.iter():
+        if isinstance(elem.tag, str):
+            elem.tag = elem.tag.split('}')[-1]
+    return element
 
 def parse_xml_to_json(xml_file):
     tree = ET.parse(xml_file)
     root = tree.getroot()
+    remove_namespace(root)
 
     def parse_collection(collection):
         parsed_collection = {"pages": [], "subsections": []}
         for element in collection:
-            tag = element.tag.split('}')[-1]
+            tag = element.tag
             if tag == "module":
                 parsed_collection["pages"].append({
                     "id": element.attrib["document"],
-                    "title" : "page title"
+                    "title": "page title"
                 })
             elif tag == "subcollection":
-                title = element.find('{http://cnx.rice.edu/mdml}title').text
+                title = element.find('title').text
                 subsection = {
                     "title": title,
                 }
-                subsection.update(parse_collection(element.find('{http://cnx.rice.edu/collxml}content')))
+                subsection.update(parse_collection(element.find('content')))
                 parsed_collection["subsections"].append(subsection)
         return parsed_collection
 
-    parsed_data = parse_collection(root.find('{http://cnx.rice.edu/collxml}content'))
+    parsed_data = parse_collection(root.find('content'))
 
     return parsed_data
 
-
 def cnxml_to_mdx(cnxml_file):
-    root = ET.parse(cnxml_file)
+    root = ET.parse(cnxml_file).getroot()
+    remove_namespace(root)
     output_mdx = ""
     content_id = ""
     content_title = ""
 
     def parse_element(element):
-        # print(f'parsing {ET.tostring(element, encoding="unicode")}')
-        tag = element.tag.split('}')[-1]
+        tag = element.tag
         if tag == 'title':
             return f'## {element.text}\n'
         elif tag == 'para':
@@ -67,7 +72,6 @@ def cnxml_to_mdx(cnxml_file):
                 elif 'title' in e.tag:
                     nonlocal content_title
                     content_title = e.text
-
             return ''
         elif tag == 'note':
             if 'class' in element.attrib:
@@ -81,7 +85,6 @@ def cnxml_to_mdx(cnxml_file):
             return f'{parse_table(element)}\n'
 
         try_recurse = ''.join(parse_element(e) for e in element)
-        # as_str = ET.tostring(element, encoding='unicode')
         as_str = element.text
         return try_recurse if try_recurse != '' else (as_str if as_str is not None else '')
 
@@ -98,7 +101,7 @@ def cnxml_to_mdx(cnxml_file):
     def parse_section(element):
         output = ""
         for child in element:
-            child_tag = child.tag.split('}')[-1]
+            child_tag = child.tag
             if child_tag == 'title':
                 output += f'### {child.text}\n\n'
             else:
@@ -151,7 +154,6 @@ def write_mdx(write_directory):
             f.write(mdx_content)
 
     return mapping_dict
-
 
 if __name__ == "__main__":
     book_title = 'Physics'
