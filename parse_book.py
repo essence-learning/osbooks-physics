@@ -1,4 +1,5 @@
 import xml.etree.ElementTree as ET
+from xml.dom import minidom
 import json
 import os
 from pathlib import Path
@@ -61,7 +62,14 @@ def cnxml_to_mdx(cnxml_file):
         elif tag == 'list':
             return f'{parse_list(element)}\n'
         elif tag == 'link':
-            return f'[{element.text}]({element.attrib.get("url")})'
+            target_id = element.attrib.get('target-id')
+
+            if target_id:
+                clean_name = target_id.replace('_', ' ')
+
+                return f'[{clean_name}]({target_id})'
+
+            return f'[temporarily unnamed link]()'
         elif tag == 'sup':
             return f'<sup>{element.text}</sup>'
         elif tag == 'metadata':
@@ -82,11 +90,13 @@ def cnxml_to_mdx(cnxml_file):
                     objective_lines = [f'> {line}' for line in objective_content]
                     return '\n'.join(objective_lines) + '\n'
         elif tag == 'tbody':
-            return f'{parse_table(element)}\n'
+            return f'{parse_table(element).replace('\n', '')}\n'
         elif tag == 'equation':
-            return f'{ET.tostring(element, encoding="unicode")}\n'
+            equation_ml = f'{ET.tostring(element, encoding="unicode")}'.replace('\n', '')
+            # pretty_xml = minidom.parseString(equation_ml).toprettyxml(indent="  ")
+            return f'{equation_ml}\n'
         elif tag == 'math':
-            return f'{ET.tostring(element, encoding="unicode")}'
+            return f'{ET.tostring(element, encoding="unicode")}'.replace('\n', '')
 
         try_recurse = ''.join(parse_element(e) for e in element)
         as_str = element.text
@@ -119,9 +129,9 @@ def cnxml_to_mdx(cnxml_file):
         for i, item in enumerate(element):
             if list_type == 'bulleted':
                 bullet = '*' if bullet_style == 'none' else bullet_style
-                output += f'{bullet} {parse_element(item)}\n'
+                output += f'{bullet} {parse_para(item)}\n'
             else:
-                output += f'{i + 1}. {parse_element(item)}\n'
+                output += f'{i + 1}. {parse_para(item)}\n'
         return output
 
     def parse_table(element):
@@ -144,8 +154,14 @@ def write_mdx(write_directory):
     modules_path = Path('./modules/')
     mapping_dict = dict()
 
+    set_article = None
+
     for article in modules_path.iterdir():
+        if set_article is not None and set_article not in str(article):
+            continue
+
         print(f'parsing {article}')
+
         cnxml_file = article / Path('index.cnxml')
 
         this_id, this_title, mdx_content = cnxml_to_mdx(cnxml_file)
