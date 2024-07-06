@@ -4,6 +4,7 @@ import json
 import os
 from pathlib import Path
 
+
 def remove_namespace(element):
     for elem in element.iter():
         if isinstance(elem.tag, str):
@@ -70,6 +71,11 @@ def cnxml_to_mdx(cnxml_file):
                 return f'[{clean_name}]({target_id})'
 
             return f'[temporarily unnamed link]()'
+        elif tag == 'image':
+            image_src = element.attrib.get('src')
+            if image_src:
+                image_src = image_src.split('/')[-1]
+            return f'![Temp alt text](__MEDIA_URL__{image_src})'
         elif tag == 'sup':
             return f'<sup>{element.text}</sup>'
         elif tag == 'metadata':
@@ -176,6 +182,7 @@ def write_mdx(write_directory):
     return mapping_dict
 
 if __name__ == "__main__":
+    MEDIA_PREFIX = "CNX_HSPhysics"
     book_title = 'Physics'
     directory_path = Path.cwd() / Path(book_title)
     content_path = directory_path / Path('content')
