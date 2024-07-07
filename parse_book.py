@@ -2,6 +2,7 @@ import xml.etree.ElementTree as ET
 from xml.dom import minidom
 import json
 import os
+import shutil
 from pathlib import Path
 
 
@@ -55,7 +56,7 @@ def cnxml_to_mdx(cnxml_file):
             inner = element.text if element.text else ''
             return f'**{inner.strip()}**'
         elif tag == 'caption':
-            return f'<caption>{element.text}</caption>\n'
+            return f'<p>{element.text}</p>\n'
         elif tag == 'section':
             return f'{parse_section(element)}\n\n'
         elif tag == 'emphasis':
@@ -216,3 +217,8 @@ if __name__ == "__main__":
 
     with open(toc_file, 'w') as f:
         json.dump(parsed_data, f, indent=4)
+
+    # Also copy all media into Physics
+    source_media = Path('./media')
+    destination_media = Path(f'./{book_title}/media')
+    shutil.copytree(source_media, destination_media, dirs_exist_ok = True)
