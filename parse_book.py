@@ -185,7 +185,7 @@ def write_mdx(write_directory):
 if __name__ == "__main__":
     MEDIA_PREFIX = "CNX_HSPhysics"
     book_title = 'Physics'
-    directory_path = Path.cwd() / Path(book_title)
+    directory_path = Path.cwd()
     content_path = directory_path / Path('content')
 
     if not directory_path.exists():
@@ -219,6 +219,6 @@ if __name__ == "__main__":
         json.dump(parsed_data, f, indent=4)
 
     # Also copy all media into Physics
-    source_media = Path('./media')
-    destination_media = Path(f'./{book_title}/media')
-    shutil.copytree(source_media, destination_media, dirs_exist_ok = True)
+    # source_media = Path('./media')
+    # destination_media = Path(f'./{book_title}/media')
+    # shutil.copytree(source_media, destination_media, dirs_exist_ok = True)
