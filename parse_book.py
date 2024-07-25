@@ -117,7 +117,7 @@ def cnxml_to_mdx(cnxml_file):
             content += parse_element(child)
             if child.tail:
                 content += child.tail
-        return content
+        return content.strip()
 
     def parse_section(element):
         output = ""
