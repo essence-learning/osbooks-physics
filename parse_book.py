@@ -1,10 +1,7 @@
 import xml.etree.ElementTree as ET
-from xml.dom import minidom
 import json
 import os
-import shutil
 from pathlib import Path
-
 
 def remove_namespace(element):
     for elem in element.iter():
@@ -185,17 +182,17 @@ def write_mdx(write_directory):
 if __name__ == "__main__":
     MEDIA_PREFIX = "CNX_HSPhysics"
     book_title = 'Physics'
-    directory_path = Path.cwd()
-    content_path = directory_path / Path('content')
+    cwd = Path.cwd()
+    content_path = cwd / Path('content')
 
-    if not directory_path.exists():
-        os.makedirs(directory_path)
+    if not cwd.exists():
+        os.makedirs(cwd)
 
     if not content_path.exists():
         os.makedirs(content_path)
 
     xml_file = Path.cwd() / Path('collections/physics.collection.xml')
-    toc_file = directory_path / Path('toc.json')
+    toc_file = cwd / Path('toc.json')
 
     id_mappings = write_mdx(content_path)
 
@@ -217,8 +214,3 @@ if __name__ == "__main__":
 
     with open(toc_file, 'w') as f:
         json.dump(parsed_data, f, indent=4)
-
-    # Also copy all media into Physics
-    # source_media = Path('./media')
-    # destination_media = Path(f'./{book_title}/media')
-    # shutil.copytree(source_media, destination_media, dirs_exist_ok = True)

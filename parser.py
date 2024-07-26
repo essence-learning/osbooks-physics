@@ -1,38 +1,70 @@
-import json
-import os
 from pathlib import Path
+import xml.etree.ElementTree as ET
 
-if __name__ == "__main__":
-    book_title = 'Physics'
+COLLECTION_FILE = 'physics.collections.xml'
+
+class Module:
+    def __init__(self):
+        self.title = '{Page missing title}'
+        self.id = 'noid'
+        self.content = ''
+        self.glossary = dict()
+
+    def __repr__(self):
+        return f'Title: {self.title}, id: {self.id}, content_length: {len(self.content)}, glossary_length: {len(self.glossary)}'
+
+def tag(element):
+    '''Returns tag of element with namespace removed'''
+    return element.tag.split('}', 1)[1]
+
+def text(element):
+    '''Returns inner XML as text'''
+    return ''.join(element.itertext())
+
+def process_module(root) -> Module:
+    # title
+    # metadata
+    # content
+    # glossary
+
+    current_module = Module()
+
+    for component in root:
+        match tag(component):
+            case 'title':
+                current_module.title = text(component).strip()
+
+            case 'metadata':
+                for metadata in component:
+                    if tag(metadata) == 'content-id':
+                        current_module.id = text(metadata).strip()
+
+            case 'content':
+                pass
+            case 'glossary':
+                pass
+            case _:
+                pass
+
+    return current_module
+
+
+if __name__ == '__main__':
     cwd = Path.cwd()
-    content_path = cwd / Path('content')
+    
+    title_table = dict()
 
-    if not cwd.exists():
-        os.makedirs(cwd)
+    # First parse the modules
+    modules = [m for m in (cwd / 'modules').iterdir() if m.is_dir()]
+    for module in modules:
+        print(f'Processing {module.name}')
+        module_tree = ET.parse(module / 'index.cnxml')
+        module_root = module_tree.getroot()
 
-    if not content_path.exists():
-        os.makedirs(content_path)
+        module_obj = process_module(module_root)
+        print(module_obj)
+        # For each module, write conent to mdx file
 
-    xml_file = cwd / Path('collections/physics.collection.xml')
-    toc_file = cwd / Path('toc.json')
-
-    id_mappings = write_mdx(content_path)
-    # Convert TOC stuff
-    parsed_data = {'title': book_title}
-    parsed_data.update(parse_xml_to_json(xml_file))
-
-    # update the id mappings from toc
-    def update_obj(obj):
-        if 'pages' in obj:
-            for page in obj['pages']:
-                if page['id'] in id_mappings:
-                    page['title'] = id_mappings[page['id']]
-        if 'subsections' in obj:
-            for subsection in obj['subsections']:
-                update_obj(subsection)
-
-    update_obj(parsed_data)
-
-    with open(toc_file, 'w') as f:
-        json.dump(parsed_data, f, indent=4)
+        # Then, add to title table for TOC file
+        title_table[module_obj.id] = module_obj.title
 
