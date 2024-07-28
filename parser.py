@@ -36,6 +36,8 @@ def generate_content(node, section_depth) -> str:
     if 'class' in node.attrib and node.attrib['class'] == 'os-teacher':
         return ''
 
+    global figure_count, figure_table
+
     output = []
 
     match node.tag:
@@ -54,6 +56,35 @@ def generate_content(node, section_depth) -> str:
 
         case 'item':
             output.append(f'* {text(node, section_depth)}')
+
+        case 'figure':
+            media_node = node.find('media')
+            alt_text = media_node.attrib.get('alt', 'Missing alt text')
+            
+            image_src = media_node.find('image').attrib.get('src')
+
+            if image_src:
+                image_src = image_src.split('/')[-1]
+
+            image_id = node.attrib.get('id')
+            image_mdx = f'<img id="{image_id}" src="__MEDIA_URL__{image_src}" alt="{alt_text}" />'
+
+            figure_table[image_id] = figure_count
+
+            caption_node = node.find('caption')
+
+            if caption_node is not None:
+                image_mdx += f'\n***Figure {figure_count}** {text(caption_node, section_depth)}*'
+
+            figure_count += 1
+
+            return image_mdx
+
+
+        case 'link':
+            if 'target-id' in node.attrib:
+                id = node.attrib.get('target-id')
+                return f'[Figure {figure_table[id]}](#{id})'
 
         case 'emphasis':
             effect = '**'
@@ -145,7 +176,7 @@ if __name__ == '__main__':
 
     # Parse the modules
     # modules = [m for m in (cwd / 'modules').iterdir() if m.is_dir()]
-    modules = [cwd / 'modules/m54082', cwd / 'modules/m54081']
+    modules = [cwd / 'modules/m54082']
     for module in modules:
         print(f'Processing {module.name}')
         module_tree = ET.parse(module / 'index.cnxml')
@@ -153,6 +184,8 @@ if __name__ == '__main__':
 
         remove_namespace(module_root)
 
+        figure_count = 1
+        figure_table = dict()
         module_obj = process_module(module_root)
         print(module_obj)
 
@@ -163,7 +196,7 @@ if __name__ == '__main__':
         # Then, add to module table for later access to metadata
         module_table[module_obj.id] = module_obj
         print('=' * 20)
-        # print(module_obj.content)
+        print(module_obj.content)
 
     # Generate the TOC
     toc_data = process_toc(collection_file, module_table)
