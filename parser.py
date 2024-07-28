@@ -17,9 +17,55 @@ def tag(element):
     '''Returns tag of element with namespace removed'''
     return element.tag.split('}', 1)[1]
 
-def text(element):
-    '''Returns inner XML as text'''
-    return ''.join(element.itertext())
+def text(element, section_depth):
+    '''Returns parsed inner XML'''
+    content = ''
+
+    if element.text:
+        content += element.text
+    for child in element:
+        content += generate_content(child, section_depth)
+        if child.tail:
+            content += child.tail
+
+    content.strip()
+
+    return content
+
+def generate_content(node, section_depth) -> str:
+    if 'class' in node.attrib and node.attrib['class'] == 'os-teacher':
+        return ''
+
+    output = []
+
+    match tag(node):
+        case 'content' | 'section':
+            for child in node:
+                output.append(generate_content(child, section_depth + 1))
+
+        case 'para':
+            output.append(text(node, section_depth))
+
+        case 'title':
+            output.append(f'{"#" * section_depth} {text(node, section_depth)}')
+
+        case 'emphasis':
+            effect = ''
+
+            if 'effect' in node.attrib:
+                match node.attrib['effect']:
+                    case 'italics':
+                        effect = '*'
+                    case _:
+                        effect = ''
+
+            output.append(f'{effect}{text(node, section_depth)}{effect}')
+
+        case _:
+            pass
+            # for child in node:
+            #     output += generate_content(child)
+    return '\n'.join(output)
 
 def process_module(root) -> Module:
     # title
@@ -32,17 +78,19 @@ def process_module(root) -> Module:
     for component in root:
         match tag(component):
             case 'title':
-                current_module.title = text(component).strip()
+                current_module.title = component.text
 
             case 'metadata':
                 for metadata in component:
                     if tag(metadata) == 'content-id':
-                        current_module.id = text(metadata).strip()
+                        current_module.id = metadata.text
 
             case 'content':
-                pass
+                current_module.content = generate_content(component, 0)
+
             case 'glossary':
                 pass
+
             case _:
                 pass
 
@@ -52,10 +100,11 @@ def process_module(root) -> Module:
 if __name__ == '__main__':
     cwd = Path.cwd()
     
-    title_table = dict()
+    module_table: dict[str, Module] = dict()
 
     # First parse the modules
-    modules = [m for m in (cwd / 'modules').iterdir() if m.is_dir()]
+    # modules = [m for m in (cwd / 'modules').iterdir() if m.is_dir()]
+    modules = [cwd / 'modules/m54081']
     for module in modules:
         print(f'Processing {module.name}')
         module_tree = ET.parse(module / 'index.cnxml')
@@ -65,6 +114,8 @@ if __name__ == '__main__':
         print(module_obj)
         # For each module, write conent to mdx file
 
-        # Then, add to title table for TOC file
-        title_table[module_obj.id] = module_obj.title
+        # Then, add to module table for later access to metadata
+        module_table[module_obj.id] = module_obj
+        print('=' * 20)
+        print(module_obj.content)
 
