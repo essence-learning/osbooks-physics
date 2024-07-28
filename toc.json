@@ -12,30 +12,24 @@
             "title": "What is Physics?",
             "subsections": [
                 {
-                    "is_page": false,
+                    "is_page": true,
+                    "title": "Introduction",
+                    "id": "m54082"
+                },
+                {
+                    "is_page": true,
                     "title": "No Title Found",
-                    "subsections": [
-                        {
-                            "is_page": true,
-                            "title": "Introduction",
-                            "id": "m54082"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54057"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54083"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54599"
-                        }
-                    ]
+                    "id": "m54057"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54083"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54599"
                 }
             ]
         },
@@ -44,35 +38,29 @@
             "title": "Motion in One Dimension",
             "subsections": [
                 {
-                    "is_page": false,
+                    "is_page": true,
                     "title": "No Title Found",
-                    "subsections": [
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54097"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54108"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54104"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54110"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54094"
-                        }
-                    ]
+                    "id": "m54097"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54108"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54104"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54110"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54094"
                 }
             ]
         },
@@ -81,25 +69,19 @@
             "title": "Acceleration",
             "subsections": [
                 {
-                    "is_page": false,
+                    "is_page": true,
                     "title": "No Title Found",
-                    "subsections": [
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54119"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54123"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54116"
-                        }
-                    ]
+                    "id": "m54119"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54123"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54116"
                 }
             ]
         },
@@ -108,35 +90,29 @@
             "title": "Forces and Newton\u2019s Laws of Motion",
             "subsections": [
                 {
-                    "is_page": false,
+                    "is_page": true,
                     "title": "No Title Found",
-                    "subsections": [
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54144"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54135"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54138"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54142"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54131"
-                        }
-                    ]
+                    "id": "m54144"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54135"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54138"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54142"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54131"
                 }
             ]
         },
@@ -145,40 +121,34 @@
             "title": "Motion in Two Dimensions",
             "subsections": [
                 {
-                    "is_page": false,
+                    "is_page": true,
                     "title": "No Title Found",
-                    "subsections": [
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54145"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54165"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54147"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54162"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54159"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54154"
-                        }
-                    ]
+                    "id": "m54145"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54165"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54147"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54162"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54159"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54154"
                 }
             ]
         },
@@ -187,30 +157,24 @@
             "title": "Circular and Rotational Motion",
             "subsections": [
                 {
-                    "is_page": false,
+                    "is_page": true,
                     "title": "No Title Found",
-                    "subsections": [
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54173"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54176"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54181"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54180"
-                        }
-                    ]
+                    "id": "m54173"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54176"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54181"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54180"
                 }
             ]
         },
@@ -219,25 +183,19 @@
             "title": "Newton's Law of Gravitation",
             "subsections": [
                 {
-                    "is_page": false,
+                    "is_page": true,
                     "title": "No Title Found",
-                    "subsections": [
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54196"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54192"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54189"
-                        }
-                    ]
+                    "id": "m54196"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54192"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54189"
                 }
             ]
         },
@@ -246,30 +204,24 @@
             "title": "Momentum",
             "subsections": [
                 {
-                    "is_page": false,
+                    "is_page": true,
                     "title": "No Title Found",
-                    "subsections": [
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54212"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54215"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54202"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54209"
-                        }
-                    ]
+                    "id": "m54212"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54215"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54202"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54209"
                 }
             ]
         },
@@ -278,30 +230,24 @@
             "title": "Work, Energy, and Simple Machines",
             "subsections": [
                 {
-                    "is_page": false,
+                    "is_page": true,
                     "title": "No Title Found",
-                    "subsections": [
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54268"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54271"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54273"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54274"
-                        }
-                    ]
+                    "id": "m54268"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54271"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54273"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54274"
                 }
             ]
         },
@@ -310,25 +256,19 @@
             "title": "Special Relativity",
             "subsections": [
                 {
-                    "is_page": false,
+                    "is_page": true,
                     "title": "No Title Found",
-                    "subsections": [
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54277"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54280"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54282"
-                        }
-                    ]
+                    "id": "m54277"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54280"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54282"
                 }
             ]
         },
@@ -337,30 +277,24 @@
             "title": "Thermal Energy, Heat, and Work",
             "subsections": [
                 {
-                    "is_page": false,
+                    "is_page": true,
                     "title": "No Title Found",
-                    "subsections": [
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54283"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54287"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54290"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54292"
-                        }
-                    ]
+                    "id": "m54283"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54287"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54290"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54292"
                 }
             ]
         },
@@ -369,35 +303,29 @@
             "title": "Thermodynamics",
             "subsections": [
                 {
-                    "is_page": false,
+                    "is_page": true,
                     "title": "No Title Found",
-                    "subsections": [
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54300"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54302"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54305"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54306"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54307"
-                        }
-                    ]
+                    "id": "m54300"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54302"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54305"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54306"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54307"
                 }
             ]
         },
@@ -406,30 +334,24 @@
             "title": "Waves and Their Properties",
             "subsections": [
                 {
-                    "is_page": false,
+                    "is_page": true,
                     "title": "No Title Found",
-                    "subsections": [
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54312"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54314"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54321"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54318"
-                        }
-                    ]
+                    "id": "m54312"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54314"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54321"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54318"
                 }
             ]
         },
@@ -438,35 +360,29 @@
             "title": "Sound",
             "subsections": [
                 {
-                    "is_page": false,
+                    "is_page": true,
                     "title": "No Title Found",
-                    "subsections": [
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54327"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54331"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54333"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54334"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54335"
-                        }
-                    ]
+                    "id": "m54327"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54331"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54333"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54334"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54335"
                 }
             ]
         },
@@ -475,25 +391,19 @@
             "title": "Light",
             "subsections": [
                 {
-                    "is_page": false,
+                    "is_page": true,
                     "title": "No Title Found",
-                    "subsections": [
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54336"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54342"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54346"
-                        }
-                    ]
+                    "id": "m54336"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54342"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54346"
                 }
             ]
         },
@@ -502,30 +412,24 @@
             "title": "Mirrors and Lenses",
             "subsections": [
                 {
-                    "is_page": false,
+                    "is_page": true,
                     "title": "No Title Found",
-                    "subsections": [
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54366"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54357"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54365"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54361"
-                        }
-                    ]
+                    "id": "m54366"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54357"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54365"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54361"
                 }
             ]
         },
@@ -534,25 +438,19 @@
             "title": "Diffraction and Interference",
             "subsections": [
                 {
-                    "is_page": false,
+                    "is_page": true,
                     "title": "No Title Found",
-                    "subsections": [
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54376"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54369"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54371"
-                        }
-                    ]
+                    "id": "m54376"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54369"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54371"
                 }
             ]
         },
@@ -561,40 +459,34 @@
             "title": "Static Electricity",
             "subsections": [
                 {
-                    "is_page": false,
+                    "is_page": true,
                     "title": "No Title Found",
-                    "subsections": [
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54417"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54410"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54414"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54428"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54426"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m63179"
-                        }
-                    ]
+                    "id": "m54417"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54410"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54414"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54428"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54426"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m63179"
                 }
             ]
         },
@@ -603,35 +495,29 @@
             "title": "Electrical Circuits",
             "subsections": [
                 {
-                    "is_page": false,
+                    "is_page": true,
                     "title": "No Title Found",
-                    "subsections": [
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54450"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54437"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54435"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54442"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54446"
-                        }
-                    ]
+                    "id": "m54450"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54437"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54435"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54442"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54446"
                 }
             ]
         },
@@ -640,30 +526,24 @@
             "title": "Magnetism",
             "subsections": [
                 {
-                    "is_page": false,
+                    "is_page": true,
                     "title": "No Title Found",
-                    "subsections": [
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54460"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54465"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54467"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54456"
-                        }
-                    ]
+                    "id": "m54460"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54465"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54467"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54456"
                 }
             ]
         },
@@ -672,30 +552,24 @@
             "title": "The Quantum Nature of Light",
             "subsections": [
                 {
-                    "is_page": false,
+                    "is_page": true,
                     "title": "No Title Found",
-                    "subsections": [
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54562"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54566"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54559"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54552"
-                        }
-                    ]
+                    "id": "m54562"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54566"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54559"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54552"
                 }
             ]
         },
@@ -704,40 +578,34 @@
             "title": "The Atom",
             "subsections": [
                 {
-                    "is_page": false,
+                    "is_page": true,
                     "title": "No Title Found",
-                    "subsections": [
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54583"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54582"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54580"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m63183"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54574"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54578"
-                        }
-                    ]
+                    "id": "m54583"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54582"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54580"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m63183"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54574"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54578"
                 }
             ]
         },
@@ -746,30 +614,24 @@
             "title": "Particle Physics",
             "subsections": [
                 {
-                    "is_page": false,
+                    "is_page": true,
                     "title": "No Title Found",
-                    "subsections": [
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54584"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54593"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54595"
-                        },
-                        {
-                            "is_page": true,
-                            "title": "No Title Found",
-                            "id": "m54588"
-                        }
-                    ]
+                    "id": "m54584"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54593"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54595"
+                },
+                {
+                    "is_page": true,
+                    "title": "No Title Found",
+                    "id": "m54588"
                 }
             ]
         },

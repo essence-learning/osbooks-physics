@@ -118,15 +118,16 @@ def process_toc(xml_file, module_table):
         else:
             parsed_collection = {'is_page': False, 'title': 'No Title Found', 'subsections': []}
 
-            for element in node:
-                if element.tag == 'title':
-                    parsed_collection['title'] = element.text
-                else:
-                    parsed_collection['subsections'].append(parse_collection(element))
+            title_node = node.find('title')
+            if title_node is not None:
+                parsed_collection['title'] = title_node.text
+
+            for element in node.find('content'):
+                parsed_collection['subsections'].append(parse_collection(element))
 
         return parsed_collection
 
-    parsed_data = parse_collection(root.find('content'))
+    parsed_data = parse_collection(root)
 
     # I don't know why pyright is bugging out over this line but it works fine
     parsed_data['title'] = root.find('metadata').find('title').text
@@ -162,7 +163,7 @@ if __name__ == '__main__':
         # Then, add to module table for later access to metadata
         module_table[module_obj.id] = module_obj
         print('=' * 20)
-        print(module_obj.content)
+        # print(module_obj.content)
 
     # Generate the TOC
     toc_data = process_toc(collection_file, module_table)
