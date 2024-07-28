@@ -144,7 +144,7 @@ if __name__ == '__main__':
 
     # Parse the modules
     # modules = [m for m in (cwd / 'modules').iterdir() if m.is_dir()]
-    modules = [cwd / 'modules/m54082']
+    modules = [cwd / 'modules/m54082', cwd / 'modules/m54081']
     for module in modules:
         print(f'Processing {module.name}')
         module_tree = ET.parse(module / 'index.cnxml')
@@ -166,4 +166,6 @@ if __name__ == '__main__':
 
     # Generate the TOC
     toc_data = process_toc(collection_file, module_table)
-    print(json.dumps(toc_data, indent=2))
+
+    with open(Path(cwd / 'toc.json'), 'w') as f:
+        json.dump(toc_data, f, indent=4)
