@@ -1,350 +1,181 @@
-## Vector Addition and Subtraction: Analytical Methods
+# Vector Addition and Subtraction: Analytical Methods
+> 
 > ## Section Learning Objectives
 > By the end of this section, you will be able to  do the following:
 > 
 > * Define components of vectors
 > * Describe the analytical method of vector addition and subtraction
 > * Use the analytical method of vector addition and subtraction to solve problems
-> 
-> 
-### Section Key Terms
 
-<table>  <tr>    <td>analytical method</td>    <td>component (of a two-dimensional vector)</td>  </tr></table>
+## Section Key Terms
+<table><tr><td>analytical method</td>
+            <td>component (of a two-dimensional vector)</td></tr></table>
+## Components of Vectors
+For the  of vector addition and subtraction, we use some simple geometry and trigonometry, instead of using a ruler and protractor as we did for graphical methods. However, the graphical method will still come in handy to visualize the problem by drawing vectors using the head-to-tail method. The analytical method is more accurate than the graphical method, which is limited by the precision of the drawing. For a refresher on the definitions of the sine, cosine, and tangent of an angle, see [Figure 1](#Figure_05_02_trig).
+
+![A right triangle is shown. The hypotenuse is labeled h, the vertical leg is labeled Y, and the horizontal leg is labeled X. The right angle is labeled with the angle symbol. The following formulas appear next to the triangle: sine angle equals y over h, cosine angle equals x over h, and tangent angle equals y over x.__ALT__Figure_05_02_trig](__MEDIA_URL__CNX_HSPhysics_05_02_trig.jpg)
+***Figure 1** For a right triangle, the sine, cosine, and tangent of *θ* are defined in terms of the adjacent side, the opposite side, or the hypotenuse. In this figure, *x* is the adjacent side, *y* is the opposite side, and *h* is the hypotenuse.*
 
 
-### Components of Vectors
+Since, by definition,  , we can find the length *x* if we know *h* and    by using   . Similarly, we can find the length of *y* by using   . These trigonometric relationships are useful for adding vectors.
 
-For the **analytical method** of vector addition and subtraction, we use some simple geometry and trigonometry, instead of using a ruler and protractor as we did for graphical methods. However, the graphical method will still come in handy to visualize the problem by drawing vectors using the head-to-tail method. The analytical method is more accurate than the graphical method, which is limited by the precision of the drawing. For a refresher on the definitions of the sine, cosine, and tangent of an angle, see [Figure 05 02 trig](Figure_05_02_trig).
+When a vector acts in more than one dimension, it is useful to break it down into its x and y components. For a two-dimensional vector, a  is a piece of a vector that points in either the x- or y-direction. Every 2-d vector can be expressed as a sum of its x and y components.
 
-![Temp alt text](__MEDIA_URL__CNX_HSPhysics_05_02_trig.jpg)<p>For a right triangle, the sine, cosine, and tangent of </p>
-Since, by definition,  <math><mrow><mtext>cos</mtext><mi>θ</mi><mo>=</mo><mi>x</mi><mo>/</mo><mi>h</mi></mrow></math>, we can find the length , we can find the length *x* if we know *h* and  <math><mrow><mi>θ</mi></mrow></math>  by using    by using  <math><mrow><mi>x</mi><mo>=</mo><mi>h</mi><mtext>cos</mtext><mi>θ</mi></mrow></math> . Similarly, we can find the length of  . Similarly, we can find the length of *y* by using  <math><mrow><mi>y</mi><mo>=</mo><mi>h</mi><mtext>sin</mtext><mi>θ</mi></mrow></math> . These trigonometric relationships are useful for adding vectors. . These trigonometric relationships are useful for adding vectors.
+For example, given a vector like  in [Figure 2](#Figure_05_02_right), we may want to find what two perpendicular vectors,  and , add to produce it. In this example,  and  form a right triangle, meaning that the angle between them is 90 degrees. This is a common situation in physics and happens to be the least complicated situation trigonometrically.
 
-When a vector acts in more than one dimension, it is useful to break it down into its x and y components. For a two-dimensional vector, a **component** is a piece of a vector that points in either the x- or y-direction. Every 2-d vector can be expressed as a sum of its x and y components.
+![Vectors A, Ax, and Ay are shown. The vector A, with its tail at the origin of an x, y-coordinate system, is shown together with its x- and y-components, Ax and Ay. These vectors form a right triangle. The formula Ax plus Ay equals A is shown above the vectors.__ALT__Figure_05_02_right](__MEDIA_URL__CNX_HSPhysics_05_02_right.jpg)
+***Figure 2** The vector , with its tail at the origin of an *x*- *y*-coordinate system, is shown together with its *x*- and *y*-components,  and  These vectors form a right triangle.*
 
-For example, given a vector like <math>      <mrow>        <mstyle mathvariant="bold" mathsize="normal"><mi>A</mi></mstyle>      </mrow>    </math> in  in [Figure 05 02 right](Figure_05_02_right), we may want to find what two perpendicular vectors, <math>      <mrow>        <msub>          <mstyle mathvariant="bold" mathsize="normal"><mi>A</mi></mstyle>          <mi>x</mi>        </msub>      </mrow>    </math> and  and <math>      <mrow>        <msub>          <mstyle mathvariant="bold" mathsize="normal"><mi>A</mi></mstyle>          <mi>y</mi>        </msub>      </mrow>    </math>, add to produce it. In this example, , add to produce it. In this example, <math>      <mrow>        <msub>          <mstyle mathvariant="bold" mathsize="normal"><mi>A</mi></mstyle>          <mi>x</mi>        </msub>      </mrow>    </math> and  and <math>      <mrow>        <msub>          <mstyle mathvariant="bold" mathsize="normal"><mi>A</mi></mstyle>          <mi>y</mi>        </msub>      </mrow>    </math> form a right triangle, meaning that the angle between them is 90 degrees. This is a common situation in physics and happens to be the least complicated situation trigonometrically. form a right triangle, meaning that the angle between them is 90 degrees. This is a common situation in physics and happens to be the least complicated situation trigonometrically.
+and  are defined to be the components of  along the *x*- and *y*-axes. The three vectors, , , and , form a right triangle.
 
-![Temp alt text](__MEDIA_URL__CNX_HSPhysics_05_02_right.jpg)<p>The vector </p>
-<math>      <mrow>        <msub>          <mstyle mathvariant="bold" mathsize="normal"><mi>A</mi></mstyle>          <mi>x</mi>        </msub>      </mrow>    </math> and  and <math>      <mrow>        <msub>          <mstyle mathvariant="bold" mathsize="normal"><mi>A</mi></mstyle>          <mi>y</mi>        </msub>      </mrow>    </math> are defined to be the components of  are defined to be the components of <math>      <mrow>        <mstyle mathvariant="bold" mathsize="normal"><mi>A</mi></mstyle>      </mrow>    </math> along the  along the *x*- and *y*-axes. The three vectors, <math>      <mrow>        <mstyle mathvariant="bold" mathsize="normal"><mi>A</mi></mstyle>      </mrow>    </math>, , <math>      <mrow>        <msub>          <mstyle mathvariant="bold" mathsize="normal"><mi>A</mi></mstyle>          <mi>x</mi>        </msub>      </mrow>    </math>, and , and <math>      <mrow>        <msub>          <mstyle mathvariant="bold" mathsize="normal"><mi>A</mi></mstyle>          <mi>y</mi>        </msub>      </mrow>    </math>, form a right triangle., form a right triangle.
 
-<equation id="fs-id1167066836799" class="unnumbered"><label />       <math>        <mrow>          <msub>            <mstyle mathvariant="bold" mathsize="normal"><mi>A</mi></mstyle>            <mstyle mathvariant="bold" mathsize="normal"><mi>x</mi></mstyle>          </msub>          <mo> </mo><mo>+</mo><mo> </mo><msub>            <mstyle mathvariant="bold" mathsize="normal"><mi>A</mi></mstyle>            <mstyle mathvariant="bold" mathsize="normal"><mi>y</mi></mstyle>          </msub>          <mo> </mo><mo>=</mo><mo> </mo><mstyle mathvariant="bold" mathsize="normal"><mi>A</mi></mstyle>        </mrow>      </math>    </equation>
-If the vector <math>      <mrow>        <mstyle mathvariant="bold" mathsize="normal"><mi>A</mi></mstyle>      </mrow>    </math> is known, then its magnitude  is known, then its magnitude <math>      <mrow>        <mi>A</mi>      </mrow>    </math> (its length) and its angle  (its length) and its angle <math>      <mrow>        <mi>θ</mi>      </mrow>    </math> (its direction) are known. To find  (its direction) are known. To find <math>      <mrow>        <msub>          <mi>A</mi>          <mi>x</mi>        </msub>      </mrow>    </math> and  and <math>      <mrow>        <msub>          <mi>A</mi>          <mi>y</mi>        </msub>      </mrow>    </math>, its , its *x*- and *y*-components, we use the following relationships for a right triangle:
+If the vector  is known, then its magnitude  (its length) and its angle  (its direction) are known. To find  and , its *x*- and *y*-components, we use the following relationships for a right triangle:
 
-<equation id="fs-id1167066825236" class="unnumbered"><label />       <math>        <mrow>          <msub>            <mi>A</mi>            <mi>x</mi>          </msub>          <mo>=</mo><mi>A</mi><mtext>cos</mtext><mi>θ</mi>        </mrow>      </math>    </equation>
+
 and
 
-<equation id="fs-id1167066958563" class="unnumbered"><label />       <math>        <mrow>          <msub>            <mi>A</mi>            <mi>y</mi>          </msub>          <mo>=</mo><mi>A</mi><mtext>sin</mtext><mi>θ,</mi>        </mrow>      </math>    </equation>
-where <math>        <mrow>          <msub>            <mi>A</mi>            <mi>x</mi>          </msub>        </mrow>      </math> is the magnitude of  is the magnitude of *A* in the *x*-direction, <math>        <mrow>          <msub>            <mi>A</mi>            <mi>y</mi>          </msub>        </mrow>      </math> is the magnitude of  is the magnitude of *A* in the *y*-direction, and <math>        <mrow>          <mi>θ</mi>        </mrow>      </math> is the angle of the resultant with respect to the  is the angle of the resultant with respect to the *x*-axis, as shown in [Figure 05 02 angle](Figure_05_02_angle).
 
-![Temp alt text](__MEDIA_URL__CNX_HSPhysics_05_02_angle.jpg)<p>The magnitudes of the vector components </p>
-Suppose, for example, that <math>      <mrow>        <mstyle mathvariant="bold" mathsize="normal"><mi>A</mi></mstyle>      </mrow>    </math> is the vector representing the total displacement of the person walking in a city, as illustrated in  is the vector representing the total displacement of the person walking in a city, as illustrated in [Figure 05 02 blocks](Figure_05_02_blocks).
+where  is the magnitude of **A** in the *x*-direction,  is the magnitude of **A** in the *y*-direction, and  is the angle of the resultant with respect to the *x*-axis, as shown in [Figure 3](#Figure_05_02_angle).
 
-![Temp alt text](__MEDIA_URL__CNX_HSPhysics_05_02_blocks.jpg)<p>We can use the relationships  </p>
-Then A = 10.3 blocks and  <math>      <mrow>        <mi>θ</mi><mo>=</mo><msup>          <mrow>            <mn>29.1</mn>          </mrow>          <mo>∘</mo>        </msup>      </mrow>    </math>, so that , so that
+![Vectors A x and A y form the legs of a right triangle and vector A forms the hypotenuse. Vector Ax is along an x-axis and vector Y is vertical and dashed. A x equals A times cosine angle. A y equals A times sine angle. A x plus A y equals A.__ALT__Figure_05_02_angle](__MEDIA_URL__CNX_HSPhysics_05_02_angle.jpg)
+***Figure 3** The magnitudes of the vector components  and  can be related to the resultant vector  and the angle  with trigonometric identities. Here we see that  and*
 
-<equation id="fs-id1164565321281"> <math>      <mrow>        <mtable>          <mtr rowalign="center">            <mtd rowalign="center" columnalign="right">              <mrow>                <msub>                  <mi>A</mi>                  <mi>x</mi>                </msub>              </mrow>            </mtd>            <mtd rowalign="center">              <mo>=</mo>            </mtd>            <mtd rowalign="center" columnalign="left">              <mrow>                <mi>A</mi><mtext>cos</mtext><mi>θ</mi>              </mrow>            </mtd>          </mtr>          <mtr rowalign="center">            <mtd rowalign="center" />            <mtd rowalign="center">              <mo>=</mo>            </mtd>            <mtd rowalign="center" columnalign="left">              <mrow>                <mo stretchy="false">(</mo><mn>10.3</mn><mspace width="0.3em" /><mtext> blocks)(cos29</mtext><msup>                  <mrow>                    <mtext>.1</mtext>                  </mrow>                  <mo>∘</mo>                </msup>                <mo stretchy="false">)</mo>              </mrow>            </mtd>          </mtr>          <mtr rowalign="center">            <mtd rowalign="center" />            <mtd rowalign="center">              <mo>=</mo>            </mtd>            <mtd rowalign="center" columnalign="left">              <mrow>                <mo stretchy="false">(</mo><mn>10.3</mn><mspace width="0.3em" /><mtext> blocks)(0</mtext><mtext>.874)</mtext>              </mrow>            </mtd>          </mtr>          <mtr rowalign="center">            <mtd rowalign="center" />            <mtd rowalign="center">              <mo>=</mo>            </mtd>            <mtd rowalign="center" columnalign="left">              <mrow>                <mtext>9</mtext><mtext>.0 blocks.</mtext>              </mrow>            </mtd>          </mtr>        </mtable>      </mrow>    </math></equation>    
+
+Suppose, for example, that  is the vector representing the total displacement of the person walking in a city, as illustrated in [Figure 4](#Figure_05_02_blocks).
+
+![A map is shown over top x and y-axes. The origin is labeled Starting Point. The x-axis represents east and has a scale from zero to nine in increments of one. The y-axis represents north and has a scale from zero to five in increments of one. Lines show that a person walks nine blocks east and five blocks north. A displacement vector is plotted from the origin to the destination of nine, five on the axes. The following label is next to the y-axis: A y equals A times sine angle, equals ten point three blocks times sine twenty-nine point one, equals five blocks north. The following label is next to the x-axis: A x equals A cosine angle, equals ten point three blocks times sine twenty-nine point one, equals nine blocks east.__ALT__Figure_05_02_blocks](__MEDIA_URL__CNX_HSPhysics_05_02_blocks.jpg)
+***Figure 4** We can use the relationships    and    to determine the magnitude of the horizontal and vertical component vectors in this example.*
+
+Then A = 10.3 blocks and  , so that
+
+
 This magnitude indicates that the walker has traveled 9 blocks to the east—in other words, a 9-block eastward displacement. Similarly,
 
-<equation id="fs-id1164567885421">       <math>        <mrow>          <mtable>            <mtr rowalign="center">              <mtd rowalign="center" columnalign="right">                <mrow>                  <msub>                    <mi>A</mi>                    <mi>y</mi>                  </msub>                </mrow>              </mtd>              <mtd rowalign="center">                <mo>=</mo>              </mtd>              <mtd rowalign="center" columnalign="left">                <mrow>                  <mi>A</mi><mtext>sin</mtext><mi>θ</mi>                </mrow>              </mtd>            </mtr>            <mtr rowalign="center">              <mtd rowalign="center" />              <mtd rowalign="center">                <mo>=</mo>              </mtd>              <mtd rowalign="center" columnalign="left">                <mrow>                  <mo stretchy="false">(</mo><mn>10.3</mn><mspace width="0.3em" /><mtext> blocks)(sin29</mtext><msup>                    <mrow>                      <mtext>.1</mtext>                    </mrow>                    <mo>∘</mo>                  </msup>                  <mo stretchy="false">)</mo>                </mrow>              </mtd>            </mtr>            <mtr rowalign="center">              <mtd rowalign="center" />              <mtd rowalign="center">                <mo>=</mo>              </mtd>              <mtd rowalign="center" columnalign="left">                <mrow>                  <mo stretchy="false">(</mo><mn>10.3</mn><mspace width="0.3em" /><mtext> blocks)(0</mtext><mtext>.846)</mtext>                </mrow>              </mtd>            </mtr>            <mtr rowalign="center">              <mtd rowalign="center" />              <mtd rowalign="center">                <mo>=</mo>              </mtd>              <mtd rowalign="center" columnalign="left">                <mrow>                  <mtext>5</mtext><mtext>.0 blocks,</mtext>                </mrow>              </mtd>            </mtr>          </mtable>        </mrow>      </math></equation>    
+
 indicating that the walker has traveled 5 blocks to the north—a 5-block northward displacement.
 
+## Analytical Method of Vector Addition and Subtraction
+Calculating a resultant vector (or vector addition) is the reverse of breaking the resultant down into its components. If the perpendicular components    and    of a vector    are known, then we can find    analytically. How do we do this? Since, by definition,
 
 
-### Analytical Method of Vector Addition and Subtraction
+we solve for    to find the direction of the resultant.
 
-Calculating a resultant vector (or vector addition) is the reverse of breaking the resultant down into its components. If the perpendicular components  <math>        <mrow>          <msub>            <mstyle mathvariant="bold" mathsize="normal"><mi>A</mi></mstyle>            <mi>x</mi>          </msub>        </mrow>      </math>  and    and  <math>        <mrow>          <msub>            <mstyle mathvariant="bold" mathsize="normal"><mi>A</mi></mstyle>            <mi>y</mi>          </msub>        </mrow>      </math>  of a vector    of a vector  <math>        <mrow>          <mstyle mathvariant="bold" mathsize="normal"><mi>A</mi></mstyle>        </mrow>      </math>  are known, then we can find    are known, then we can find  <math>        <mrow>          <mstyle mathvariant="bold" mathsize="normal"><mi>A</mi></mstyle>        </mrow>      </math>  analytically. How do we do this? Since, by definition,   analytically. How do we do this? Since, by definition,
 
-<equation id="fs-id1167066876431" class="unnumbered"><label />      <math>       <mrow>         <mtext>tan</mtext><mi>θ</mi><mo>=</mo><mi>y</mi><mo>/</mo><mi>x</mi><mtext> (or in this case tan</mtext><mi>θ</mi><mo>=</mo><msub>           <mi>A</mi>           <mi>y</mi>         </msub>         <mo>/</mo><msub>           <mi>A</mi>           <mi>x</mi>         </msub>         <mtext>),</mtext>       </mrow>     </math>   </equation>
-we solve for  <math>        <mrow><mi>θ</mi></mrow>      </math>  to find the direction of the resultant.  to find the direction of the resultant.
-
-<equation id="fs-id1167066965880" class="unnumbered">        <label />         <math>          <mrow>            <mi>θ</mi><mo>=</mo><msup>              <mrow>                <mi>tan</mi>              </mrow>              <mrow>                <mo>−</mo><mn>1</mn>              </mrow>            </msup>            <mo stretchy="false">(</mo><msub>              <mi>A</mi>              <mi>y</mi>            </msub>            <mo>/</mo><msub>              <mi>A</mi>              <mi>x</mi>            </msub>            <mo stretchy="false">)</mo>          </mrow>        </math>      </equation>  
-Note that <math><msup>        <mrow>          <mtext>tan</mtext>        </mrow>        <mrow>          <mo>−</mo><mn>1</mn>        </mrow>      </msup><mo stretchy="false">(</mo><mi>θ</mi><mo stretchy="false">)</mo></math> gives an angle in the first quadrant if        gives an angle in the first quadrant if 
-      <math><mrow>        <msub><mi>A</mi><mi>y</mi></msub><mo>/</mo><msub><mi>A</mi><mi>x</mi></msub><mspace width="0.2em" /><mo>&gt;</mo><mspace width="0.2em" /><mn>0</mn>      </mrow></math> and in the fourth quadrant if        and in the fourth quadrant if 
-      <math><mrow>        <msub><mi>A</mi><mi>y</mi></msub><mo>/</mo><msub><mi>A</mi><mi>x</mi></msub><mspace width="0.2em" /><mo>&lt;</mo><mspace width="0.2em" /><mn>0</mn>      </mrow></math>. If, in fact, both . If, in fact, both <math><msub><mi>A</mi><mi>x</mi></msub></math> and  and <math><msub><mi>A</mi><mi>y</mi></msub></math> are negative, or if  are negative, or if <math><msub><mi>A</mi><mi>x</mi></msub></math> is negative and  is negative and <math><msub><mi>A</mi><mi>y</mi></msub></math> positive, then  positive, then <math><mi>θ</mi></math>, measured from the positive , measured from the positive <math><mi>x</mi></math> direction, is        direction, is 
-      <math><mrow><msup><mrow>        <mtext>tan</mtext></mrow>      <mrow>        <mo>–</mo><mn>1</mn></mrow></msup>     <mo stretchy="false">(</mo><mi>θ</mi><mo stretchy="false">)</mo><mo>+</mo><mn>180</mn><mtext>°</mtext>    </mrow>      </math>..
+Note that  gives an angle in the first quadrant if 
+       and in the fourth quadrant if 
+      . If, in fact, both  and  are negative, or if  is negative and  positive, then , measured from the positive  direction, is 
+      .
 
 Since this is a right triangle, the Pythagorean theorem (x<sup>2</sup> + y<sup>2</sup> = h<sup>2</sup>) for finding the hypotenuse applies. In this case, it becomes
 
-<equation id="fs-id1167066880042" class="unnumbered"><label /> <math>        <mrow>          <msup>            <mi>A</mi>            <mn>2</mn>          </msup>          <mo>=</mo><msubsup>            <mi>A</mi>            <mi>x</mi>            <mn>2</mn>          </msubsup>          <mo>+</mo><msubsup>            <mi>A</mi>            <mi>y</mi>            <mn>2</mn>          </msubsup>          <mtext>.</mtext>        </mrow>      </math> </equation>
+
 Solving for A gives
 
-<equation id="fs-id1167066965864" class="unnumbered"><label />         <math>          <mrow>            <mi>A</mi><mo>=</mo><msqrt>              <mrow>                <msub>                  <mi>A</mi>                  <mi>x</mi>                </msub>                <msup>                  <mrow />                  <mn>2</mn>                </msup>                <mo>+</mo><msub>                  <mi>A</mi>                  <mi>y</mi>                </msub>                <msup>                  <mrow />                  <mn>2</mn>                </msup>              </mrow>            </msqrt>            <mtext>.</mtext>          </mrow>        </math>      </equation>
-In summary, to find the magnitude  <math>        <mrow>          <mi>A</mi>        </mrow>      </math>  and direction    and direction  <math>        <mrow>          <mi>θ</mi>        </mrow>      </math>  of a vector from its perpendicular components    of a vector from its perpendicular components  <math>        <mrow>          <msub>            <mstyle mathvariant="bold" mathsize="normal"><mi>A</mi></mstyle>            <mi>x</mi>          </msub>        </mrow>      </math>  and    and  <math>        <mrow>          <msub>            <mstyle mathvariant="bold" mathsize="normal"><mi>A</mi></mstyle>            <mi>y</mi>          </msub>        </mrow>      </math>, as illustrated in , as illustrated in [Figure 05 02 diagonal](Figure_05_02_diagonal), we use the following relationships:
 
-<equation id="fs-id1167066878022" class="unnumbered">        <label />         <math>          <mrow>            <mtable>              <mtr rowalign="center">                <mtd rowalign="center" columnalign="right">                  <mi>A</mi>                </mtd>                <mtd rowalign="center">                  <mo>=</mo>                </mtd>                <mtd rowalign="center" columnalign="left">                  <mrow>                    <msqrt>                      <mrow>                        <msub>                          <mi>A</mi>                          <mi>x</mi>                        </msub>                        <msup>                          <mrow />                          <mn>2</mn>                        </msup>                        <mo>+</mo><msub>                          <mi>A</mi>                          <mi>y</mi>                        </msub>                        <msup>                          <mrow />                          <mn>2</mn>                        </msup>                      </mrow>                    </msqrt>                  </mrow>                </mtd>              </mtr>              <mtr rowalign="center">                <mtd rowalign="center" />                <mtd rowalign="center" />                <mtd rowalign="center" columnalign="left">                  <mrow>                    <mi>θ</mi><mo>=</mo><msup>                      <mrow>                        <mi>tan</mi>                      </mrow>                      <mrow>                        <mo>−</mo><mn>1</mn>                      </mrow>                    </msup>                    <mo stretchy="false">(</mo><msub>                      <mi>A</mi>                      <mi>y</mi>                    </msub>                    <mo>/</mo><msub>                      <mi>A</mi>                      <mi>x</mi>                    </msub>                    <mo stretchy="false">)</mo>                  </mrow>                </mtd>              </mtr>            </mtable>          </mrow>        </math>      </equation>      
-![Temp alt text](__MEDIA_URL__CNX_HSPhysics_05_02_diagonal.jpg)<p>The magnitude and direction of the resultant vector </p>
-Sometimes, the vectors added are not perfectly perpendicular to one another. An example of this is the case below, where the vectors  <math>        <mrow>          <mstyle mathvariant="bold" mathsize="normal"><mi>A</mi></mstyle>        </mrow>      </math>  and    and  <math>        <mrow>          <mstyle mathvariant="bold" mathsize="normal"><mi>B</mi></mstyle>        </mrow>      </math>  are added to produce the resultant    are added to produce the resultant  <math>        <mrow>          <mstyle mathvariant="bold" mathsize="normal"><mi>R</mi></mstyle><mtext>,</mtext>        </mrow>      </math>  as illustrated in   as illustrated in [Figure 05 02 direction](Figure_05_02_direction).
-
-![Temp alt text](__MEDIA_URL__CNX_HSPhysics_05_02_direction.jpg)<p>Vectors </p>
-If <math>        <mrow>          <mstyle mathvariant="bold" mathsize="normal"><mi>A</mi></mstyle>        </mrow>      </math> and  and <math>        <mrow>          <mstyle mathvariant="bold" mathsize="normal"><mi>B</mi></mstyle>        </mrow>      </math> represent two legs of a walk (two displacements), then  represent two legs of a walk (two displacements), then <math>        <mrow>          <mstyle mathvariant="bold" mathsize="normal"><mi>R</mi></mstyle>        </mrow>      </math> is the total displacement. The person taking the walk ends up at the tip of  is the total displacement. The person taking the walk ends up at the tip of <math>        <mrow>          <mstyle mathvariant="bold" mathsize="normal"><mi>R</mi></mstyle>        </mrow>      </math> . There are many ways to arrive at the same point. The person could have walked straight ahead first in the  . There are many ways to arrive at the same point. The person could have walked straight ahead first in the *x*-direction and then in the *y*-direction. Those paths are the *x*- and *y*-components of the resultant, <math>        <mrow>          <msub>            <mstyle mathvariant="bold" mathsize="normal"><mi>R</mi></mstyle>            <mi>x</mi>          </msub>        </mrow>      </math> and  and <math>        <mrow>          <msub>            <mstyle mathvariant="bold" mathsize="normal"><mi>R</mi></mstyle>            <mi>y</mi>          </msub>          <mo>.</mo>        </mrow>      </math> If we know  If we know <math>        <mrow>          <msub>            <mstyle mathvariant="bold" mathsize="normal"><mi>R</mi></mstyle>            <mi>x</mi>          </msub>        </mrow>      </math> and  and <math>        <mrow>          <msub>            <mstyle mathvariant="bold" mathsize="normal"><mi>R</mi></mstyle>            <mi>y</mi>          </msub>        </mrow>      </math>, we can find , we can find <math>        <mrow>          <mi>R</mi>        </mrow>      </math> and  and <math>        <mrow>          <mi>θ</mi>        </mrow>      </math> using the equations  using the equations <math>        <mrow>          <mi>R</mi><mo>=</mo><msqrt>            <mrow>              <msub>                <mi>R</mi>                <mtext>x</mtext>              </msub>              <msup>                <mrow />                <mn>2</mn>              </msup>              <mo>+</mo><msub>                <mi>R</mi>                <mtext>y</mtext>              </msub>              <msup>                <mrow />                <mn>2</mn>              </msup>            </mrow>          </msqrt>        </mrow>      </math> and  and <math>        <mrow>          <mi>θ</mi><mo>=</mo><mi>t</mi><mi>a</mi><msup>            <mi>n</mi>            <mrow>              <mo>–</mo><mn>1</mn>            </mrow>          </msup>          <mo stretchy="false">(</mo><msub>            <mi>R</mi>            <mi>y</mi>          </msub>          <mo>/</mo><msub>            <mi>R</mi>            <mi>x</mi>          </msub>          <mo stretchy="false">)</mo>        </mrow>      </math> .  .
-
-1. Draw in the *x* and *y* components of each vector (including the resultant) with a dashed line. Use the equations <math>          <mrow>            <msub>              <mi>A</mi>              <mi>x</mi>            </msub>            <mo>=</mo><mi>A</mi><mtext>cos</mtext><mi>θ</mi>          </mrow>        </math> and  and <math>          <mrow>            <msub>              <mi>A</mi>              <mi>y</mi>            </msub>            <mo>=</mo><mi>A</mi><mtext>sin</mtext><mi>θ</mi>          </mrow>        </math> to find the components. In  to find the components. In [Figure 05 02 dotted](Figure_05_02_dotted), these components are <math>          <mrow>            <msub>              <mi>A</mi>              <mi>x</mi>            </msub>          </mrow>        </math>, , <math>          <mrow>            <msub>              <mi>A</mi>              <mi>y</mi>            </msub>          </mrow>        </math>, , <math>          <mrow>            <msub>              <mi>B</mi>              <mi>x</mi>            </msub>          </mrow>        </math>, and , and <math>          <mrow>            <msub>              <mi>B</mi>              <mi>y</mi>            </msub>            <mo>.</mo>          </mrow>        </math> Vector  Vector <math>          <mrow>            <mstyle mathvariant="bold" mathsize="normal"><mi>A</mi></mstyle>          </mrow>        </math> makes an angle of  makes an angle of <math>          <mrow>            <msub>              <mi>θ</mi>              <mi>A</mi>            </msub>          </mrow>        </math> with the  with the *x*-axis, and vector <math>          <mrow>            <mstyle mathvariant="bold" mathsize="normal"><mi>B</mi></mstyle>          </mrow>        </math> makes and angle of  makes and angle of <math>          <mrow>            <msub>              <mi>θ</mi>              <mi>B</mi>            </msub>          </mrow>        </math> with its own  with its own *x*-axis (which is slightly above the *x*-axis used by vector *A*).
-          ![Temp alt text](__MEDIA_URL__CNX_HSPhysics_05_02_dotted.jpg)<p>To add vectors </p>
-2. Find the *x* component of the resultant by adding the *x* component of the vectors
-          <equation id="fs-id1167066956478" class="unnumbered"><label />             <math>              <mrow>                <msub>                  <mi>R</mi>                  <mi>x</mi>                </msub>                <mo>=</mo><msub>                  <mi>A</mi>                  <mi>x</mi>                </msub>                <mo>+</mo><msub>                  <mi>B</mi>                  <mi>x</mi>                </msub>              </mrow>            </math>          </equation>
-and find the *y* component of the resultant (as illustrated in [Figure 05 02 R](Figure_05_02_R)) by adding the *y* component of the vectors.
+In summary, to find the magnitude    and direction    of a vector from its perpendicular components    and  , as illustrated in [Figure 5](#Figure_05_02_diagonal), we use the following relationships:
 
 
-          <equation id="fs-id1167067105565" class="unnumbered"><label />             <math>              <mrow>                <msub>                  <mi>R</mi>                  <mi>y</mi>                </msub>                <mo>=</mo><msub>                  <mi>A</mi>                  <mi>y</mi>                </msub>                <mo>+</mo><msub>                  <mi>B</mi>                  <mi>y</mi>                </msub>                <mtext>.</mtext>              </mrow>            </math>          </equation>
-![Temp alt text](__MEDIA_URL__CNX_HSPhysics_05_02_R.jpg)<p>The vectors </p>
-
-          Now that we know the components of  <math>            <mrow>              <mstyle mathvariant="bold" mathsize="normal"><mi>R</mi></mstyle><mo>,</mo></mrow>          </math>  we can find its magnitude and direction.  we can find its magnitude and direction.
-3. To get the magnitude of the resultant R, use the Pythagorean theorem.
-          <equation id="fs-id1167066983774" class="unnumbered"><label /> <math>            <mrow>              <mi>R</mi><mo>=</mo><msqrt>                <mrow>                  <msubsup>                    <mi>R</mi>                    <mi>x</mi>                    <mn>2</mn>                  </msubsup>                  <mo>+</mo><msubsup>                    <mi>R</mi>                    <mi>y</mi>                    <mn>2</mn>                  </msubsup>                </mrow>              </msqrt>            </mrow>          </math>          </equation>
-4. To get the direction of the resultant
-          <equation id="fs-id1167067104117" class="unnumbered"><label />             <math>              <mrow>                <mi>θ</mi><mo>=</mo><msup>                  <mrow>                    <mi>tan</mi>                  </mrow>                  <mrow>                    <mo>−</mo><mn>1</mn>                  </mrow>                </msup>                <mo stretchy="false">(</mo><msub>                  <mi>R</mi>                  <mi>y</mi>                </msub>                <mo>/</mo><msub>                  <mi>R</mi>                  <mi>x</mi>                </msub>                <mo stretchy="false">)</mo><mtext>.</mtext>              </mrow>            </math>          </equation>
-
-## Classifying Vectors and Quantities Example
-This video contrasts and compares three vectors in terms of their magnitudes, positions, and directions.
+![Vectors Ax and Ay form the legs of a right triangle and vector A forms the hypotenuse. Vectors Ax and Ay are dashed. The formula angle equals inverse tangent times Ay over Ax is inside the triangle. Vector A is labeled A equals the square root of Ax squared plus Ay squared.__ALT__Figure_05_02_diagonal](__MEDIA_URL__CNX_HSPhysics_05_02_diagonal.jpg)
+***Figure 5** The magnitude and direction of the resultant vector  can be determined once the horizontal components  and  have been determined.*
 
 
-          [temporarily unnamed link]()
+Sometimes, the vectors added are not perfectly perpendicular to one another. An example of this is the case below, where the vectors    and    are added to produce the resultant    as illustrated in [Figure 6](#Figure_05_02_direction).
 
-In the video, the vectors were represented with an arrow above them rather than in bold. This is a common notation in math classes.
+![A compass is shown on the left. On the right, vectors A, B, and R form a triangle, with the vertex of AR at the origin of an x-y axis. The formula A plus B equals R is above the triangle.__ALT__Figure_05_02_direction](__MEDIA_URL__CNX_HSPhysics_05_02_direction.jpg)
+***Figure 6** Vectors  and  are two legs of a walk, and  is the resultant or total displacement. You can use analytical methods to determine the magnitude and direction of  .*
 
+If  and  represent two legs of a walk (two displacements), then  is the total displacement. The person taking the walk ends up at the tip of  . There are many ways to arrive at the same point. The person could have walked straight ahead first in the *x*-direction and then in the *y*-direction. Those paths are the *x*- and *y*-components of the resultant,  and  If we know  and , we can find  and  using the equations  and  .
 
+* Draw in the *x* and *y* components of each vector (including the resultant) with a dashed line. Use the equations  and  to find the components. In [Figure 7](#Figure_05_02_dotted), these components are , , , and  Vector  makes an angle of  with the *x*-axis, and vector  makes and angle of  with its own *x*-axis (which is slightly above the *x*-axis used by vector **A**).
+          ![A compass is shown on the left. On the right, vectors A, B, and R form a triangle, with the vertex of AR at the origin of an x-y axis. The formula A plus B equals R is above the triangle. Dashed lines indicate vertical and horizontal components of each vector. Labels indicate locations for angle A and angle B.__ALT__Figure_05_02_dotted](__MEDIA_URL__CNX_HSPhysics_05_02_dotted.jpg)
+***Figure 7** To add vectors  and  first determine the horizontal and vertical components of each vector. These are the dotted vectors      shown in the image.*
+* Find the *x* component of the resultant by adding the *x* component of the vectors
+          and find the *y* component of the resultant (as illustrated in [Figure 8](#Figure_05_02_R)) by adding the *y* component of the vectors.
 
-### Using the Analytical Method of Vector Addition and Subtraction to Solve Problems
+          ![A compass is shown on the left. On the right, vectors A, B, and R form a triangle, with the vertex of AR at the origin of an x-y axis. The formula A plus B equals R is above the triangle. Dashed lines indicate vertical and horizontal components of each vector. Labels indicate locations for angle A and angle B. The formula Rx equals Ax plus Bx is below the x-axis. The formula Ry equals Ay plus By is next to the y-axis.__ALT__Figure_05_02_R](__MEDIA_URL__CNX_HSPhysics_05_02_R.jpg)
+***Figure 8** The vectors  and  add to give the magnitude of the resultant vector in the horizontal direction,  Similarly, the vectors  and  add to give the magnitude of the resultant vector in the vertical direction,*
 
-[Figure 05 02 AB](Figure_05_02_AB) uses the analytical method to add vectors.
-
-## An Accelerating Subway Train
-Add the vector <math>          <mrow>            <mstyle mathvariant="bold" mathsize="normal"><mi>A</mi></mstyle>          </mrow>        </math> to the vector  to the vector <math>          <mrow>            <mstyle mathvariant="bold" mathsize="normal"><mi>B</mi></mstyle>          </mrow>        </math> shown in  shown in [Figure 05 02 AB](Figure_05_02_AB), using the steps above. The *x*-axis is along the east–west direction, and the *y*-axis is along the north–south directions. A person first walks <math>          <mrow>            <mtext>53</mtext><mtext>.0 m</mtext>          </mrow>        </math> in a direction  in a direction <math>          <mrow>            <mtext>20</mtext><mtext>.0°</mtext>          </mrow>        </math> north of east, represented by vector  north of east, represented by vector <math>          <mrow>            <mstyle mathvariant="bold" mathsize="normal"><mi>A</mi></mstyle><mo>.</mo>          </mrow>        </math> The person then walks  The person then walks <math>          <mrow>            <mtext>34</mtext><mtext>.0 m</mtext>          </mrow>        </math> in a direction  in a direction <math>          <mrow>            <mtext>63</mtext><mtext>.0</mtext><mo>°</mo>          </mrow>        </math> north of east, represented by vector  north of east, represented by vector <math>          <mrow>            <mstyle mathvariant="bold" mathsize="normal"><mi>B</mi></mstyle><mo>.</mo>          </mrow>        </math>
-
-![Temp alt text](__MEDIA_URL__CNX_HSPhysics_05_02_AB.jpg)<p>You can use analytical models to add vectors.</p>
-## Strategy
-The components of <math>            <mrow>              <mstyle mathvariant="bold" mathsize="normal"><mi>A</mi></mstyle>            </mrow>          </math> and  and <math>            <mrow>              <mstyle mathvariant="bold" mathsize="normal"><mi>B</mi></mstyle>            </mrow>          </math> along the  along the *x*- and *y*-axes represent walking due east and due north to get to the same ending point. We will solve for these components and then add them in the x-direction and y-direction to find the resultant.
-
-## Solution
-First, we find the components of <math>            <mrow>              <mstyle mathvariant="bold" mathsize="normal"><mi>A</mi></mstyle>            </mrow>          </math> and  and <math>            <mrow>              <mstyle mathvariant="bold" mathsize="normal"><mi>B</mi></mstyle>            </mrow>          </math> along the  along the *x*- and *y*-axes. From the problem, we know that <math>            <mrow>              <mi>A</mi><mo>=</mo><mn>53.0</mn><mspace width="0.3em" /><mtext> m,</mtext>            </mrow>          </math>  <math>            <mrow>              <msub>                <mi>θ</mi>                <mtext>A</mtext>              </msub>              <mo>=</mo><msup>                <mrow>                  <mn>20.0</mn>                </mrow>                <mo>∘,</mo>              </msup>            </mrow>          </math>  <math>            <mrow>              <mi>B</mi>            </mrow>          </math> =  = <math>            <mrow>              <mtext>34</mtext><mtext>.0 m</mtext>            </mrow>          </math>, and , and <math>            <mrow>              <msub>                <mi>θ</mi>                <mtext>B</mtext>              </msub>              <mo>=</mo><msup>                <mrow>                  <mn>63.0</mn>                </mrow>                <mo>∘</mo>              </msup>            </mrow>          </math> . We find the  . We find the *x*-components by using <math>            <mrow>              <msub>                <mi>A</mi>                <mi>x</mi>              </msub>              <mo>=</mo><mi>A</mi><mi>cos</mi><mi>θ</mi>            </mrow>          </math>, which gives, which gives
-
-<equation id="fs-id1167067105642" class="unnumbered"><label />       <math>        <mrow>          <mtable>            <mtr rowalign="center">              <mtd rowalign="center" columnalign="right">                <mrow>                  <msub>                    <mi>A</mi>                    <mi>x</mi>                  </msub>                </mrow>              </mtd>              <mtd rowalign="center">                <mo>=</mo>              </mtd>              <mtd rowalign="center" columnalign="left">                <mrow>                  <mi>A</mi><mi>cos</mi><msub>                    <mi>θ</mi>                    <mi>A</mi>                  </msub>                  <mo>=</mo><mo stretchy="false">(</mo><mn>53.0</mn><mspace width="0.3em" /><mtext> m</mtext><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>cos</mi><msup>                    <mrow>                      <mn>20.0</mn>                    </mrow>                    <mo>∘</mo>                  </msup>                  <mo stretchy="false">)</mo>                </mrow>              </mtd>            </mtr>            <mtr rowalign="center">              <mtd rowalign="center" />              <mtd rowalign="center">                <mo>=</mo>              </mtd>              <mtd rowalign="center" columnalign="left">                <mrow>                  <mo stretchy="false">(</mo><mn>53.0</mn><mspace width="0.3em" /><mtext> m</mtext><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>0.940</mn><mo stretchy="false">)</mo><mo>=</mo><mn>49.8</mn><mspace width="0.3em" /><mtext> m</mtext>                </mrow>              </mtd>            </mtr>          </mtable>        </mrow>      </math>    </equation>
-and
-
-<equation id="fs-id1167067024537" class="unnumbered">      <label />       <math>        <mrow>          <mtable>            <mtr rowalign="center">              <mtd rowalign="center" columnalign="right">                <mrow>                  <msub>                    <mi>B</mi>                    <mi>x</mi>                  </msub>                </mrow>              </mtd>              <mtd rowalign="center">                <mo>=</mo>              </mtd>              <mtd rowalign="center" columnalign="left">                <mrow>                  <mi>B</mi><mi>cos</mi><msub>                    <mi>θ</mi>                    <mi>B</mi>                  </msub>                  <mo>=</mo><mo stretchy="false">(</mo><mn>34.0</mn><mspace width="0.3em" /><mtext> m</mtext><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>cos</mi><msup>                    <mrow>                      <mn>63.0</mn>                    </mrow>                    <mo>∘</mo>                  </msup>                  <mo stretchy="false">)</mo>                </mrow>              </mtd>            </mtr>            <mtr rowalign="center">              <mtd rowalign="center" />              <mtd rowalign="center">                <mo>=</mo>              </mtd>              <mtd rowalign="center" columnalign="left">                <mrow>                  <mo stretchy="false">(</mo><mn>34.0</mn><mspace width="0.3em" /><mtext> m</mtext><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>0.454</mn><mo stretchy="false">)</mo><mo>=</mo><mn>15.4</mn><mspace width="0.3em" /><mtext> m.</mtext>                </mrow>              </mtd>            </mtr>          </mtable>        </mrow>      </math>    </equation>    
-Similarly, the *y*-components are found using <math>      <mrow>        <msub>          <mi>A</mi>          <mi>y</mi>        </msub>        <mo>=</mo><mi>A</mi><mi>sin</mi><msub>          <mi>θ</mi>          <mi>A</mi>        </msub>      </mrow>    </math>
-
-<equation id="fs-id1167067026961" class="unnumbered">      <label />       <math>        <mrow>          <mtable>            <mtr rowalign="center">              <mtd rowalign="center" columnalign="right">                <mrow>                  <msub>                    <mi>A</mi>                    <mi>y</mi>                  </msub>                </mrow>              </mtd>              <mtd rowalign="center">                <mo>=</mo>              </mtd>              <mtd rowalign="center" columnalign="left">                <mrow>                  <mi>A</mi><mi>sin</mi><msub>                    <mi>θ</mi>                    <mi>A</mi>                  </msub>                  <mo>=</mo><mo stretchy="false">(</mo><mn>53.0</mn><mspace width="0.3em" /><mtext> m</mtext><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>sin</mi><msup>                    <mrow>                      <mn>20.0</mn>                    </mrow>                    <mo>∘</mo>                  </msup>                  <mo stretchy="false">)</mo>                </mrow>              </mtd>            </mtr>            <mtr rowalign="center">              <mtd rowalign="center" />              <mtd rowalign="center">                <mo>=</mo>              </mtd>              <mtd rowalign="center" columnalign="left">                <mrow>                  <mo stretchy="false">(</mo><mn>53.0</mn><mspace width="0.3em" /><mtext> m</mtext><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>0.342</mn><mo stretchy="false">)</mo><mo>=</mo><mn>18.1</mn><mspace width="0.3em" /><mtext> m</mtext>                </mrow>              </mtd>            </mtr>          </mtable>        </mrow>      </math>    </equation>    
-and
-
-<equation id="fs-id1167067106036" class="unnumbered">      <label />       <math>        <mrow>          <mtable>            <mtr rowalign="center">              <mtd rowalign="center" columnalign="right">                <mrow>                  <msub>                    <mi>B</mi>                    <mi>y</mi>                  </msub>                </mrow>              </mtd>              <mtd rowalign="center">                <mo>=</mo>              </mtd>              <mtd rowalign="center" columnalign="left">                <mrow>                  <mi>B</mi><mi>sin</mi><msub>                    <mi>θ</mi>                    <mi>B</mi>                  </msub>                  <mo>=</mo><mo stretchy="false">(</mo><mn>34.0</mn><mspace width="0.3em" /><mtext> m</mtext><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>sin</mi><msup>                    <mrow>                      <mn>63.0</mn>                    </mrow>                    <mo>∘</mo>                  </msup>                  <mo stretchy="false">)</mo>                </mrow>              </mtd>            </mtr>            <mtr rowalign="center">              <mtd rowalign="center" />              <mtd rowalign="center">                <mo>=</mo>              </mtd>              <mtd rowalign="center" columnalign="left">                <mrow>                  <mo stretchy="false">(</mo><mn>34.0</mn><mspace width="0.3em" /><mtext> m</mtext><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>0.891</mn><mo stretchy="false">)</mo><mo>=</mo><mn>30.3</mn><mspace width="0.3em" /><mtext> m</mtext><mtext>.</mtext>                </mrow>              </mtd>            </mtr>          </mtable>        </mrow>      </math>    </equation>    
-The *x*- and *y*-components of the resultant are
-
-<equation id="fs-id1167067035388" class="unnumbered">      <label />       <math>        <mrow>          <msub>            <mi>R</mi>            <mi>x</mi>          </msub>          <mo>=</mo><msub>            <mi>A</mi>            <mi>x</mi>          </msub>          <mo>+</mo><msub>            <mi>B</mi>            <mi>x</mi>          </msub>          <mo>=</mo><mn>49.8</mn><mspace width="0.3em" /><mtext> m</mtext><mo>+</mo><mn>15.4</mn><mspace width="0.3em" /><mtext> m</mtext><mo>=</mo><mn>65.2</mn><mspace width="0.3em" /><mtext> m</mtext>        </mrow>      </math>    </equation>    
-and
-
-<equation id="fs-id1167066961228" class="unnumbered">      <label />       <math>        <mrow>          <msub>            <mi>R</mi>            <mi>y</mi>          </msub>          <mo>=</mo><msub>            <mi>A</mi>            <mi>y</mi>          </msub>          <mo>+</mo><msub>            <mi>B</mi>            <mi>y</mi>          </msub>          <mo>=</mo><mn>18.1</mn><mspace width="0.3em" /><mtext> m</mtext><mo>+</mo><mn>30.3</mn><mspace width="0.3em" /><mtext> m</mtext><mo>=</mo><mn>48.4</mn><mspace width="0.3em" /><mtext> m</mtext><mo>.</mo>        </mrow>      </math>    </equation>            
-Now we can find the magnitude of the resultant by using the Pythagorean theorem
-
-<equation id="fs-id1167066946651"><label /> <math>              <mrow>                <mi>R</mi><mo>=</mo><msqrt>                  <mrow>                    <msubsup>                      <mi>R</mi>                      <mi>x</mi>                      <mn>2</mn>                    </msubsup>                    <mo>+</mo><msubsup>                      <mi>R</mi>                      <mi>y</mi>                      <mn>2</mn>                    </msubsup>                  </mrow>                </msqrt>                <mo>=</mo><msqrt>                  <mrow>                    <msup>                      <mrow>                        <mo stretchy="false">(</mo><mn>65.2</mn><mo stretchy="false">)</mo>                      </mrow>                      <mn>2</mn>                    </msup>                    <mo>+</mo><msup>                      <mrow>                        <mo stretchy="false">(</mo><mn>48.4</mn><mo stretchy="false">)</mo>                      </mrow>                      <mn>2</mn>                    </msup>                  </mrow>                </msqrt>                <mtext> m</mtext>              </mrow>            </math>            </equation>            
-so that
-
-<equation id="fs-id1167067105958" class="unnumbered">              <label />               <math>                <mrow>                  <mi>R</mi><mo>=</mo><msqrt>                    <mrow>                      <mn>6601</mn><mspace width="0.3em" /><mtext> m</mtext>                    </mrow>                  </msqrt>                  <mo>=</mo><mn>81.2</mn><mspace width="0.3em" /><mtext> m </mtext><mtext>.</mtext>                </mrow>              </math>            </equation>            
-Finally, we find the direction of the resultant
-
-<equation id="fs-id1167067105603" class="unnumbered">              <label />               <math>                <mrow>                  <mi>θ</mi><mo>=</mo><msup>                    <mrow>                      <mi>tan</mi>                    </mrow>                    <mrow>                      <mo>−</mo><mn>1</mn>                    </mrow>                  </msup>                  <mo stretchy="false">(</mo><msub>                    <mi>R</mi>                    <mi>y</mi>                  </msub>                  <mo>/</mo><msub>                    <mi>R</mi>                    <mi>x</mi>                  </msub>                  <mo stretchy="false">)</mo><mo>=</mo><mo>+</mo><msup>                    <mrow>                      <mi>tan</mi>                    </mrow>                    <mrow>                      <mo>−</mo><mn>1</mn>                    </mrow>                  </msup>                  <mo stretchy="false">(</mo><mn>48.4</mn><mo>/</mo><mn>65.2</mn><mo stretchy="false">)</mo><mo>.</mo>                </mrow>              </math>            </equation>            
-This is
-
-<equation id="fs-id1167066037487" class="unnumbered">              <label /> <math>              <mrow>                <mi>θ</mi><mo>=</mo><msup>                  <mrow>                    <mi>tan</mi>                  </mrow>                  <mrow>                    <mo>−</mo><mn>1</mn>                  </mrow>                </msup>                <mo stretchy="false">(</mo><mn>0.742</mn><mo stretchy="false">)</mo><mo>=</mo><msup>                  <mrow>                    <mn>36.6</mn>                  </mrow>                  <mo>∘</mo>                </msup>                <mo>.</mo>              </mrow>            </math> </equation>          
-## Discussion
-This example shows vector addition using the analytical method. Vector subtraction using the analytical method is very similar. It is just the addition of a negative vector. That is, <math>            <mrow>              <mtext>A</mtext><mo>−</mo><mtext>B</mtext><mo>≡</mo><mtext>A</mtext><mo>+</mo><mo stretchy="false">(</mo><mo>−</mo><mtext>B</mtext><mo stretchy="false">)</mo>            </mrow>          </math> . The components of –  . The components of – <math>            <mrow>              <mtext>B</mtext>            </mrow>          </math> are the negatives of the components of  are the negatives of the components of <math>            <mrow>              <mtext>B</mtext>            </mrow>          </math> . Therefore, the  . Therefore, the *x*- and *y*-components of the resultant <math>            <mrow>              <mtext>A</mtext><mo>−</mo><mtext>B</mtext><mo>=</mo><mtext>R</mtext>            </mrow>          </math>  are   are
-
-<equation id="fs-id1167067042203" class="unnumbered">            <label />             <math>              <mrow>                <msub>                  <mi>R</mi>                  <mi>x</mi>                </msub>                <mo>=</mo><msub>                  <mi>A</mi>                  <mi>x</mi>                </msub>                <mo>+</mo><mo>-</mo><msub>                  <mi>B</mi>                  <mi>x</mi>                </msub>              </mrow>            </math>          </equation>          
-and
-
-<equation id="fs-id1167067105740" class="unnumbered">            <label />             <math>              <mrow>                <msub>                  <mi>R</mi>                  <mi>y</mi>                </msub>                <mo>=</mo><msub>                  <mi>A</mi>                  <mi>y</mi>                </msub>                <mo>+</mo><mo>-</mo><msub>                  <mi>B</mi>                  <mi>y</mi>                </msub>              </mrow>            </math>          </equation>          
-and the rest of the method outlined above is identical to that for addition.
+          Now that we know the components of    we can find its magnitude and direction.
+* To get the magnitude of the resultant R, use the Pythagorean theorem.
+* To get the direction of the resultant
+> ### Classifying Vectors and Quantities Example
+> This video contrasts and compares three vectors in terms of their magnitudes, positions, and directions.
+> 
+> 
+> In the video, the vectors were represented with an arrow above them rather than in bold. This is a common notation in math classes.
+## Using the Analytical Method of Vector Addition and Subtraction to Solve Problems
+[Figure __REPLACE_Figure_05_02_AB__](#Figure_05_02_AB) uses the analytical method to add vectors.
 
 
-
-### Practice Problems
-
-What is the magnitude of a vector whose *x*-component is 4 cm and whose *y*-component is 3 cm?
-
-1. 1 cm
-2. 5 cm
-3. 7 cm
-4. 25 cm
-
-What is the magnitude of a vector that makes an angle of 30° to the horizontal and whose *x*-component is 3 units?
-
-1. 2.61 units
-2. 3.00 units
-3. 3.46 units
-4. 6.00 units
+## Practice Problems
 
 
-
-## Atmospheric Science
-![Temp alt text](__MEDIA_URL__CNX_HSPhysics_05_02_weather.jpg)<p>This picture shows Bert Foord during a television Weather Forecast from the Meteorological Office in 1963.  (BBC TV)</p>
-Atmospheric science is a **physical science**, meaning that it is a science based heavily on physics. Atmospheric science includes meteorology (the study of weather) and climatology (the study of climate). Climate is basically the average weather over a longer time scale. Weather changes quickly over time, whereas the climate changes more gradually.
-
-The movement of air, water and heat is vitally important to climatology and meteorology. Since motion is such a major factor in weather and climate, this field uses vectors for much of its math.
-
-Vectors are used to represent currents in the ocean, wind velocity and forces acting on a parcel of air. You have probably seen a weather map using vectors to show the strength (magnitude) and direction of the wind.
-
-Vectors used in atmospheric science are often three-dimensional. We won’t cover three-dimensional motion in this text, but to go from two-dimensions to three-dimensions, you simply add a third vector component. Three-dimensional motion is represented as a combination of *x*-, *y*- and *z* components, where *z* is the altitude.
-
-Vector calculus combines vector math with calculus, and is often used to find the rates of change in temperature, pressure or wind speed over time or distance. This is useful information, since atmospheric motion is driven by changes in pressure or temperature. The greater the variation in pressure over a given distance, the stronger the wind to try to correct that imbalance. Cold air tends to be more dense and therefore has higher pressure than warm air. Higher pressure air rushes into a region of lower pressure and gets deflected by the spinning of the Earth, and friction slows the wind at Earth’s surface.
-
-Finding how wind changes over distance and multiplying vectors lets meteorologists, like the one shown in [Figure 05 02 weather](Figure_05_02_weather), figure out how much rotation (spin) there is in the atmosphere at any given time and location. This is an important tool for tornado prediction. Conditions with greater rotation are more likely to produce tornadoes.
-
-[temporarily unnamed link]()
-
-
-
-### Section Summary
-
+> ### Atmospheric Science
+> ![A black and white photograph of a meteorologist is shown. The meteorologist is standing in front of a weather map with a television camera pointing at him.__ALT__Figure_05_02_weather](__MEDIA_URL__CNX_HSPhysics_05_02_weather.jpg)
+> ***Figure 9** This picture shows Bert Foord during a television Weather Forecast from the Meteorological Office in 1963.  (BBC TV)*
+> 
+> Atmospheric science is a , meaning that it is a science based heavily on physics. Atmospheric science includes meteorology (the study of weather) and climatology (the study of climate). Climate is basically the average weather over a longer time scale. Weather changes quickly over time, whereas the climate changes more gradually.
+> 
+> The movement of air, water and heat is vitally important to climatology and meteorology. Since motion is such a major factor in weather and climate, this field uses vectors for much of its math.
+> 
+> Vectors are used to represent currents in the ocean, wind velocity and forces acting on a parcel of air. You have probably seen a weather map using vectors to show the strength (magnitude) and direction of the wind.
+> 
+> Vectors used in atmospheric science are often three-dimensional. We won’t cover three-dimensional motion in this text, but to go from two-dimensions to three-dimensions, you simply add a third vector component. Three-dimensional motion is represented as a combination of *x*-, *y*- and *z* components, where *z* is the altitude.
+> 
+> Vector calculus combines vector math with calculus, and is often used to find the rates of change in temperature, pressure or wind speed over time or distance. This is useful information, since atmospheric motion is driven by changes in pressure or temperature. The greater the variation in pressure over a given distance, the stronger the wind to try to correct that imbalance. Cold air tends to be more dense and therefore has higher pressure than warm air. Higher pressure air rushes into a region of lower pressure and gets deflected by the spinning of the Earth, and friction slows the wind at Earth’s surface.
+> 
+> Finding how wind changes over distance and multiplying vectors lets meteorologists, like the one shown in [Figure 9](#Figure_05_02_weather), figure out how much rotation (spin) there is in the atmosphere at any given time and location. This is an important tool for tornado prediction. Conditions with greater rotation are more likely to produce tornadoes.
+> 
+## Section Summary
 * The analytical method of vector addition and subtraction uses the Pythagorean theorem and trigonometric identities to determine the magnitude and direction of a resultant vector.
-* The steps to add vectors <math>        <mrow>          <mtext>A</mtext>        </mrow>      </math> and  and <math>        <mrow>          <mtext>B</mtext>        </mrow>      </math> using the analytical method are as follows:       using the analytical method are as follows:
-      1. Determine the coordinate system for the vectors. Then, determine the horizontal and vertical components of each vector using the equations
-        <equation id="fs-id1167067105366" class="unnumbered">          <label />           <math>            <mrow>              <mtable>                <mtr>                  <mtd columnalign="right">                    <mrow>                      <msub>                        <mi>A</mi>                        <mi>x</mi>                      </msub>                    </mrow>                  </mtd>                  <mtd>                    <mo>=</mo>                  </mtd>                  <mtd columnalign="left">                    <mrow>                      <mi>A</mi><mtext>cos</mtext><mi>θ</mi>                    </mrow>                  </mtd>                </mtr>                <mtr>                  <mtd columnalign="right">                    <mrow>                      <msub>                        <mi>B</mi>                        <mi>x</mi>                      </msub>                    </mrow>                  </mtd>                  <mtd>                    <mo>=</mo>                  </mtd>                  <mtd columnalign="left">                    <mrow>                      <mi>B</mi><mtext>cos</mtext><mi>θ</mi>                    </mrow>                  </mtd>                </mtr>              </mtable>            </mrow>          </math>        </equation>          
-
+* The steps to add vectors  and  using the analytical method are as follows:
+      * Determine the coordinate system for the vectors. Then, determine the horizontal and vertical components of each vector using the equations
+        
           and
-
-
-        <equation id="fs-id1167067077336" class="unnumbered">          <label />           <math>            <mrow>              <mtable>                <mtr>                  <mtd columnalign="right">                    <mrow>                      <msub>                        <mi>A</mi>                        <mi>y</mi>                      </msub>                    </mrow>                  </mtd>                  <mtd>                    <mo>=</mo>                  </mtd>                  <mtd columnalign="left">                    <mrow>                      <mi>A</mi><mtext>sin</mtext><mi>θ</mi>                    </mrow>                  </mtd>                </mtr>                <mtr>                  <mtd columnalign="right">                    <mrow>                      <msub>                        <mi>B</mi>                        <mi>y</mi>                      </msub>                    </mrow>                  </mtd>                  <mtd>                    <mo>=</mo>                  </mtd>                  <mtd columnalign="left">                    <mrow>                      <mi>B</mi><mtext>sin</mtext><mi>θ</mi><mtext>.</mtext></mrow>                  </mtd>                </mtr>              </mtable>            </mrow>          </math>        </equation>
-2. Add the horizontal and vertical components of each vector to determine the components <math>          <mrow>            <msub>              <mi>R</mi>              <mi>x</mi>            </msub>          </mrow>        </math> and  and <math>          <mrow>            <msub>              <mi>R</mi>              <mi>y</mi>            </msub>          </mrow>        </math> of the resultant vector,  of the resultant vector, <math>          <mrow>            <mtext>R.</mtext>          </mrow>        </math>        
-        <equation id="fs-id1167066957683" class="unnumbered">          <label />           <math>            <mrow>              <msub>                <mi>R</mi>                <mi>x</mi>              </msub>              <mo>=</mo><msub>                <mi>A</mi>                <mi>x</mi>              </msub>              <mo>+</mo><msub>                <mi>B</mi>                <mi>x</mi>              </msub>            </mrow>          </math>        </equation>          
-
+* Add the horizontal and vertical components of each vector to determine the components  and  of the resultant vector, 
+        
           and
+* Use the Pythagorean theorem to determine the magnitude, , of the resultant vector
+* Use a trigonometric identity to determine the direction, , of
+## Key Equations
+<table><tr><td>resultant magnitude</td>
+            <td></td></tr>
+          <tr><td>resultant direction</td>
+            <td></td></tr>
+          <tr><td>x-component of a vector A (when an angle is given relative to the horizontal)</td>
+            <td></td></tr>
+          <tr><td>y-component of a vector A (when an angle is given relative to the horizontal)</td>
+            <td></td></tr>
+          <tr><td>addition of vectors</td>
+            <td></td></tr></table>
+## Check Your Understanding
 
 
-          <equation id="fs-id1167066957733" class="unnumbered">            <label />             <math>              <mrow>                <msub>                  <mi>R</mi>                  <mi>y</mi>                </msub>                <mo>=</mo><msub>                  <mi>A</mi>                  <mi>y</mi>                </msub>                <mo>+</mo><msub>                  <mi>B</mi>                  <mi>y</mi>                </msub>                <mo>.</mo>              </mrow>            </math>          </equation>
-3. Use the Pythagorean theorem to determine the magnitude, <math>          <mrow>            <mi>R</mi>          </mrow>        </math>, of the resultant vector , of the resultant vector <math>          <mrow>            <mtext>R.</mtext>          </mrow>        </math>        
-        <equation id="fs-id1167066993829" class="unnumbered">          <label />           <math>            <mrow>              <mi>R</mi><mo>=</mo><msqrt>                <mrow>                  <msubsup>                    <mi>R</mi>                    <mi>x</mi>                    <mn>2</mn>                  </msubsup>                  <mo>+</mo><msubsup>                    <mi>R</mi>                    <mi>y</mi>                    <mn>2</mn>                  </msubsup>                </mrow>              </msqrt>                          </mrow>          </math>        </equation>
-4. Use a trigonometric identity to determine the direction, <math>          <mrow>            <mi>θ</mi>          </mrow>        </math>, of , of <math>          <mrow>            <mtext>R.</mtext>          </mrow>        </math>        
-        <equation id="fs-id1167067101251" class="unnumbered">          <label />           <math>            <mrow>              <mi>θ</mi><mo>=</mo><msup>                <mrow>                  <mtext>tan</mtext>                </mrow>                <mrow>                  <mo>−</mo><mn>1</mn>                </mrow>              </msup>              <mo stretchy="false">(</mo><msub>                <mi>R</mi>                <mi>y</mi>              </msub>              <mo>/</mo><msub>                <mi>R</mi>                <mi>x</mi>              </msub>              <mo stretchy="false">)</mo>            </mrow>          </math>        </equation>
 
 
 
-### Key Equations
+## Concept Items
 
-<table>  <tr>    <td>resultant magnitude</td>    <td><math>              <mrow>                <mi>R</mi><mo>=</mo><msqrt>                  <mrow>                    <msubsup>                      <mi>R</mi>                      <mi>x</mi>                      <mn>2</mn>                    </msubsup>                    <mo>+</mo><msubsup>                      <mi>R</mi>                      <mi>y</mi>                      <mn>2</mn>                    </msubsup>                  </mrow>                </msqrt>              </mrow>            </math></td>  </tr>  <tr>    <td>resultant direction</td>    <td><math>              <mrow>                <mi>θ</mi><mo>=</mo><msup>                  <mrow>                    <mtext>tan</mtext>                  </mrow>                  <mrow>                    <mo>−</mo><mn>1</mn>                  </mrow>                </msup>                <mo stretchy="false">(</mo><msub>                  <mi>R</mi>                  <mi>y</mi>                </msub>                <mo>/</mo><msub>                  <mi>R</mi>                  <mi>x</mi>                </msub>                <mo stretchy="false">)</mo>              </mrow>            </math></td>  </tr>  <tr>    <td>x-component of a vector A (when an angle is given relative to the horizontal)</td>    <td><math>              <mrow>                <msub>                  <mi>A</mi>                  <mi>x</mi>                </msub>                <mo>=</mo><mi>A</mi><mtext>cos</mtext><mi>θ</mi>              </mrow>            </math></td>  </tr>  <tr>    <td>y-component of a vector A (when an angle is given relative to the horizontal)</td>    <td><math>              <mrow>                <msub>                  <mi>A</mi>                  <mi>y</mi>                </msub>                <mo>=</mo><mi>A</mi><mtext>sin</mtext><mi>θ</mi>              </mrow>            </math></td>  </tr>  <tr>    <td>addition of vectors</td>    <td><math>              <mrow>                <msub>                  <mstyle mathvariant="bold" mathsize="normal"><mi>A</mi></mstyle>                  <mstyle mathvariant="bold" mathsize="normal"><mi>x</mi></mstyle>                </msub>                <mstyle mathvariant="bold" mathsize="normal"><mo> </mo><mo>+</mo><mo> </mo></mstyle><msub>                  <mstyle mathvariant="bold" mathsize="normal"><mi>A</mi></mstyle>                  <mstyle mathvariant="bold" mathsize="normal"><mi>y</mi></mstyle>                </msub>                <mstyle mathvariant="bold" mathsize="normal"><mo> </mo><mo>=</mo><mo> </mo><mi>A</mi></mstyle>              </mrow>            </math></td>  </tr></table>
 
 
-### Check Your Understanding
 
-Between the analytical and graphical methods of vector additions, which is more accurate? Why?
+## Problems
 
-1. The analytical method is less accurate than the graphical method, because the former involves geometry and trigonometry.
-2. The analytical method is more accurate than the graphical method, because the latter involves some extensive calculations.
-3. The analytical method is less accurate than the graphical method, because the former includes drawing all figures to the right scale.
-4. The analytical method is more accurate than the graphical method, because the latter is limited by the precision of the drawing.
 
-What is a component of a two dimensional vector?
+## Critical Thinking
 
-1. A component is a piece of a vector that points in either the *x* or *y* direction.
-2. A component is a piece of a vector that has half of the magnitude of the original vector.
-3. A component is a piece of a vector that points in the direction opposite to the original vector.
-4. A component is a piece of a vector that points in the same direction as original vector but with double of its magnitude.
 
-[temporarily unnamed link]()
+## Test Prep Multiple Choice
 
-How can we determine the magnitude of a vector if we know the magnitudes of its components?
 
-1. <math><mrow><mo>|</mo><mover><mtext>A</mtext><mo>→</mo></mover><mo>|</mo><mo>=</mo><msub><mi>A</mi><mi>x</mi></msub><mo>+</mo><msub><mi>A</mi><mi>y</mi></msub></mrow></math>
-2. <math><mrow><mo>|</mo><mover><mtext>A</mtext><mo>→</mo></mover><mo>|</mo><mo>=</mo><msup><msub><mi>A</mi><mi>x</mi></msub><mn>2</mn></msup><mo>+</mo><msup><msub><mi>A</mi><mi>y</mi></msub><mn>2</mn></msup></mrow></math>
-3. <math><mrow><mo>|</mo><mover><mtext>A</mtext><mo>→</mo></mover><mo>|</mo><mo>=</mo><msqrt><msup><msub><mi>A</mi><mi>x</mi></msub><mn>2</mn></msup><mo>+</mo><msup><msub><mi>A</mi><mi>y</mi></msub><mn>2</mn></msup></msqrt></mrow></math>
-4. <math><mrow><mo>|</mo><mover><mtext>A</mtext><mo>→</mo></mover><mo>|</mo><mo>=</mo><mo>(</mo><msup><msub><mi>A</mi><mi>x</mi></msub><mn>2</mn></msup><mo>+</mo><msup><msub><mi>A</mi><mi>y</mi></msub><mn>2</mn></msup><msup><mo>)</mo><mn>2</mn></msup></mrow></math>
 
+## Test Prep Short Answer
 
 
-### Concept Items
 
-[temporarily unnamed link]()
 
-[temporarily unnamed link]()
 
-[temporarily unnamed link]()
 
-True or FalseEvery 2-D vector can be expressed as the product of its x and y-components.
+## Test Prep Extended Response
 
-1. True
-2. False
 
-
-
-### Problems
-
-A person walks 10.0 m north and then 2.00 m east. Solving analytically, what is the resultant displacement of the person?
-
-1. <math><mover><mtext>R</mtext><mo>→</mo></mover></math>  = 10.2 m,  θ = 78.7º east of north  = 10.2 m,  θ = 78.7º east of north
-2. <math><mover><mtext>R</mtext><mo>→</mo></mover></math>  = 10.2 m, θ = 78.7º north of east  = 10.2 m, θ = 78.7º north of east
-3. <math><mover><mtext>R</mtext><mo>→</mo></mover></math>  = 12.0 m,  θ = 78.7º east of north  = 12.0 m,  θ = 78.7º east of north
-4. <math><mover><mtext>R</mtext><mo>→</mo></mover></math>  = 12.0 m, θ = 78.7º north of east  = 12.0 m, θ = 78.7º north of east
-
-[temporarily unnamed link]()
-
-
-
-### Critical Thinking
-
-[temporarily unnamed link]()
-
-[temporarily unnamed link]()
-
-
-
-### Test Prep Multiple Choice
-
-[temporarily unnamed link]()
-
-[temporarily unnamed link]()
-
-What is the dimensionality of vectors used in the study of atmospheric sciences?
-
-1. One-dimensional
-2. Two-dimensional
-3. Three-dimensional
-
-
-
-### Test Prep Short Answer
-
-True or False—A vector can form the shape of a right angle triangle with its x and y components.
-
-1. True
-2. False
-
-True or False—All vectors have positive x and y components.
-
-1. True
-2. False
-
-[temporarily unnamed link]()
-
-[temporarily unnamed link]()
-
-When a three dimensional vector is used in the study of atmospheric sciences, what is z?
-
-1. Altitude
-2. Heat
-3. Temperature
-4. Wind speed
-
-Which method is not an application of vector calculus?
-
-1. To find the rate of change in atmospheric temperature
-2. To study changes in wind speed and direction
-3. To predict changes in atmospheric pressure
-4. To measure changes in average rainfall
-
-
-
-### Test Prep Extended Response
-
-[temporarily unnamed link]()
-
-True or False—If only the angles of two vectors are known, we can find the angle of their resultant addition vector.
-
-1. True
-2. False
-
-True or false—We can find the magnitude and direction of the resultant vector if we know the angles of two vectors and the magnitude of one.
-
-1. True
-2. False
-
-
-
-**analytical method**the method of determining the magnitude and direction of a resultant vector using the Pythagorean theorem and trigonometric identities**component (of a 2-dimensional vector)**a piece of a vector that points in a particular direction, usually in the direction of one of the axes of a chosen coordinate system; every 2-d vector can be expressed as a sum of two perpendicular vector components

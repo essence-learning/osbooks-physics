@@ -45,11 +45,21 @@ def generate_content(node, section_depth) -> str:
             for child in node:
                 output.append(generate_content(child, section_depth + 1))
 
+        case 'note':
+            for child in node:
+                output.append(generate_content(child, section_depth + 1))
+
+            separate_lines = ('\n'.join(output)).splitlines()
+            output = ['> ' + line for line in separate_lines]
+
         case 'newline':
             return '\n'
 
         case 'para':
             output.append(text(node, section_depth) + '\n')
+
+        case 'sup':
+            output.append(f'<sup>{text(node, section_depth)}</sup>')
 
         case 'title':
             output.append(f'{"#" * section_depth} {text(node, section_depth)}')
@@ -98,6 +108,18 @@ def generate_content(node, section_depth) -> str:
                         effect = '**'
 
             output.append(f'{effect}{text(node, section_depth)}{effect}')
+
+        case 'table' | 'tgroup':
+            return text(node, section_depth)
+
+        case 'tbody':
+            return f'<table>{text(node, section_depth)}</table>\n'
+
+        case 'row':
+            return f'<tr>{text(node, section_depth)}</tr>'
+
+        case 'entry':
+            return f'<td>{text(node, section_depth)}</td>'
 
         case _:
             pass
@@ -176,8 +198,8 @@ if __name__ == '__main__':
     module_table: dict[str, Module] = dict()
 
     # Parse the modules
-    # modules = [m for m in (cwd / 'modules').iterdir() if m.is_dir()]
-    modules = [cwd / 'modules/m54082', cwd / 'modules/m54057']
+    modules = [m for m in (cwd / 'modules').iterdir() if m.is_dir()]
+    # modules = [cwd / 'modules/m54082', cwd / 'modules/m54057']
     for module in modules:
         print(f'Processing {module.name}')
         module_tree = ET.parse(module / 'index.cnxml')
