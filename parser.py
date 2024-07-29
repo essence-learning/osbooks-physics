@@ -67,7 +67,8 @@ def generate_content(node, section_depth) -> str:
                 image_src = image_src.split('/')[-1]
 
             image_id = node.attrib.get('id')
-            image_mdx = f'<img id="{image_id}" src="__MEDIA_URL__{image_src}" alt="{alt_text}" />'
+            image_mdx = f'![{alt_text}__ALT__{image_id}](__MEDIA_URL__{image_src})'
+            # The image id is encoded into the alt text to be unpacked later
 
             figure_table[image_id] = figure_count
 
@@ -78,13 +79,13 @@ def generate_content(node, section_depth) -> str:
 
             figure_count += 1
 
-            return image_mdx
+            return image_mdx + '\n'
 
 
         case 'link':
             if 'target-id' in node.attrib:
                 id = node.attrib.get('target-id')
-                return f'[Figure {figure_table[id]}](#{id})'
+                return f'[Figure __REPLACE_{id}__](#{id})'
 
         case 'emphasis':
             effect = '**'
@@ -176,7 +177,7 @@ if __name__ == '__main__':
 
     # Parse the modules
     # modules = [m for m in (cwd / 'modules').iterdir() if m.is_dir()]
-    modules = [cwd / 'modules/m54082']
+    modules = [cwd / 'modules/m54082', cwd / 'modules/m54057']
     for module in modules:
         print(f'Processing {module.name}')
         module_tree = ET.parse(module / 'index.cnxml')
@@ -187,6 +188,10 @@ if __name__ == '__main__':
         figure_count = 1
         figure_table = dict()
         module_obj = process_module(module_root)
+
+        for figure_id in figure_table:
+            module_obj.content = module_obj.content.replace(f'__REPLACE_{figure_id}__', f'{figure_table[figure_id]}')
+
         print(module_obj)
 
         # For each module, write conent to mdx file
@@ -196,7 +201,7 @@ if __name__ == '__main__':
         # Then, add to module table for later access to metadata
         module_table[module_obj.id] = module_obj
         print('=' * 20)
-        print(module_obj.content)
+        # print(module_obj.content)
 
     # Generate the TOC
     toc_data = process_toc(collection_file, module_table)
