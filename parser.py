@@ -121,6 +121,9 @@ def generate_content(node, section_depth) -> str:
         case 'entry':
             return f'<td>{text(node, section_depth)}</td>'
 
+        case 'equation' | 'math':
+            return f'{ET.tostring(node, encoding="unicode")}'.replace('\n', '')
+
         case _:
             pass
             # for child in node:
