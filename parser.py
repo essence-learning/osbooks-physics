@@ -113,7 +113,7 @@ def generate_content(node, section_depth) -> str:
             return text(node, section_depth)
 
         case 'tbody':
-            return f'<table>{text(node, section_depth)}</table>\n'
+            return f'<table>{text(node, section_depth)}</table>'.replace('\n', '') + '\n'
 
         case 'row':
             return f'<tr>{text(node, section_depth)}</tr>'
